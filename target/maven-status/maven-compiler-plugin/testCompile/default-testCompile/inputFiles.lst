@@ -1,5 +1,7 @@
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\VideoPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\BaseClass\test1.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_Gif_Test.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_VideoTest.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_ExistingList.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\MyEventsPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\loginpage.java
@@ -10,6 +12,7 @@ C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\createPhotoPag
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\RegistrationPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\reviewPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\PhotoPage.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\createVideoPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\packageDetails.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\createGifPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\retryAnalyzerUtil\retryAnalyser.java

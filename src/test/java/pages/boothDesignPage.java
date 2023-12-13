@@ -176,5 +176,37 @@ public class boothDesignPage {
 			}
 		}
 	}
+	
+	@FindBy(xpath = "(//mat-icon[contains(text(),'add')])[2]")
 
+	WebElement VideoNode;
+
+	public void dragAndDropVideoNode() {
+
+		Actions act = new Actions(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1500));
+
+		WebElement source = wait.until(ExpectedConditions.visibilityOf(VideoNode));
+		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
+
+		act.dragAndDrop(source, dest).build().perform();
+	}
+	public void clickonVideoGearIcon() {
+
+		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+
+		WebElement gear = wait.until(ExpectedConditions.elementToBeClickable(photoGearIcon));
+
+		js = (JavascriptExecutor) driver;
+		try {
+
+			Actions act = new Actions(driver);
+			act.click(gear).perform();
+
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+		}
+
+	}
 }
