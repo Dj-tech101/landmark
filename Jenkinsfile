@@ -15,7 +15,7 @@ pipeline {
             steps {
                 // Check out the code from the specified branch (DjBranch)
                 checkout([$class: 'GitSCM', branches: [[name: '*/DjBranch']], userRemoteConfigs: [[url: 'https://github.com/Dj-tech101/landmark.git']]])
-             bat 'C:\\Program Files\\apache-maven-3.9.5\\binmvn clean install'
+             bat 'C:\\Program Files\\apache-maven-3.9.5\\bin\\mvn clean install'
             }
         }
     }
