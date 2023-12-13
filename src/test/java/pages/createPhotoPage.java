@@ -59,13 +59,92 @@ public class createPhotoPage {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		wait = new WebDriverWait(driver, Duration.ofMillis(3));
+		try {
+			Thread.sleep(3000);
+			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(openFileForOverlay));
 
-		WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(openFileForOverlay));
+			js = (JavascriptExecutor) driver;
 
-		e2.click();
+			js.executeScript("arguments[0].click();", e2);
 
-		Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\autoitfiles.exe");
+			Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\autoitfiles.exe");
 
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getLocalizedMessage());
+		}
+
+	}
+
+	@FindBy(xpath = "//input[@role='switch']")
+	WebElement GreenScreenToggle;
+
+	@FindBy(xpath = "(//button[contains(text(),' OPEN FILE ')])[1]")
+	WebElement openBackroundSection;
+
+	@SuppressWarnings("deprecation")
+	public Boolean sendKeysBackgroundImage() throws IOException, InterruptedException {
+		boolean value = false;
+
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		try {
+			wait = new WebDriverWait(driver, Duration.ofMillis(3));
+
+			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(GreenScreenToggle));
+
+			String areaChecked = e2.getAttribute("aria-checked");
+			if (CheckedGreenScreenToggle()) {
+				System.out.println("Toggle is on");
+			} else {
+				js = (JavascriptExecutor) driver;
+
+				js.executeScript("arguments[0].click();", e2);
+
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getMessage());
+		}
+
+		Thread.sleep(1200);
+
+		WebElement background = wait.until(ExpectedConditions.elementToBeClickable(openBackroundSection));
+
+		background.click();
+
+		Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\backround autoIt.exe");
+		return value;
+
+	}
+
+	public boolean CheckedGreenScreenToggle() {
+
+		boolean value = false;
+
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		try {
+			wait = new WebDriverWait(driver, Duration.ofMillis(3));
+
+			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(GreenScreenToggle));
+
+			String areaChecked = e2.getAttribute("aria-checked");
+
+			if (areaChecked.equals("true")) {
+
+				value = true;
+
+			} else {
+				value = false;
+
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getMessage());
+		}
+		return value;
 	}
 
 	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[2]")
@@ -75,22 +154,24 @@ public class createPhotoPage {
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(4));
 
-		FluentWait<WebDriver> waitfluent = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
-				.pollingEvery(Duration.ofMinutes(1))
-
-				.withMessage("element is not display");
-
-		WebElement e2 = wait.until(ExpectedConditions.visibilityOf(saveButton));
+//		FluentWait<WebDriver> waitfluent = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
+//				.pollingEvery(Duration.ofMinutes(1))
+//
+//				.withMessage("element is not display");
+//
+//		WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(saveButton));
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
 
 		js = (JavascriptExecutor) driver;
 
-		js.executeScript("arguments[0].click();", e2);
+		Thread.sleep(4000);
+
+		js.executeScript("arguments[0].click();", saveButton);
 
 	}
-	
+
 	public void createNewNameofPhoto() {
-		
+
 	}
 }

@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="demo_testCases.Create_Event_ExistingList"/>
-      <class name="demo_testCases.Create_Event_NewFresh"/>
+      <class name="demo_testCases.Smoke_Create_Event_ExistingList"/>
+      <class name="demo_testCases.Smoke_Create_Event_Gif_Test"/>
+      <class name="demo_testCases.Smoke_Create_Event_WithGreenScreen"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

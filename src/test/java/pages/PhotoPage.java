@@ -110,12 +110,16 @@ public class PhotoPage {
 	public void createNewSinglePhoto(String nameofphoto) throws InterruptedException, IOException {
 		
 		PhotoPage photopage = new PhotoPage(driver);
+		
 		photopage.clickonCreatePhotoButton();
+		
 		photopage.clickOnSingleImageButton();
 		
 		createPhotoPage createPhoto = new createPhotoPage(driver);
 
 		createPhoto.sendNameTextField(nameofphoto);
+		
+		createPhoto.sendKeysBackgroundImage();
 
 		createPhoto.sendKeysOverlayField();
 

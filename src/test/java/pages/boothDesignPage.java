@@ -53,7 +53,7 @@ public class boothDesignPage {
 	@FindBy(xpath = "//div[@id='graphContainer']")
 	WebElement destination;
 
-	public void dragAndDrop() {
+	public void dragAndDropphotoNode() {
 
 		Actions act = new Actions(driver);
 
@@ -79,6 +79,22 @@ public class boothDesignPage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(3));
 
 		WebElement source = wait.until(ExpectedConditions.visibilityOf(sharesource));
+		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
+
+		act.dragAndDrop(source, dest).build().perform();
+	}
+
+	@FindBy(xpath = "(//mat-icon[contains(text(),'add')])[3]")
+
+	WebElement gifNode;
+
+	public void dragAndDropGifNode() {
+
+		Actions act = new Actions(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1500));
+
+		WebElement source = wait.until(ExpectedConditions.visibilityOf(gifNode));
 		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
 
 		act.dragAndDrop(source, dest).build().perform();
@@ -125,6 +141,26 @@ public class boothDesignPage {
 		}
 
 	}
+	
+	public void clickonGifGearIcon() {
+
+		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+
+		WebElement gear = wait.until(ExpectedConditions.elementToBeClickable(photoGearIcon));
+
+		js = (JavascriptExecutor) driver;
+		try {
+
+			Actions act = new Actions(driver);
+			act.click(gear).perform();
+
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+		}
+
+	}
+	
+	
 
 	@FindBy(xpath = "//*[@id='graphContainer']//*[name()='div']//*[name()='span']")
 	List<WebElement> listofNodes;

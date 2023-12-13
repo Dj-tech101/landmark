@@ -7,6 +7,7 @@ import java.util.Random;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import BaseClass.baseclass;
 import pages.CheckoutPage;
 import pages.MyEventsPage;
 import pages.PhotoPage;
@@ -90,7 +91,7 @@ public class Create_Event_NewFresh extends baseclass {
 		designPage = new boothDesignPage(driver);
 
 		System.out.println("drag photo to destination");
-		designPage.dragAndDrop();
+		designPage.dragAndDropphotoNode();
 
 		System.out.println("click on phto gear icon ");
 

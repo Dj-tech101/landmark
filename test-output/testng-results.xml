@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-07T16:51:49 IST" name="Suite" finished-at="2023-12-07T16:55:18 IST" duration-ms="208460">
+  <suite started-at="2023-12-13T13:38:22 IST" name="Default suite" finished-at="2023-12-13T13:39:24 IST" duration-ms="61874">
     <groups>
+      <group name="smoke">
+        <method signature="Smoke_Create_Event_Gif_Test.Validate_Creation_event_with_Gif()[pri:0, instance:demo_testCases.Smoke_Create_Event_Gif_Test@4218d6a3]" name="Validate_Creation_event_with_Gif" class="demo_testCases.Smoke_Create_Event_Gif_Test"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-12-07T16:51:49 IST" name="Test" finished-at="2023-12-07T16:55:18 IST" duration-ms="208460">
-      <class name="demo_testCases.Create_Event_ExistingList">
-        <test-method is-config="true" signature="setup()[pri:0, instance:demo_testCases.Create_Event_ExistingList@55182842]" started-at="2023-12-07T16:51:49 IST" name="setup" finished-at="2023-12-07T16:51:56 IST" duration-ms="6631" status="PASS">
+    <test started-at="2023-12-13T13:38:22 IST" name="Default test" finished-at="2023-12-13T13:39:24 IST" duration-ms="61874">
+      <class name="demo_testCases.Smoke_Create_Event_Gif_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:demo_testCases.Smoke_Create_Event_Gif_Test@4218d6a3]" started-at="2023-12-13T13:38:22 IST" name="setup" finished-at="2023-12-13T13:38:30 IST" duration-ms="7908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="name()[pri:0, instance:demo_testCases.Create_Event_ExistingList@55182842]" started-at="2023-12-07T16:51:56 IST" name="name" finished-at="2023-12-07T16:52:33 IST" duration-ms="37266" status="PASS">
+        <test-method signature="Validate_Creation_event_with_Gif()[pri:0, instance:demo_testCases.Smoke_Create_Event_Gif_Test@4218d6a3]" started-at="2023-12-13T13:38:30 IST" name="Validate_Creation_event_with_Gif" finished-at="2023-12-13T13:39:23 IST" duration-ms="53719" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- name -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo_testCases.Create_Event_ExistingList@55182842]" started-at="2023-12-07T16:52:33 IST" name="tearDown" finished-at="2023-12-07T16:52:34 IST" duration-ms="296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demo_testCases.Create_Event_ExistingList -->
-      <class name="demo_testCases.Create_Event_NewFresh">
-        <test-method is-config="true" signature="setup()[pri:0, instance:demo_testCases.Create_Event_NewFresh@45752059]" started-at="2023-12-07T16:52:34 IST" name="setup" finished-at="2023-12-07T16:53:03 IST" duration-ms="29487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestNewUserCreation()[pri:0, instance:demo_testCases.Create_Event_NewFresh@45752059]" started-at="2023-12-07T16:53:03 IST" name="TestNewUserCreation" finished-at="2023-12-07T16:55:17 IST" duration-ms="134408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNewUserCreation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo_testCases.Create_Event_NewFresh@45752059]" started-at="2023-12-07T16:55:17 IST" name="tearDown" finished-at="2023-12-07T16:55:18 IST" duration-ms="331" status="PASS">
+        </test-method> <!-- Validate_Creation_event_with_Gif -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo_testCases.Smoke_Create_Event_Gif_Test@4218d6a3]" started-at="2023-12-13T13:39:23 IST" name="tearDown" finished-at="2023-12-13T13:39:24 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- demo_testCases.Create_Event_NewFresh -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- demo_testCases.Smoke_Create_Event_Gif_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

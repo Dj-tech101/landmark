@@ -2,6 +2,7 @@ package pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,15 +23,15 @@ public class loginpage {
 
 	}
 
-	@FindBy(id = "Email")
+	@FindBy(xpath = "//input[@id='Email']")
 	WebElement email;
 
 	public void usernamesendkey(String name) {
+//		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+//		WebElement usernameInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Email")));
+//		usernameInput.sendKeys(name);
 
-		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-		wait.until(ExpectedConditions.visibilityOf(email)).sendKeys(name);
-
+		email.sendKeys(name);
 	}
 
 	@FindBy(id = "Password")
@@ -54,7 +55,7 @@ public class loginpage {
 
 	}
 
-	public void login(String user, String pass) {
+	public void loginwithCredential(String user, String pass) {
 
 		usernamesendkey(user);
 		passwordnamesendkey(pass);

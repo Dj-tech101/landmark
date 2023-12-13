@@ -109,8 +109,8 @@ public class packageDetails {
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		System.out.println("ready to select ");
+		
 		if (packageName.equals("PER EVENT")) {
-			System.out.println("enter in per event");
 			for (int j = 0; j < selectButtonPerEventList.size(); j++) {
 				if (Type.contains("Basic")) {
 					if (j == 0) {
@@ -160,7 +160,10 @@ public class packageDetails {
 				}
 				else if (Type.contains("Pro")) {
 
+					j++;
+					
 					System.out.println("click on per month pro ");
+					System.out.println("value of j is "+j);
 					WebElement e1 = selectButtonPerMonthList.get(j);
 					try {
 						js.executeScript("arguments[0].click();", e1);
@@ -190,6 +193,8 @@ public class packageDetails {
 				}
 				else {
 					WebElement e1 = selectButtonPerYearList.get(j);
+					
+					System.out.println("click on pro select");
 					try {
 						js.executeScript("arguments[0].click();", e1);
 						break;

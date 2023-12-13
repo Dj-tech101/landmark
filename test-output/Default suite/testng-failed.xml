@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo_testCases.Create_Event_NewFresh">
+      <class name="demo_testCases.Smoke_Create_Event_Gif_Test">
         <methods>
-          <include name="TestNewUserCreation"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="Validate_Creation_event_with_Gif"/>
         </methods>
-      </class> <!-- demo_testCases.Create_Event_NewFresh -->
+      </class> <!-- demo_testCases.Smoke_Create_Event_Gif_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
