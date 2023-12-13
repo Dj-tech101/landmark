@@ -1,22 +1,31 @@
 pipeline {
     agent any
 
-    tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        maven "MAVEN_HOME"
-    }
-
     stages {
+        stage('Checkout SCM') {
+            steps {
+                // Check out the code from the Git repository
+                checkout scm
+            }
+        }
+
+        // Optionally, you may want to specify the tool installation here if needed
+
         stage('lkstage') {
             steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/Dj-tech101/landmark.git'
-
-            
-                // To run Maven on a Windows agent, use
-                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                // Check out the code from the specified branch (DjBranch)
+                checkout([$class: 'GitSCM', branches: [[name: '*/DjBranch']], userRemoteConfigs: [[url: 'https://github.com/Dj-tech101/landmark.git']]])
             }
+        }
+    }
 
+    post {
+        success {
+            echo 'Build successful! You can add more post-build actions here.'
+        }
+
+        failure {
+            echo 'Build failed! You can add more post-failure actions here.'
         }
     }
 }
