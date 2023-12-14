@@ -106,13 +106,13 @@ public class RegistrationPage {
 
 		RegistrationPage reg = new RegistrationPage(driver);
 
-		reg.sendFirstName("maheshUser");
+		reg.sendFirstName("Mahesh");
 
-		reg.sendLastName("user");
+		reg.sendLastName("Mahesh1");
 
 		int ran = new Random().nextInt();
 
-		String randomString = "MaheshTester" + String.valueOf(ran)+"@user.com";
+		String randomString = "TesterI" + String.valueOf(ran)+"@user.com";
 
 		reg.sendEmail(randomString);
 		String pass = "mahesh@123";

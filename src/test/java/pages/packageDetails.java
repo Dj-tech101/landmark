@@ -96,7 +96,7 @@ public class packageDetails {
 	@FindBy(xpath = "//div[@id='package_2']/div[2]/div/div/ul/li[20]/button")
 	List<WebElement> selectButtonPerMonthList;;
 
-	@FindBy(xpath = "//button[ @data-packageid='3']")
+	@FindBy(xpath = "//div[@id='package_3']/div[2]/div/div/ul/li[20]/button")
 	List<WebElement> selectButtonPerYearList;;
 
 	public void clickSelectButton(String packageName, String Type) {
@@ -109,7 +109,7 @@ public class packageDetails {
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		System.out.println("ready to select ");
-		
+
 		if (packageName.equals("PER EVENT")) {
 			for (int j = 0; j < selectButtonPerEventList.size(); j++) {
 				if (Type.contains("Basic")) {
@@ -123,9 +123,10 @@ public class packageDetails {
 							System.out.println(e.getMessage());
 
 						}
-					} 
-				}
-				else {
+					}
+				} else {
+					j++;
+
 					WebElement e1 = selectButtonPerEventList.get(j);
 					try {
 						js.executeScript("arguments[0].click();", e1);
@@ -144,7 +145,7 @@ public class packageDetails {
 			System.out.println("Type is " + Type);
 
 			for (int j = 0; j < selectButtonPerMonthList.size(); j++) {
-				
+
 				if (Type.contains("Basic")) {
 					if (j == 0) {
 						WebElement e1 = selectButtonPerMonthList.get(j);
@@ -156,17 +157,19 @@ public class packageDetails {
 							// TODO: handle exception
 							System.out.println(e.getMessage());
 						}
-					} 
-				}
-				else if (Type.contains("Pro")) {
+					}
+				} else if (Type.contains("Pro")) {
 
 					j++;
-					
+
 					System.out.println("click on per month pro ");
-					System.out.println("value of j is "+j);
 					WebElement e1 = selectButtonPerMonthList.get(j);
 					try {
-						js.executeScript("arguments[0].click();", e1);
+
+						// js.executeScript("arguments[0].click();", e1);
+						Actions act1 = new Actions(driver);
+
+						act1.click(e1).perform();
 						break;
 					} catch (NoSuchElementException e) {
 						// TODO: handle exception
@@ -180,26 +183,34 @@ public class packageDetails {
 			System.out.println("enter in per year");
 
 			for (int j = 0; j < selectButtonPerYearList.size(); j++) {
-				if (Type.equals("Basic")) {
+				
+				if (Type.contains("Basic")) {
 					if (j == 0) {
-						WebElement e1 = selectButtonPerYearList.get(j);
+						WebElement e1 = selectButtonPerMonthList.get(j);
 						try {
+							System.out.println("clicking on select " + j);
 							js.executeScript("arguments[0].click();", e1);
 							break;
+
 						} catch (NoSuchElementException e) {
 							// TODO: handle exception
+							System.out.println(e.getMessage());
 						}
-					} 
-				}
-				else {
-					WebElement e1 = selectButtonPerYearList.get(j);
-					
-					System.out.println("click on pro select");
+					}
+				} else if (Type.contains("Pro")) {
+
+					j++;
+
+					System.out.println("click on per month pro ");
+					System.out.println("value of j is " + j);
+					WebElement e1 = selectButtonPerMonthList.get(j);
 					try {
 						js.executeScript("arguments[0].click();", e1);
 						break;
 					} catch (NoSuchElementException e) {
 						// TODO: handle exception
+						System.out.println(e.getMessage());
+
 					}
 				}
 			}
@@ -209,6 +220,15 @@ public class packageDetails {
 
 	@FindBy(xpath = "//button[starts-with(text(), 'PER')]")
 	List<WebElement> PackageList;
+
+	@FindBy(xpath = "(//div[@class='slider round'])[1]")
+	WebElement GreenScreenToggle;
+
+	public void switchGreenScreenToggle() {
+		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+
+		wait.until(ExpectedConditions.visibilityOf(GreenScreenToggle)).click();
+	}
 
 	public void selectPackage(String Package, String Type) throws InterruptedException {
 
@@ -226,11 +246,15 @@ public class packageDetails {
 
 				Thread.sleep(1500);
 
-				System.out.println("Name of the package is " + nameofPck);
-
 				details.clickSelectButton(nameofPck, Type);
 
 				Thread.sleep(1500);
+
+				if (Type.contains("Basic")) {
+
+					details.switchGreenScreenToggle();
+
+				}
 
 				details.clickNextButton();
 
@@ -240,7 +264,5 @@ public class packageDetails {
 		}
 
 	}
-	
-	
-	
+
 }

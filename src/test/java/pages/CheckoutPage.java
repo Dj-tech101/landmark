@@ -75,7 +75,7 @@ public class CheckoutPage {
 	public static void sendZip(String zipvalue) throws InterruptedException {
 		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
 
-		System.out.println("enter zip number");
+//		System.out.println("enter zip number");
 		zip.sendKeys(zipvalue);
 		Thread.sleep(1500);
 
@@ -222,10 +222,10 @@ public class CheckoutPage {
 
 		if (ref) {
 
-			System.out.println("eneter the name ");
+//			System.out.println("eneter the name ");
 			sendFirstName("mahesh");
 
-			System.out.println("enter the last name ");
+//			System.out.println("enter the last name ");
 			sendLastName("mahesh232323");
 			sendZip("233344");
 
@@ -242,7 +242,7 @@ public class CheckoutPage {
 
 				js = (JavascriptExecutor) driver;
 
-				System.out.println("lets click on paynow button");
+//				System.out.println("lets click on paynow button");
 				js.executeScript("arguments[0].click();", element);
 
 			} catch (Exception e) {
