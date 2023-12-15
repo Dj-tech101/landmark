@@ -16,6 +16,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Utility.TakescreenShotUtils;
+
 public class CheckoutPage {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
@@ -240,6 +242,8 @@ public class CheckoutPage {
 
 				WebElement element = wait.until(ExpectedConditions.visibilityOf(PayNowButton));
 
+				TakescreenShotUtils.GetScreenShot(driver);
+
 				js = (JavascriptExecutor) driver;
 
 //				System.out.println("lets click on paynow button");
@@ -255,6 +259,7 @@ public class CheckoutPage {
 			try {
 				wait = new WebDriverWait(driver, Duration.ofMinutes(5));
 
+				TakescreenShotUtils.GetScreenShot(driver);
 				WebElement element = wait.until(ExpectedConditions.visibilityOf(PayNowButton));
 
 				js = (JavascriptExecutor) driver;

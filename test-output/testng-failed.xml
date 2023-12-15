@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo_testCases.smoke_Create_PerEvent_Pro_GreenScreen">
+      <class name="demo_testCases.smoke_Create_Event_NewFresh">
         <methods>
           <include name="setup"/>
-          <include name="TestNewUserCreation"/>
           <include name="tearDown"/>
+          <include name="TestNewUserCreation"/>
         </methods>
-      </class> <!-- demo_testCases.smoke_Create_PerEvent_Pro_GreenScreen -->
+      </class> <!-- demo_testCases.smoke_Create_Event_NewFresh -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -146,10 +146,13 @@ public class packageDetails {
 
 			for (int j = 0; j < selectButtonPerMonthList.size(); j++) {
 
+				System.out.println("enter in loop");
 				if (Type.contains("Basic")) {
 					if (j == 0) {
 						WebElement e1 = selectButtonPerMonthList.get(j);
 						try {
+
+							System.out.println("ready to click on first select");
 							js.executeScript("arguments[0].click();", e1);
 							break;
 
@@ -165,11 +168,11 @@ public class packageDetails {
 					System.out.println("click on per month pro ");
 					WebElement e1 = selectButtonPerMonthList.get(j);
 					try {
-
-						// js.executeScript("arguments[0].click();", e1);
-						Actions act1 = new Actions(driver);
-
-						act1.click(e1).perform();
+						System.out.println("ready to click on pro select");
+						js.executeScript("arguments[0].click();", e1);
+//						Actions act1 = new Actions(driver);
+//
+//						act1.click(e1).perform();
 						break;
 					} catch (NoSuchElementException e) {
 						// TODO: handle exception
@@ -183,7 +186,7 @@ public class packageDetails {
 			System.out.println("enter in per year");
 
 			for (int j = 0; j < selectButtonPerYearList.size(); j++) {
-				
+
 				if (Type.contains("Basic")) {
 					if (j == 0) {
 						WebElement e1 = selectButtonPerMonthList.get(j);

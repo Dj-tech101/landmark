@@ -38,7 +38,7 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 	public reviewPage reviewPage;
 
-	@Test()
+	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void TestNewUserCreation() throws InterruptedException, IOException {
 
@@ -67,7 +67,7 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 		packageDetails = new packageDetails(driver);
 
-		packageDetails.selectPackage("MONTH", "Pro");
+		packageDetails.selectPackage("PER MONTH", "Pro");
 
 		System.out.println("fill the neccessory details");
 
@@ -158,6 +158,7 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 		Assert.assertEquals(actualName, name);
 
 		System.err.println("Event is created ");
+
 
 	}
 }

@@ -108,14 +108,14 @@ public class RegistrationPage {
 
 		reg.sendFirstName("Mahesh");
 
-		reg.sendLastName("Mahesh1");
+		reg.sendLastName("Mahesh");
 
-		int ran = new Random().nextInt();
+		int ran = new Random().nextInt(100);
 
-		String randomString = "TesterI" + String.valueOf(ran)+"@user.com";
+		String randomString = "Test" + String.valueOf(ran)+"@user.com";
 
 		reg.sendEmail(randomString);
-		String pass = "mahesh@123";
+		String pass = "Mahesh@123";
 
 		reg.sendPassword(pass);
 		reg.sendConfirmPassword(pass);
