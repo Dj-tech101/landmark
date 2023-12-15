@@ -20,6 +20,7 @@ public class baseclass {
 
 	@BeforeMethod
 	public void setup() throws InterruptedException {
+		
 		driver = new EdgeDriver();
 
 		driver.manage().window().maximize();
