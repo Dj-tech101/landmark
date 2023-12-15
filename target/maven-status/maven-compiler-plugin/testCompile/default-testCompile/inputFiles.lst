@@ -7,6 +7,7 @@ C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\MyEventsPage.j
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\loginpage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\boothDesignPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\checkBoxes.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerMonth_Pro.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\abcd.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\createPhotoPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\RegistrationPage.java
@@ -19,10 +20,12 @@ C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\retryAnalyzerUtil\re
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Create_Event_Basic_Configuration.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_WithGreenScreen.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\sharepage.java
-C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Create_Event_NewFresh.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerEvent_Basic.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\BaseClass\baseclass.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\creatEventPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\eventDetailsPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\GifPage.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\smoke_Create_Event_NewFresh.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerEvent_Pro.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\CheckoutPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\packagePage.java
