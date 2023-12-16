@@ -205,6 +205,10 @@ public class CheckoutPage {
 
 	@FindBy(xpath = "//button[contains(text(),'PAY NOW ')]")
 	WebElement PayNowButton;
+	
+	@FindBy(xpath = "//button[@id='btnPaynow']")
+	WebElement saveNow;
+	
 
 	@FindBy(xpath = "(//input[@name='UseExistingCard'])[1]")
 	WebElement paymentDetaiils;
@@ -260,7 +264,7 @@ public class CheckoutPage {
 				wait = new WebDriverWait(driver, Duration.ofMinutes(5));
 
 				TakescreenShotUtils.GetScreenShot(driver);
-				WebElement element = wait.until(ExpectedConditions.visibilityOf(PayNowButton));
+				WebElement element = wait.until(ExpectedConditions.visibilityOf(saveNow));
 
 				js = (JavascriptExecutor) driver;
 

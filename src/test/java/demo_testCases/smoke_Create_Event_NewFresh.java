@@ -104,9 +104,6 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 		Thread.sleep(1500);
 
-		// photopage.clickonCreatePhotoButton();
-
-		// photopage.clickOnSingleImageButton();
 
 		createPhotoPage createPhoto = new createPhotoPage(driver);
 
@@ -115,16 +112,11 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 		String nameofphoto = "photonumber" + String.valueOf(value);
 		photopage.createNewSinglePhoto(nameofphoto);
 
-//		createPhoto.sendNameTextField(nameofphoto);
-//
-//		createPhoto.sendKeysOverlayField();
-//
-//		createPhoto.clickonSaveButton();
-//
-//		photopage.clickOnClosedPhotoWindow(nameofphoto);
 
 		System.out.println("closed the window ");
 
+		
+		//****************SHARE NODE*************
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
@@ -133,11 +125,6 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 		sharepage sharenode = new sharepage(driver);
 
-//		sharenode.getlistofshareOptions("print");
-//
-//		sharenode.clickonPrintSwitch();
-//
-//		sharenode.clickOnClosedPhotoWindow();
 
 		sharenode.CreateNewShareNode("print");
 
