@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 import BaseClass.baseclass;
+import Utility.TakescreenShotUtils;
 import Utility.logger;
 import pages.CheckoutPage;
 import pages.GifPage;
@@ -137,6 +138,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 		log.info("click on next button");
 		reviewPage = new reviewPage(driver);
 
+		TakescreenShotUtils.GetScreenShot(driver);
 		reviewPage.clickNextButton();
 
 		CheckoutPage checkoutPage = new CheckoutPage(driver);

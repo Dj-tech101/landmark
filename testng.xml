@@ -3,9 +3,6 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu" />
-			<class name="demo_testCases.Smoke_Create_Event_ExistingList" />
-			<class name="demo_testCases.Smoke_Create_Event_WithGreenScreen" />
 			<class name="demo_testCases.PPUSmoke_Create_Event_Gif_TestPPu3" />
 			<class name="demo_testCases.PPUSmoke_Create_Event_Video_TestPPu2" />
 			<class name="demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu" />

@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 import BaseClass.baseclass;
+import Utility.TakescreenShotUtils;
 import Utility.logger;
 import pages.CheckoutPage;
 import pages.PhotoPage;
@@ -80,12 +81,11 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 		int number = ran.nextInt();
 
 		log.info("fill the event details");
-		
-		Date date= new Date();
-		
-		SimpleDateFormat formatter=new SimpleDateFormat("dd/mm/yyyy/hh:mm");
 
-		
+		Date date = new Date();
+
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yyyy/hh:mm");
+
 		String name = "testnormal" + formatter.format(date);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
@@ -105,7 +105,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 		String nameooVideo = "VideoName" + String.valueOf(value);
 
 		log.info("click on create new video option");
-		
+
 		videoPage.clickonCreateVideoButton();
 
 		log.info("fill the neccessory details in video");
@@ -113,7 +113,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 		createVideoPage createVideo = new createVideoPage(driver);
 
 		createVideo.createGifwithOverlay(nameooVideo);
-		
+
 		// ***********SHARE NODE*************
 
 		designPage.dragAndDropShare();
@@ -130,6 +130,8 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		log.info("click on next button");
 		reviewPage = new reviewPage(driver);
+
+		TakescreenShotUtils.GetScreenShot(driver);
 
 		reviewPage.clickNextButton();
 

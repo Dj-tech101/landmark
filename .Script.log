@@ -1386,3 +1386,14 @@
 2023-12-16 22:03:53 INFO  logger:144 - fill the neccessory data 
 2023-12-16 22:03:57 INFO  logger:150 - assser the valid data for new  event 
 2023-12-16 22:03:57 INFO  logger:153 - Event is created 
+2023-12-18 13:22:08 INFO  logger:51 - login with valid credential
+2023-12-18 13:22:10 INFO  logger:57 - click on create event button
+2023-12-18 13:22:32 INFO  logger:65 - select the package
+2023-12-18 13:22:32 INFO  logger:71 - select month and pro options
+2023-12-18 13:22:36 INFO  logger:80 - fill the event details
+2023-12-18 13:22:41 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 13:23:00 INFO  logger:122 - select the share options 
+2023-12-18 13:23:02 INFO  logger:128 - click on next button
+2023-12-18 13:23:04 INFO  logger:135 - fill the neccessory data 
+2023-12-18 13:23:08 INFO  logger:141 - assser the valid data for new  event 
+2023-12-18 13:23:08 INFO  logger:144 - Event is created 
