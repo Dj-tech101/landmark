@@ -11,10 +11,14 @@ import org.testng.annotations.Test;
 import BaseClass.baseclass;
 import Utility.logger;
 import pages.CheckoutPage;
+import pages.GifPage;
 import pages.PhotoPage;
+import pages.VideoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
+import pages.createGifPage;
 import pages.createPhotoPage;
+import pages.createVideoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
 import pages.packageDetails;
@@ -22,7 +26,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
+public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 	// public WebDriver driver;
 
@@ -58,7 +62,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 		creatEvent.clickoncreatEventButton();
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		packageselect = new packagePage(driver);
 
@@ -92,25 +96,30 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 		log.info("drag photo in Boothdesign");
 
 		// **************GIF NODE *****************
-		designPage = new boothDesignPage(driver);
+		designPage.dragAndDropGifNode();
 
-		designPage.dragAndDropphotoNode();
+		designPage.clickonGifGearIcon();
+
+		GifPage gifPage = new GifPage(driver);
+
+		//Thread.sleep(1500);
 
 
-		designPage.clickonPhotoGearIcon();
-
-		PhotoPage photopage = new PhotoPage(driver);
-
-		Thread.sleep(1500);
-
-		createPhotoPage createPhoto = new createPhotoPage(driver);
 
 		int value = ran.nextInt();
 
-		String nameofphoto = "photonumber" + String.valueOf(value);
+		String nameofGif = "gifName" + String.valueOf(value);
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		log.info("click on create new gif option");
+		
+		gifPage.clickonCreateGifButton();
 
+		log.info("fill the neccessory details in gif");
+
+		createGifPage createGif = new createGifPage(driver);
+
+		createGif.createGifwithOverlay(nameofGif);
+		
 		// ***********SHARE NODE*************
 
 		designPage.dragAndDropShare();

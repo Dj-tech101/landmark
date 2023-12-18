@@ -12,9 +12,11 @@ import BaseClass.baseclass;
 import Utility.logger;
 import pages.CheckoutPage;
 import pages.PhotoPage;
+import pages.VideoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
 import pages.createPhotoPage;
+import pages.createVideoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
 import pages.packageDetails;
@@ -22,7 +24,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
+public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 	// public WebDriver driver;
 
@@ -42,7 +44,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 	@Test(groups = "smoke", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
-	public void Validate_Creation_event_with_Gif() throws InterruptedException, IOException {
+	public void Validate_Creation_event_with_Video() throws InterruptedException, IOException {
 
 		log = logger.getlogger();
 
@@ -58,7 +60,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 		creatEvent.clickoncreatEventButton();
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		packageselect = new packagePage(driver);
 
@@ -92,25 +94,26 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 		log.info("drag photo in Boothdesign");
 
 		// **************GIF NODE *****************
-		designPage = new boothDesignPage(driver);
+		designPage.dragAndDropVideoNode();
 
-		designPage.dragAndDropphotoNode();
+		designPage.clickonVideoGearIcon();
 
-
-		designPage.clickonPhotoGearIcon();
-
-		PhotoPage photopage = new PhotoPage(driver);
-
-		Thread.sleep(1500);
-
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		VideoPage videoPage = new VideoPage(driver);
 
 		int value = ran.nextInt();
 
-		String nameofphoto = "photonumber" + String.valueOf(value);
+		String nameooVideo = "VideoName" + String.valueOf(value);
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		log.info("click on create new video option");
+		
+		videoPage.clickonCreateVideoButton();
 
+		log.info("fill the neccessory details in video");
+
+		createVideoPage createVideo = new createVideoPage(driver);
+
+		createVideo.createGifwithOverlay(nameooVideo);
+		
 		// ***********SHARE NODE*************
 
 		designPage.dragAndDropShare();

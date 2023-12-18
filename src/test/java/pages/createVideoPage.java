@@ -92,7 +92,7 @@ public class createVideoPage {
 
 	}
 
-	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[2]")
+	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[3]")
 	WebElement saveButton;
 
 	public void clickonSaveButton() throws InterruptedException {

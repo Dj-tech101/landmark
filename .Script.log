@@ -1352,3 +1352,37 @@
 2023-12-16 19:51:12 INFO  logger:51 - login with valid credential
 2023-12-16 19:51:12 INFO  logger:51 - login with valid credential
 2023-12-16 19:51:12 INFO  logger:51 - login with valid credential
+2023-12-16 21:50:55 INFO  logger:53 - login with valid credential
+2023-12-16 21:50:58 INFO  logger:59 - click on create event button
+2023-12-16 21:51:20 INFO  logger:67 - select the package
+2023-12-16 21:51:20 INFO  logger:73 - select month and pro options
+2023-12-16 21:51:24 INFO  logger:82 - fill the event details
+2023-12-16 21:51:29 INFO  logger:94 - drag photo in Boothdesign
+2023-12-16 21:51:31 INFO  logger:107 - click on create new video option
+2023-12-16 21:51:32 INFO  logger:111 - fill the neccessory details in video
+2023-12-16 21:51:46 INFO  logger:125 - select the share options 
+2023-12-16 21:51:47 INFO  logger:131 - click on next button
+2023-12-16 21:51:49 INFO  logger:138 - fill the neccessory data 
+2023-12-16 21:51:54 INFO  logger:144 - assser the valid data for new  event 
+2023-12-16 21:51:54 INFO  logger:147 - Event is created 
+2023-12-16 22:01:57 INFO  logger:55 - login with valid credential
+2023-12-16 22:02:01 INFO  logger:61 - click on create event button
+2023-12-16 22:02:30 INFO  logger:69 - select the package
+2023-12-16 22:02:30 INFO  logger:75 - select month and pro options
+2023-12-16 22:02:33 INFO  logger:84 - fill the event details
+2023-12-16 22:02:38 INFO  logger:96 - drag photo in Boothdesign
+2023-12-16 22:02:40 INFO  logger:113 - click on create new gif option
+2023-12-16 22:02:40 INFO  logger:117 - fill the neccessory details in gif
+2023-12-16 22:03:01 INFO  logger:55 - login with valid credential
+2023-12-16 22:03:04 INFO  logger:61 - click on create event button
+2023-12-16 22:03:25 INFO  logger:69 - select the package
+2023-12-16 22:03:25 INFO  logger:75 - select month and pro options
+2023-12-16 22:03:28 INFO  logger:84 - fill the event details
+2023-12-16 22:03:33 INFO  logger:96 - drag photo in Boothdesign
+2023-12-16 22:03:34 INFO  logger:113 - click on create new gif option
+2023-12-16 22:03:35 INFO  logger:117 - fill the neccessory details in gif
+2023-12-16 22:03:49 INFO  logger:131 - select the share options 
+2023-12-16 22:03:50 INFO  logger:137 - click on next button
+2023-12-16 22:03:53 INFO  logger:144 - fill the neccessory data 
+2023-12-16 22:03:57 INFO  logger:150 - assser the valid data for new  event 
+2023-12-16 22:03:57 INFO  logger:153 - Event is created 
