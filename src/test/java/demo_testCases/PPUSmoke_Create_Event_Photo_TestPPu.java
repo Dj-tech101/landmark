@@ -42,7 +42,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 	@Test(groups = "smoke", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
-	public void Validate_Creation_event_with_Gif() throws InterruptedException, IOException {
+	public void Validate_Creation_event_with_Photo() throws InterruptedException, IOException {
 
 		log = logger.getlogger();
 
@@ -58,7 +58,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 		creatEvent.clickoncreatEventButton();
 
-		Thread.sleep(3000);
+		Thread.sleep(300);
 
 		packageselect = new packagePage(driver);
 
@@ -81,17 +81,17 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 		
 		Date date= new Date();
 		
-		SimpleDateFormat formatter=new SimpleDateFormat("dd/mm/yyyy/hh:mm");
+		SimpleDateFormat formatter=new SimpleDateFormat("dd");
 
 		
-		String name = "testnormal" + formatter.format(date);
+		String name = "testPHOTOSharing" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage(driver);
 
 		log.info("drag photo in Boothdesign");
 
-		// **************GIF NODE *****************
+		// **************pHOTO NODE *****************
 		designPage = new boothDesignPage(driver);
 
 		designPage.dragAndDropphotoNode();

@@ -86,10 +86,10 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 		
 		Date date= new Date();
 		
-		SimpleDateFormat formatter=new SimpleDateFormat("dd/mm/yyyy/hh:mm");
+		SimpleDateFormat formatter=new SimpleDateFormat("dd-mm-hh:mm");
 
 		
-		String name = "testnormal" + formatter.format(date);
+		String name = "TestGifsharing" + String.valueOf(number);;
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage(driver);

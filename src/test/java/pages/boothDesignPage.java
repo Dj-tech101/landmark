@@ -112,9 +112,11 @@ public class boothDesignPage {
 		js = (JavascriptExecutor) driver;
 		try {
 
-			Actions act = new Actions(driver);
-			act.click(gear).perform();
+			//js.executeScript("arguments[0].click();", gear);
 
+			Actions act = new Actions(driver);
+
+			act.moveToElement(gearIcon).click().perform();
 		} catch (NoSuchElementException e) {
 			// TODO: handle exception
 		}

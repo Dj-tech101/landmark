@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo_testCases.PPUSmoke_Create_Event_Gif_TestPPu3">
+      <class name="demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="Validate_Creation_event_with_Gif"/>
+          <include name="validate_Per_Event_information"/>
         </methods>
-      </class> <!-- demo_testCases.PPUSmoke_Create_Event_Gif_TestPPu3 -->
+      </class> <!-- demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

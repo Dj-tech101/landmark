@@ -1397,3 +1397,401 @@
 2023-12-18 13:23:04 INFO  logger:135 - fill the neccessory data 
 2023-12-18 13:23:08 INFO  logger:141 - assser the valid data for new  event 
 2023-12-18 13:23:08 INFO  logger:144 - Event is created 
+2023-12-18 14:53:56 INFO  logger:56 - login with valid credential
+2023-12-18 14:54:01 INFO  logger:62 - click on create event button
+2023-12-18 14:54:31 INFO  logger:70 - select the package
+2023-12-18 14:54:31 INFO  logger:76 - select month and pro options
+2023-12-18 14:54:35 INFO  logger:85 - fill the event details
+2023-12-18 14:54:41 INFO  logger:97 - drag photo in Boothdesign
+2023-12-18 14:54:42 INFO  logger:114 - click on create new gif option
+2023-12-18 14:54:43 INFO  logger:118 - fill the neccessory details in gif
+2023-12-18 14:54:58 INFO  logger:132 - select the share options 
+2023-12-18 14:54:59 INFO  logger:138 - click on next button
+2023-12-18 14:55:02 INFO  logger:146 - fill the neccessory data 
+2023-12-18 14:55:06 INFO  logger:152 - assser the valid data for new  event 
+2023-12-18 14:55:06 INFO  logger:155 - Event is created 
+2023-12-18 14:55:16 INFO  logger:54 - login with valid credential
+2023-12-18 14:55:20 INFO  logger:60 - click on create event button
+2023-12-18 14:56:26 INFO  logger:68 - select the package
+2023-12-18 14:56:42 INFO  logger:54 - login with valid credential
+2023-12-18 14:56:42 INFO  logger:54 - login with valid credential
+2023-12-18 14:56:42 INFO  logger:54 - login with valid credential
+2023-12-18 14:56:49 INFO  logger:51 - login with valid credential
+2023-12-18 14:56:52 INFO  logger:57 - click on create event button
+2023-12-18 14:57:10 INFO  logger:65 - select the package
+2023-12-18 14:57:10 INFO  logger:71 - select month and pro options
+2023-12-18 14:57:13 INFO  logger:80 - fill the event details
+2023-12-18 14:57:19 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 14:57:43 INFO  logger:122 - select the share options 
+2023-12-18 14:57:45 INFO  logger:128 - click on next button
+2023-12-18 14:57:48 INFO  logger:135 - fill the neccessory data 
+2023-12-18 14:57:52 INFO  logger:141 - assser the valid data for new  event 
+2023-12-18 14:57:52 INFO  logger:144 - Event is created 
+2023-12-18 15:12:58 INFO  logger:54 - login with valid credential
+2023-12-18 15:13:01 INFO  logger:60 - click on create event button
+2023-12-18 15:13:55 INFO  logger:68 - select the package
+2023-12-18 15:13:55 INFO  logger:74 - select month and pro options
+2023-12-18 15:13:59 INFO  logger:83 - fill the event details
+2023-12-18 15:14:12 INFO  logger:94 - drag photo in Boothdesign
+2023-12-18 15:16:43 INFO  logger:51 - login with valid credential
+2023-12-18 15:16:46 INFO  logger:57 - click on create event button
+2023-12-18 15:17:13 INFO  logger:65 - select the package
+2023-12-18 15:17:13 INFO  logger:71 - select month and pro options
+2023-12-18 15:17:17 INFO  logger:80 - fill the event details
+2023-12-18 15:17:27 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 15:20:22 INFO  logger:51 - login with valid credential
+2023-12-18 15:20:27 INFO  logger:57 - click on create event button
+2023-12-18 15:20:58 INFO  logger:65 - select the package
+2023-12-18 15:20:58 INFO  logger:71 - select month and pro options
+2023-12-18 15:21:02 INFO  logger:80 - fill the event details
+2023-12-18 15:21:07 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 15:21:33 INFO  logger:122 - select the share options 
+2023-12-18 15:21:35 INFO  logger:128 - click on next button
+2023-12-18 15:21:37 INFO  logger:135 - fill the neccessory data 
+2023-12-18 15:21:42 INFO  logger:141 - assser the valid data for new  event 
+2023-12-18 15:21:42 INFO  logger:144 - Event is created 
+2023-12-18 15:27:56 INFO  logger:51 - login with valid credential
+2023-12-18 15:27:59 INFO  logger:57 - click on create event button
+2023-12-18 15:28:18 INFO  logger:65 - select the package
+2023-12-18 15:28:18 INFO  logger:71 - select month and pro options
+2023-12-18 15:28:22 INFO  logger:80 - fill the event details
+2023-12-18 15:28:28 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 15:29:03 INFO  logger:122 - select the share options 
+2023-12-18 15:29:04 INFO  logger:128 - click on next button
+2023-12-18 15:29:06 INFO  logger:135 - fill the neccessory data 
+2023-12-18 15:29:11 INFO  logger:141 - assser the valid data for new  event 
+2023-12-18 15:29:11 INFO  logger:144 - Event is created 
+2023-12-18 16:07:51 INFO  logger:51 - login with valid credential
+2023-12-18 16:07:54 INFO  logger:57 - click on create event button
+2023-12-18 16:11:29 INFO  logger:51 - login with valid credential
+2023-12-18 16:11:33 INFO  logger:57 - click on create event button
+2023-12-18 16:12:43 INFO  logger:65 - select the package
+2023-12-18 16:12:43 INFO  logger:71 - select month and pro options
+2023-12-18 16:12:47 INFO  logger:80 - fill the event details
+2023-12-18 16:12:52 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 16:13:39 INFO  logger:51 - login with valid credential
+2023-12-18 16:13:47 INFO  logger:57 - click on create event button
+2023-12-18 16:14:08 INFO  logger:65 - select the package
+2023-12-18 16:14:08 INFO  logger:71 - select month and pro options
+2023-12-18 16:14:11 INFO  logger:80 - fill the event details
+2023-12-18 16:14:18 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 16:14:37 INFO  logger:122 - select the share options 
+2023-12-18 16:14:38 INFO  logger:128 - click on next button
+2023-12-18 16:14:40 INFO  logger:135 - fill the neccessory data 
+2023-12-18 16:14:45 INFO  logger:141 - assser the valid data for new  event 
+2023-12-18 16:14:45 INFO  logger:144 - Event is created 
+2023-12-18 16:57:19 INFO  logger:54 - login with valid credential
+2023-12-18 16:57:22 INFO  logger:60 - click on create event button
+2023-12-18 16:57:32 INFO  logger:54 - login with valid credential
+2023-12-18 16:57:36 INFO  logger:60 - click on create event button
+2023-12-18 16:57:59 INFO  logger:68 - select the package
+2023-12-18 16:57:59 INFO  logger:74 - select month and pro options
+2023-12-18 16:58:02 INFO  logger:83 - fill the event details
+2023-12-18 16:58:08 INFO  logger:94 - drag photo in Boothdesign
+2023-12-18 16:58:09 INFO  logger:107 - click on create new video option
+2023-12-18 16:58:10 INFO  logger:111 - fill the neccessory details in video
+2023-12-18 16:58:24 INFO  logger:125 - select the share options 
+2023-12-18 16:58:26 INFO  logger:131 - click on next button
+2023-12-18 16:58:28 INFO  logger:140 - fill the neccessory data 
+2023-12-18 16:59:04 INFO  logger:54 - login with valid credential
+2023-12-18 16:59:09 INFO  logger:60 - click on create event button
+2023-12-18 16:59:58 INFO  logger:68 - select the package
+2023-12-18 16:59:58 INFO  logger:74 - select month and pro options
+2023-12-18 17:00:02 INFO  logger:83 - fill the event details
+2023-12-18 17:00:10 INFO  logger:94 - drag photo in Boothdesign
+2023-12-18 17:00:11 INFO  logger:107 - click on create new video option
+2023-12-18 17:00:13 INFO  logger:111 - fill the neccessory details in video
+2023-12-18 17:00:32 INFO  logger:125 - select the share options 
+2023-12-18 17:00:47 INFO  logger:54 - login with valid credential
+2023-12-18 17:00:56 INFO  logger:60 - click on create event button
+2023-12-18 17:02:23 INFO  logger:51 - login with valid credential
+2023-12-18 17:02:28 INFO  logger:57 - click on create event button
+2023-12-18 17:03:32 INFO  logger:146 - assser the valid data for new  event 
+2023-12-18 17:03:32 INFO  logger:149 - Event is created 
+2023-12-18 17:06:28 INFO  logger:51 - login with valid credential
+2023-12-18 17:06:28 INFO  logger:51 - login with valid credential
+2023-12-18 17:06:28 INFO  logger:51 - login with valid credential
+2023-12-18 17:06:28 INFO  logger:51 - login with valid credential
+2023-12-18 17:06:37 INFO  logger:51 - login with valid credential
+2023-12-18 17:06:47 INFO  logger:57 - click on create event button
+2023-12-18 17:10:09 INFO  logger:51 - login with valid credential
+2023-12-18 17:10:11 INFO  logger:57 - click on create event button
+2023-12-18 17:10:55 INFO  logger:65 - select the package
+2023-12-18 17:10:55 INFO  logger:71 - select month and pro options
+2023-12-18 17:10:59 INFO  logger:80 - fill the event details
+2023-12-18 17:11:05 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 17:53:48 INFO  logger:51 - login with valid credential
+2023-12-18 17:53:48 INFO  logger:51 - login with valid credential
+2023-12-18 17:53:48 INFO  logger:51 - login with valid credential
+2023-12-18 17:58:22 INFO  logger:51 - login with valid credential
+2023-12-18 17:58:28 INFO  logger:57 - click on create event button
+2023-12-18 18:00:21 INFO  logger:51 - login with valid credential
+2023-12-18 18:00:29 INFO  logger:57 - click on create event button
+2023-12-18 18:01:36 INFO  logger:65 - select the package
+2023-12-18 18:01:36 INFO  logger:71 - select month and pro options
+2023-12-18 18:01:40 INFO  logger:80 - fill the event details
+2023-12-18 18:01:47 INFO  logger:92 - drag photo in Boothdesign
+2023-12-18 18:02:09 INFO  logger:122 - select the share options 
+2023-12-18 18:02:10 INFO  logger:128 - click on next button
+2023-12-18 18:02:13 INFO  logger:135 - fill the neccessory data 
+2023-12-18 18:02:17 INFO  logger:141 - assser the valid data for new  event 
+2023-12-18 18:02:17 INFO  logger:144 - Event is created 
+2023-12-19 14:25:09 INFO  logger:51 - login with valid credential
+2023-12-19 14:25:13 INFO  logger:58 - click on create new event button
+2023-12-19 14:25:24 INFO  logger:65 - click on package
+2023-12-19 14:25:25 INFO  logger:71 - select package
+2023-12-19 14:25:28 INFO  logger:83 - fill necccessory data
+2023-12-19 14:25:35 INFO  logger:97 - create photo node as single image
+2023-12-19 14:25:43 INFO  logger:51 - login with valid credential
+2023-12-19 14:26:03 INFO  logger:58 - click on create new event button
+2023-12-19 14:26:28 INFO  logger:65 - click on package
+2023-12-19 14:26:28 INFO  logger:71 - select package
+2023-12-19 14:26:32 INFO  logger:83 - fill necccessory data
+2023-12-19 14:26:38 INFO  logger:97 - create photo node as single image
+2023-12-19 14:26:57 INFO  logger:123 - create Sahre node 
+2023-12-19 14:31:37 INFO  logger:51 - login with valid credential
+2023-12-19 14:31:42 INFO  logger:58 - click on create new event button
+2023-12-19 14:32:19 INFO  logger:51 - login with valid credential
+2023-12-19 14:32:25 INFO  logger:58 - click on create new event button
+2023-12-19 14:32:49 INFO  logger:65 - click on package
+2023-12-19 14:32:49 INFO  logger:71 - select package
+2023-12-19 14:32:52 INFO  logger:83 - fill necccessory data
+2023-12-19 14:32:58 INFO  logger:97 - create photo node as single image
+2023-12-19 14:33:13 INFO  logger:123 - create Sahre node 
+2023-12-19 14:40:20 INFO  logger:51 - login with valid credential
+2023-12-19 14:40:49 INFO  logger:58 - click on create new event button
+2023-12-19 14:41:14 INFO  logger:65 - click on package
+2023-12-19 14:41:14 INFO  logger:71 - select package
+2023-12-19 14:41:18 INFO  logger:83 - fill necccessory data
+2023-12-19 14:41:24 INFO  logger:97 - create photo node as single image
+2023-12-19 14:41:55 INFO  logger:123 - create Sahre node 
+2023-12-19 14:42:25 INFO  logger:51 - login with valid credential
+2023-12-19 14:42:44 INFO  logger:58 - click on create new event button
+2023-12-19 14:43:07 INFO  logger:65 - click on package
+2023-12-19 14:43:07 INFO  logger:71 - select package
+2023-12-19 14:43:11 INFO  logger:83 - fill necccessory data
+2023-12-19 14:43:18 INFO  logger:97 - create photo node as single image
+2023-12-19 14:44:36 INFO  logger:51 - login with valid credential
+2023-12-19 14:44:40 INFO  logger:58 - click on create new event button
+2023-12-19 14:45:00 INFO  logger:65 - click on package
+2023-12-19 14:45:00 INFO  logger:71 - select package
+2023-12-19 14:45:04 INFO  logger:83 - fill necccessory data
+2023-12-19 14:45:10 INFO  logger:97 - create photo node as single image
+2023-12-19 14:45:34 INFO  logger:123 - create Sahre node 
+2023-12-19 14:45:55 INFO  logger:51 - login with valid credential
+2023-12-19 14:46:01 INFO  logger:58 - click on create new event button
+2023-12-19 14:46:24 INFO  logger:65 - click on package
+2023-12-19 14:46:25 INFO  logger:71 - select package
+2023-12-19 14:46:28 INFO  logger:83 - fill necccessory data
+2023-12-19 14:46:59 INFO  logger:51 - login with valid credential
+2023-12-19 14:47:02 INFO  logger:58 - click on create new event button
+2023-12-19 14:47:16 INFO  logger:65 - click on package
+2023-12-19 14:47:16 INFO  logger:71 - select package
+2023-12-19 14:47:19 INFO  logger:83 - fill necccessory data
+2023-12-19 14:47:26 INFO  logger:97 - create photo node as single image
+2023-12-19 14:47:47 INFO  logger:123 - create Sahre node 
+2023-12-19 14:48:04 INFO  logger:51 - login with valid credential
+2023-12-19 14:49:56 INFO  logger:51 - login with valid credential
+2023-12-19 14:50:01 INFO  logger:58 - click on create new event button
+2023-12-19 14:50:20 INFO  logger:65 - click on package
+2023-12-19 14:50:20 INFO  logger:71 - select package
+2023-12-19 14:50:24 INFO  logger:83 - fill necccessory data
+2023-12-19 14:50:30 INFO  logger:97 - create photo node as single image
+2023-12-19 14:50:58 INFO  logger:123 - create Sahre node 
+2023-12-19 14:53:05 INFO  logger:51 - login with valid credential
+2023-12-19 14:53:08 INFO  logger:58 - click on create new event button
+2023-12-19 14:53:26 INFO  logger:65 - click on package
+2023-12-19 14:53:26 INFO  logger:71 - select package
+2023-12-19 14:53:30 INFO  logger:83 - fill necccessory data
+2023-12-19 14:53:36 INFO  logger:97 - create photo node as single image
+2023-12-19 14:54:20 INFO  logger:123 - create Sahre node 
+2023-12-19 14:54:37 INFO  logger:51 - login with valid credential
+2023-12-19 14:56:39 INFO  logger:51 - login with valid credential
+2023-12-19 14:56:48 INFO  logger:58 - click on create new event button
+2023-12-19 14:57:08 INFO  logger:65 - click on package
+2023-12-19 14:57:08 INFO  logger:71 - select package
+2023-12-19 14:57:11 INFO  logger:83 - fill necccessory data
+2023-12-19 14:57:18 INFO  logger:97 - create photo node as single image
+2023-12-19 14:57:37 INFO  logger:123 - create Sahre node 
+2023-12-19 14:57:50 INFO  logger:51 - login with valid credential
+2023-12-19 14:58:04 INFO  logger:58 - click on create new event button
+2023-12-19 14:59:37 INFO  logger:51 - login with valid credential
+2023-12-19 14:59:43 INFO  logger:58 - click on create new event button
+2023-12-19 14:59:59 INFO  logger:65 - click on package
+2023-12-19 14:59:59 INFO  logger:71 - select package
+2023-12-19 15:00:03 INFO  logger:83 - fill necccessory data
+2023-12-19 15:00:09 INFO  logger:97 - create photo node as single image
+2023-12-19 15:00:31 INFO  logger:123 - create Sahre node 
+2023-12-19 15:05:22 INFO  logger:51 - login with valid credential
+2023-12-19 15:05:26 INFO  logger:58 - click on create new event button
+2023-12-19 15:05:46 INFO  logger:65 - click on package
+2023-12-19 15:05:46 INFO  logger:71 - select package
+2023-12-19 15:05:50 INFO  logger:83 - fill necccessory data
+2023-12-19 15:05:56 INFO  logger:97 - create photo node as single image
+2023-12-19 15:06:11 INFO  logger:123 - create Sahre node 
+2023-12-19 15:08:49 INFO  logger:51 - login with valid credential
+2023-12-19 15:08:53 INFO  logger:58 - click on create new event button
+2023-12-19 15:09:10 INFO  logger:65 - click on package
+2023-12-19 15:09:10 INFO  logger:71 - select package
+2023-12-19 15:09:14 INFO  logger:83 - fill necccessory data
+2023-12-19 15:09:20 INFO  logger:97 - create photo node as single image
+2023-12-19 15:10:55 INFO  logger:51 - login with valid credential
+2023-12-19 15:11:08 INFO  logger:58 - click on create new event button
+2023-12-19 15:11:26 INFO  logger:65 - click on package
+2023-12-19 15:11:27 INFO  logger:71 - select package
+2023-12-19 15:11:30 INFO  logger:83 - fill necccessory data
+2023-12-19 15:11:36 INFO  logger:97 - create photo node as single image
+2023-12-19 15:12:05 INFO  logger:123 - create Sahre node 
+2023-12-19 15:12:46 INFO  logger:51 - login with valid credential
+2023-12-19 15:12:47 INFO  logger:58 - click on create new event button
+2023-12-19 15:12:54 INFO  logger:65 - click on package
+2023-12-19 15:12:54 INFO  logger:71 - select package
+2023-12-19 15:12:58 INFO  logger:83 - fill necccessory data
+2023-12-19 15:13:04 INFO  logger:97 - create photo node as single image
+2023-12-19 15:14:44 INFO  logger:51 - login with valid credential
+2023-12-19 15:14:49 INFO  logger:51 - login with valid credential
+2023-12-19 15:15:05 INFO  logger:51 - login with valid credential
+2023-12-19 15:16:31 INFO  logger:51 - login with valid credential
+2023-12-19 15:16:54 INFO  logger:58 - click on create new event button
+2023-12-19 15:17:03 INFO  logger:65 - click on package
+2023-12-19 15:17:03 INFO  logger:71 - select package
+2023-12-19 15:17:07 INFO  logger:83 - fill necccessory data
+2023-12-19 15:17:13 INFO  logger:97 - create photo node as single image
+2023-12-19 15:17:25 INFO  logger:123 - create Sahre node 
+2023-12-19 15:17:40 INFO  logger:51 - login with valid credential
+2023-12-19 15:17:42 INFO  logger:58 - click on create new event button
+2023-12-19 15:17:49 INFO  logger:65 - click on package
+2023-12-19 15:17:49 INFO  logger:71 - select package
+2023-12-19 15:17:52 INFO  logger:83 - fill necccessory data
+2023-12-19 15:17:58 INFO  logger:97 - create photo node as single image
+2023-12-19 15:18:11 INFO  logger:123 - create Sahre node 
+2023-12-19 15:18:42 INFO  logger:51 - login with valid credential
+2023-12-19 15:18:44 INFO  logger:58 - click on create new event button
+2023-12-19 15:18:51 INFO  logger:65 - click on package
+2023-12-19 15:18:51 INFO  logger:71 - select package
+2023-12-19 15:18:55 INFO  logger:83 - fill necccessory data
+2023-12-19 15:19:00 INFO  logger:97 - create photo node as single image
+2023-12-19 15:19:12 INFO  logger:123 - create Sahre node 
+2023-12-19 15:19:19 INFO  logger:137 - click on next button
+2023-12-19 15:19:21 INFO  logger:147 - fill credit details
+2023-12-19 15:21:57 INFO  logger:52 - login with valid credential
+2023-12-19 15:21:59 INFO  logger:59 - click on create new event button
+2023-12-19 15:22:05 INFO  logger:66 - click on package
+2023-12-19 15:22:05 INFO  logger:72 - select package
+2023-12-19 15:22:09 INFO  logger:84 - fill necccessory data
+2023-12-19 15:22:15 INFO  logger:98 - create photo node as single image
+2023-12-19 15:22:27 INFO  logger:124 - create Sahre node 
+2023-12-19 15:22:34 INFO  logger:137 - click on next button
+2023-12-19 15:22:36 INFO  logger:147 - fill credit details
+2023-12-19 15:25:27 INFO  logger:52 - login with valid credential
+2023-12-19 15:25:30 INFO  logger:59 - click on create new event button
+2023-12-19 15:25:41 INFO  logger:66 - click on package
+2023-12-19 15:25:41 INFO  logger:72 - select package
+2023-12-19 15:25:44 INFO  logger:84 - fill necccessory data
+2023-12-19 15:25:50 INFO  logger:98 - create photo node as single image
+2023-12-19 15:26:07 INFO  logger:124 - create Sahre node 
+2023-12-19 15:26:14 INFO  logger:137 - click on next button
+2023-12-19 15:26:17 INFO  logger:147 - fill credit details
+2023-12-19 15:27:35 INFO  logger:52 - login with valid credential
+2023-12-19 15:27:38 INFO  logger:59 - click on create new event button
+2023-12-19 15:27:49 INFO  logger:66 - click on package
+2023-12-19 15:27:49 INFO  logger:72 - select package
+2023-12-19 15:27:52 INFO  logger:84 - fill necccessory data
+2023-12-19 15:27:58 INFO  logger:98 - create photo node as single image
+2023-12-19 15:28:14 INFO  logger:124 - create Sahre node 
+2023-12-19 15:28:21 INFO  logger:137 - click on next button
+2023-12-19 15:28:23 INFO  logger:147 - fill credit details
+2023-12-19 15:31:59 INFO  logger:52 - login with valid credential
+2023-12-19 15:32:02 INFO  logger:59 - click on create new event button
+2023-12-19 15:32:09 INFO  logger:66 - click on package
+2023-12-19 15:32:09 INFO  logger:72 - select package
+2023-12-19 15:32:12 INFO  logger:84 - fill necccessory data
+2023-12-19 15:32:18 INFO  logger:98 - create photo node as single image
+2023-12-19 15:32:30 INFO  logger:124 - create Sahre node 
+2023-12-19 15:32:37 INFO  logger:137 - click on next button
+2023-12-19 15:32:39 INFO  logger:147 - fill credit details
+2023-12-19 15:33:35 INFO  logger:52 - login with valid credential
+2023-12-19 15:33:36 INFO  logger:59 - click on create new event button
+2023-12-19 15:33:43 INFO  logger:66 - click on package
+2023-12-19 15:33:43 INFO  logger:72 - select package
+2023-12-19 15:33:47 INFO  logger:84 - fill necccessory data
+2023-12-19 15:33:52 INFO  logger:98 - create photo node as single image
+2023-12-19 15:34:16 INFO  logger:52 - login with valid credential
+2023-12-19 15:34:18 INFO  logger:59 - click on create new event button
+2023-12-19 15:34:31 INFO  logger:66 - click on package
+2023-12-19 15:34:31 INFO  logger:72 - select package
+2023-12-19 15:34:35 INFO  logger:84 - fill necccessory data
+2023-12-19 15:34:40 INFO  logger:98 - create photo node as single image
+2023-12-19 15:34:51 INFO  logger:124 - create Sahre node 
+2023-12-19 15:34:59 INFO  logger:137 - click on next button
+2023-12-19 15:35:01 INFO  logger:147 - fill credit details
+2023-12-19 15:36:37 INFO  logger:52 - login with valid credential
+2023-12-19 15:36:38 INFO  logger:59 - click on create new event button
+2023-12-19 15:36:51 INFO  logger:66 - click on package
+2023-12-19 15:36:52 INFO  logger:72 - select package
+2023-12-19 15:36:55 INFO  logger:84 - fill necccessory data
+2023-12-19 15:37:01 INFO  logger:98 - create photo node as single image
+2023-12-19 15:37:13 INFO  logger:124 - create Sahre node 
+2023-12-19 15:37:20 INFO  logger:137 - click on next button
+2023-12-19 15:37:22 INFO  logger:147 - fill credit details
+2023-12-19 15:41:17 INFO  logger:52 - login with valid credential
+2023-12-19 15:41:19 INFO  logger:59 - click on create new event button
+2023-12-19 15:41:28 INFO  logger:66 - click on package
+2023-12-19 15:41:28 INFO  logger:72 - select package
+2023-12-19 15:41:31 INFO  logger:84 - fill necccessory data
+2023-12-19 15:41:36 INFO  logger:98 - create photo node as single image
+2023-12-19 15:41:48 INFO  logger:124 - create Sahre node 
+2023-12-19 15:41:55 INFO  logger:137 - click on next button
+2023-12-19 15:41:57 INFO  logger:147 - fill credit details
+2023-12-19 15:44:28 INFO  logger:52 - login with valid credential
+2023-12-19 15:44:30 INFO  logger:59 - click on create new event button
+2023-12-19 15:44:39 INFO  logger:66 - click on package
+2023-12-19 15:44:39 INFO  logger:72 - select package
+2023-12-19 15:44:43 INFO  logger:84 - fill necccessory data
+2023-12-19 15:44:49 INFO  logger:98 - create photo node as single image
+2023-12-19 15:45:01 INFO  logger:124 - create Sahre node 
+2023-12-19 15:45:09 INFO  logger:137 - click on next button
+2023-12-19 15:45:11 INFO  logger:147 - fill credit details
+2023-12-19 15:46:24 INFO  logger:52 - login with valid credential
+2023-12-19 15:47:02 INFO  logger:59 - click on create new event button
+2023-12-19 15:47:08 INFO  logger:66 - click on package
+2023-12-19 15:47:08 INFO  logger:72 - select package
+2023-12-19 15:47:11 INFO  logger:84 - fill necccessory data
+2023-12-19 15:47:18 INFO  logger:98 - create photo node as single image
+2023-12-19 15:47:30 INFO  logger:124 - create Sahre node 
+2023-12-19 15:47:37 INFO  logger:137 - click on next button
+2023-12-19 15:47:39 INFO  logger:147 - fill credit details
+2023-12-19 15:54:57 INFO  logger:51 - login with valid credential
+2023-12-19 15:55:00 INFO  logger:58 - click on create new event button
+2023-12-19 15:55:50 INFO  logger:51 - login with valid credential
+2023-12-19 15:55:52 INFO  logger:58 - click on create new event button
+2023-12-19 15:56:01 INFO  logger:65 - click on package
+2023-12-19 15:56:01 INFO  logger:71 - select package
+2023-12-19 15:56:05 INFO  logger:83 - fill necccessory data
+2023-12-19 15:56:11 INFO  logger:97 - create photo node as single image
+2023-12-19 15:56:26 INFO  logger:123 - create Sahre node 
+2023-12-19 15:57:47 INFO  logger:51 - login with valid credential
+2023-12-19 15:57:49 INFO  logger:58 - click on create new event button
+2023-12-19 15:57:55 INFO  logger:65 - click on package
+2023-12-19 15:57:56 INFO  logger:71 - select package
+2023-12-19 15:57:59 INFO  logger:83 - fill necccessory data
+2023-12-19 15:58:05 INFO  logger:97 - create photo node as single image
+2023-12-19 15:58:17 INFO  logger:123 - create Sahre node 
+2023-12-19 15:58:26 INFO  logger:137 - click on next button
+2023-12-19 15:58:28 INFO  logger:147 - fill credit details
+2023-12-19 16:00:04 INFO  logger:51 - login with valid credential
+2023-12-19 16:00:05 INFO  logger:58 - click on create new event button
+2023-12-19 16:00:14 INFO  logger:65 - click on package
+2023-12-19 16:00:14 INFO  logger:71 - select package
+2023-12-19 16:00:18 INFO  logger:83 - fill necccessory data
+2023-12-19 16:00:23 INFO  logger:97 - create photo node as single image
+2023-12-19 16:00:35 INFO  logger:123 - create Sahre node 
+2023-12-19 16:00:58 INFO  logger:51 - login with valid credential
+2023-12-19 16:01:01 INFO  logger:58 - click on create new event button
+2023-12-19 16:01:09 INFO  logger:65 - click on package
+2023-12-19 16:01:09 INFO  logger:71 - select package
+2023-12-19 16:01:12 INFO  logger:83 - fill necccessory data
+2023-12-19 16:01:18 INFO  logger:97 - create photo node as single image
+2023-12-19 16:01:34 INFO  logger:123 - create Sahre node 
+2023-12-19 16:01:42 INFO  logger:137 - click on next button
+2023-12-19 16:01:44 INFO  logger:147 - fill credit details

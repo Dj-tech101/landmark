@@ -2,27 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T13:22:00 IST" name="Default suite" finished-at="2023-12-18T13:23:09 IST" duration-ms="68161">
+  <suite started-at="2023-12-19T15:45:39 IST" name="Default suite" finished-at="2023-12-19T15:47:44 IST" duration-ms="124527">
     <groups>
-      <group name="smoke">
-        <method signature="PPUSmoke_Create_Event_Photo_TestPPu.Validate_Creation_event_with_Gif()[pri:0, instance:demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu@4218d6a3]" name="Validate_Creation_event_with_Gif" class="demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-12-18T13:22:00 IST" name="Default test" finished-at="2023-12-18T13:23:09 IST" duration-ms="68161">
-      <class name="demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu">
-        <test-method is-config="true" signature="setup()[pri:0, instance:demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu@4218d6a3]" started-at="2023-12-18T13:22:00 IST" name="setup" finished-at="2023-12-18T13:22:08 IST" duration-ms="7529" status="PASS">
+    <test started-at="2023-12-19T15:45:39 IST" name="Default test" finished-at="2023-12-19T15:47:44 IST" duration-ms="124527">
+      <class name="demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare">
+        <test-method is-config="true" signature="setup()[pri:0, instance:demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare@4218d6a3]" started-at="2023-12-19T15:45:39 IST" name="setup" finished-at="2023-12-19T15:46:24 IST" duration-ms="44701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Validate_Creation_event_with_Gif()[pri:0, instance:demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu@4218d6a3]" started-at="2023-12-18T13:22:08 IST" name="Validate_Creation_event_with_Gif" finished-at="2023-12-18T13:23:08 IST" duration-ms="60300" status="PASS">
+        <test-method signature="validate_Per_Event_information()[pri:0, instance:demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare@4218d6a3]" started-at="2023-12-19T15:46:24 IST" name="validate_Per_Event_information" finished-at="2023-12-19T15:47:44 IST" duration-ms="79787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Creation_event_with_Gif -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu@4218d6a3]" started-at="2023-12-18T13:23:08 IST" name="tearDown" finished-at="2023-12-18T13:23:09 IST" duration-ms="281" status="PASS">
+        </test-method> <!-- validate_Per_Event_information -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare@4218d6a3]" started-at="2023-12-19T15:47:44 IST" name="tearDown" finished-at="2023-12-19T15:47:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- demo_testCases.PPUSmoke_Create_Event_Photo_TestPPu -->
+      </class> <!-- demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

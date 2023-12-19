@@ -147,12 +147,12 @@ public class createPhotoPage {
 		return value;
 	}
 
-	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[3]")
+	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[2]")
 	WebElement saveButton;
 
 	public void clickonSaveButton() throws InterruptedException {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(4));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 //		FluentWait<WebDriver> waitfluent = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
 //				.pollingEvery(Duration.ofMinutes(1))
@@ -161,11 +161,11 @@ public class createPhotoPage {
 //
 //		WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(saveButton));
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(500));
 
 		js = (JavascriptExecutor) driver;
 
-		Thread.sleep(4000);
+	//	Thread.sleep(500);
 
 		js.executeScript("arguments[0].click();", saveButton);
 

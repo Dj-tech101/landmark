@@ -1,6 +1,7 @@
 package Utility;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -13,24 +14,33 @@ import org.openqa.selenium.io.FileHandler;
 
 public class TakescreenShotUtils {
 
-	public static String path = "C:\\Users\\webca\\eclipse-workspace\\Laphotoparty\\ScreenShot\\";
+	public static String path=System.getProperty("user.dir")+"\\ScreenShotlist\\ShotScreen";
+	
 
 	public static void GetScreenShot(WebDriver driver) throws IOException {
 
-		Date date = new Date();
+		
+		try {
+			Date date = new Date();
 
-		SimpleDateFormat formatter = new SimpleDateFormat("dd-mm-yy");
-		String dateFormate = formatter.format(date);
+			SimpleDateFormat formatter = new SimpleDateFormat("dd-mm-yyyy");
+			String dateFormate = formatter.format(date);
 
-		String pathdesti=path+"ScreenShot"+dateFormate+".png";
-		
-		TakesScreenshot tc=(TakesScreenshot)driver;
-		
-		File source =tc.getScreenshotAs(OutputType.FILE);
-		
-		File destination=new File(pathdesti);
-		
-		FileHandler.copy(source, destination);
+			String pathdesti=path+dateFormate+".png";
+			
+			TakesScreenshot tc=(TakesScreenshot)driver;
+			
+			File source =tc.getScreenshotAs(OutputType.FILE);
+			
+			File destination=new File(pathdesti);
+			
+			FileHandler.copy(source, destination);
+			
+			
+		} catch (FileNotFoundException e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
 		
 	}
 }

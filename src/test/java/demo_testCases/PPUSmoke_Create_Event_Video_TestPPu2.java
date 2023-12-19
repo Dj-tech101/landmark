@@ -61,7 +61,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		creatEvent.clickoncreatEventButton();
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		packageselect = new packagePage(driver);
 
@@ -84,9 +84,9 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		Date date = new Date();
 
-		SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yyyy/hh:mm");
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/hh:mm");
 
-		String name = "testnormal" + formatter.format(date);
+		String name = "testVIDEOSharing" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage(driver);

@@ -2,17 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
     <classes>
-      <class name="demo_testCases.Smoke_Create_Event_ExistingList">
+      <class name="demo_testCases.PPUSmoke_Create_Event_Video_TestPPu2">
         <methods>
-          <include name="validate_existingEvent"/>
+          <include name="setup"/>
+          <include name="Validate_Creation_event_with_Video"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- demo_testCases.Smoke_Create_Event_ExistingList -->
+      </class> <!-- demo_testCases.PPUSmoke_Create_Event_Video_TestPPu2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

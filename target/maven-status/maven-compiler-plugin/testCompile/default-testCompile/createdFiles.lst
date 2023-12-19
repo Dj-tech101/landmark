@@ -1,3 +1,4 @@
+demo_testCases\Smoke_Create_PerEvent_Basic_EmailShare.class
 pages\eventDetailsPage.class
 pages\GifPage.class
 pages\packagePage.class
@@ -10,13 +11,14 @@ pages\CheckoutPage.class
 pages\PhotoPage.class
 checkBoxes.class
 pages\RegistrationPage.class
+demo_testCases\PPUSmoke_Create_Event_Photo_TestPPu.class
 demo_testCases\Create_Event_Basic_Configuration.class
 pages\VideoPage.class
 demo_testCases\Smoke_Create_PerMonth_Pro.class
 pages\loginpage.class
 abcd.class
-demo_testCases\Smoke_Create_PerEvent_Basic.class
 demo_testCases\Smoke_Create_Event_WithGreenScreen.class
+demo_testCases\Smoke_Create_PerEvent_Basic_Smugmug.class
 retryAnalyzerUtil\retryAnalyser.class
 demo_testCases\Smoke_Create_Event_VideoTest.class
 demo_testCases\Smoke_Create_PerEvent_Pro.class
@@ -24,6 +26,8 @@ pages\createGifPage.class
 pages\createPhotoPage.class
 pages\creatEventPage.class
 BaseClass\test1.class
+demo_testCases\PPUSmoke_Create_Event_Video_TestPPu2.class
+demo_testCases\PPUSmoke_Create_Event_Gif_TestPPu3.class
 pages\MyEventsPage.class
 pages\sharepage.class
 pages\boothDesignPage.class

@@ -2,12 +2,16 @@ C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\VideoPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\BaseClass\test1.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_Gif_Test.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_VideoTest.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerEvent_Basic_Smugmug.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_ExistingList.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\MyEventsPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\loginpage.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\PPUSmoke_Create_Event_Photo_TestPPu.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\boothDesignPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\checkBoxes.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\PPUSmoke_Create_Event_Gif_TestPPu3.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerMonth_Pro.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerEvent_Basic_EmailShare.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\abcd.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\createPhotoPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\RegistrationPage.java
@@ -20,7 +24,7 @@ C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\retryAnalyzerUtil\re
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Create_Event_Basic_Configuration.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_Event_WithGreenScreen.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\sharepage.java
-C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\Smoke_Create_PerEvent_Basic.java
+C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\demo_testCases\PPUSmoke_Create_Event_Video_TestPPu2.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\BaseClass\baseclass.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\creatEventPage.java
 C:\Users\webca\eclipse-workspace\Laphotoparty\src\test\java\pages\eventDetailsPage.java
