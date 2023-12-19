@@ -45,7 +45,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 	public Logger log;
 	public propertyFile pro;
 
-	@Test()
+	@Test(groups = "share", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void validate_Per_Event_information() throws InterruptedException, IOException {
 

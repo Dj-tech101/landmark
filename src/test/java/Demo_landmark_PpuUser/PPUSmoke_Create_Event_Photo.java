@@ -1,6 +1,6 @@
 package Demo_landmark_PpuUser;
-
 import java.io.IOException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -22,7 +22,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
+public class PPUSmoke_Create_Event_Photo extends baseclass {
 
 	// public WebDriver driver;
 
@@ -40,7 +40,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 	public Logger log;
 
-	@Test(groups = "smoke", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
+	@Test(groups = "share", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void Validate_Creation_event_with_Photo() throws InterruptedException, IOException {
 

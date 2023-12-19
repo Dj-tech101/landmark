@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="demo_testCases.Smoke_Create_PerEvent_Basic_Smugmug"/>
+      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_Smugmug"/>
+      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_EmailShare"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
