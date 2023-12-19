@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo_testCases.Smoke_Create_PerEvent_Basic_Smugmug">
+      <class name="demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare">
         <methods>
-          <include name="validate_Per_Event_information"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="validate_Per_Event_information"/>
         </methods>
-      </class> <!-- demo_testCases.Smoke_Create_PerEvent_Basic_Smugmug -->
+      </class> <!-- demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="demo_testCases.Smoke_Create_PerMonth_Pro"/>
+      <class name="demo_testCases.Smoke_Create_Event_WithGreenScreen"/>
+      <class name="demo_testCases.Smoke_Create_PerEvent_Basic_EmailShare"/>
       <class name="demo_testCases.Smoke_Create_PerEvent_Basic_Smugmug"/>
+      <class name="demo_testCases.Smoke_Create_PerEvent_Pro"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
