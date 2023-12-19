@@ -1,16 +1,14 @@
-package demo_testCases;
+package Demo_landmark_PpuUser;
 
 import java.io.IOException;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import BaseClass.baseclass;
-import Utility.TakescreenShotUtils;
 import Utility.logger;
 import pages.CheckoutPage;
 import pages.PhotoPage;
@@ -24,7 +22,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class Create_Event_Basic_Configuration extends baseclass {
+public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 	// public WebDriver driver;
 
@@ -42,9 +40,9 @@ public class Create_Event_Basic_Configuration extends baseclass {
 
 	public Logger log;
 
-	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
+	@Test(groups = "smoke", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
-	public void ValidateGreenScreenButton_BasicEvent() throws InterruptedException, IOException {
+	public void Validate_Creation_event_with_Photo() throws InterruptedException, IOException {
 
 		log = logger.getlogger();
 
@@ -52,7 +50,7 @@ public class Create_Event_Basic_Configuration extends baseclass {
 
 		log.info("login with valid credential");
 
-		login.loginwithCredential("mahesh127@user.com", "Mahesh@123");
+		login.loginwithCredential("pputest@gmail.com", "ppu12345");
 
 		creatEvent = new creatEventPage(driver);
 
@@ -60,7 +58,7 @@ public class Create_Event_Basic_Configuration extends baseclass {
 
 		creatEvent.clickoncreatEventButton();
 
-		Thread.sleep(3000);
+		Thread.sleep(300);
 
 		packageselect = new packagePage(driver);
 
@@ -72,7 +70,7 @@ public class Create_Event_Basic_Configuration extends baseclass {
 
 		log.info("select month and pro options");
 
-		packageDetails.selectPackage("MONTH", "Basic");
+		packageDetails.selectPackage("MONTH", "Pro");
 
 		eventDetails = new eventDetailsPage(driver);
 		Random ran = new Random();
@@ -80,16 +78,24 @@ public class Create_Event_Basic_Configuration extends baseclass {
 		int number = ran.nextInt();
 
 		log.info("fill the event details");
+		
+		Date date= new Date();
+		
+		SimpleDateFormat formatter=new SimpleDateFormat("dd");
 
-		String name = "BasicEventTest" + String.valueOf(number);
+		
+		String name = "testPHOTOSharing" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-
 		designPage = new boothDesignPage(driver);
 
-		log.info("drag Photo in Boothdesign");
+		log.info("drag photo in Boothdesign");
+
+		// **************pHOTO NODE *****************
+		designPage = new boothDesignPage(driver);
 
 		designPage.dragAndDropphotoNode();
+
 
 		designPage.clickonPhotoGearIcon();
 
@@ -97,20 +103,45 @@ public class Create_Event_Basic_Configuration extends baseclass {
 
 		Thread.sleep(1500);
 
-		log.info("create single image photo");
-
 		createPhotoPage createPhoto = new createPhotoPage(driver);
 
-		photopage.clickonCreatePhotoButton();
+		int value = ran.nextInt();
 
-		photopage.clickOnSingleImageButton();
+		String nameofphoto = "photonumber" + String.valueOf(value);
 
-		log.info("Validate the Toggele button For single Photo");
+		photopage.createNewSinglePhoto(nameofphoto);
 
-		TakescreenShotUtils.GetScreenShot(driver);
+		// ***********SHARE NODE*************
 
-		org.testng.Assert.assertFalse(createPhoto.CheckedGreenScreenToggle());
-		
+		designPage.dragAndDropShare();
+
+		designPage.clickonShareGearIcon();
+
+		sharepage sharenode = new sharepage(driver);
+
+		log.info("select the share options ");
+
+		sharenode.CreateNewShareNode("print");
+
+		designPage.clickNextButton();
+
+		log.info("click on next button");
+		reviewPage = new reviewPage(driver);
+
+		reviewPage.clickNextButton();
+
+		CheckoutPage checkoutPage = new CheckoutPage(driver);
+
+		log.info("fill the neccessory data ");
+
+		checkoutPage.FillNeccessoryCardDetails("Exist");
+
+		Thread.sleep(4000);
+
+		log.info("assser the valid data for new  event ");
+		org.testng.Assert.assertTrue(true);
+
+		log.info("Event is created ");
 
 	}
 }

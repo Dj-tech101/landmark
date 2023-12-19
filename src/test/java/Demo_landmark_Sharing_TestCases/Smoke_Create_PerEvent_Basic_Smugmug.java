@@ -1,4 +1,4 @@
-package demo_testCases;
+package Demo_landmark_Sharing_TestCases;
 
 import java.io.IOException;
 import java.util.Random;
@@ -11,16 +11,13 @@ import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
 import Utility.logger;
+import Utility.propertyFile;
 import dev.failsafe.internal.util.Assert;
 import pages.CheckoutPage;
-import pages.GifPage;
 import pages.PhotoPage;
-import pages.VideoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
-import pages.createGifPage;
 import pages.createPhotoPage;
-import pages.createVideoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
 import pages.packageDetails;
@@ -28,7 +25,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class Smoke_Create_Event_VideoTest extends baseclass {
+public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 	// public WebDriver driver;
 
@@ -46,107 +43,122 @@ public class Smoke_Create_Event_VideoTest extends baseclass {
 
 	public Logger log;
 
-	@Test(groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
+	public propertyFile pro;
+	
+	
+	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
-	public void Validate_Creation_event_with_Gif() throws InterruptedException, IOException {
+	public void validate_Per_Event_information() throws InterruptedException, IOException {
 
+		pro= new propertyFile();
+		
 		log = logger.getlogger();
 
+		log.info("login with valid credential");
 		login = new loginpage(driver);
 
-		log.info("login with valid credential");
-
-		login.loginwithCredential("mahesh127@user.com", "Mahesh@123");
+		login.loginwithCredential(pro.getusername() ,pro.getpassword());
 
 		creatEvent = new creatEventPage(driver);
 
-		log.info("click on create event button");
+		log.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
-
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		packageselect = new packagePage(driver);
 
-		log.info("select the package");
+		log.info("click on package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails(driver);
+		
+		log.info("select package");
 
-		log.info("select month and pro options");
 
-		packageDetails.selectPackage("MONTH", "Pro");
+		packageDetails.selectPackage("PER EVENT", "Basic");
+
 
 		eventDetails = new eventDetailsPage(driver);
 		Random ran = new Random();
 
 		int number = ran.nextInt();
+		String name = "TestsmugShare" + String.valueOf(number);
 
-		log.info("fill the event details");
-
-		String name = "TestVideoCREATION" + String.valueOf(number);
+		log.info("fill necccessory data");
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
+
 		designPage = new boothDesignPage(driver);
 
-		log.info("drag Videonode in Boothdesign");
-
 		
-		//**************Video NODE *****************
-		designPage.dragAndDropVideoNode();
+		
+		
+		
+		
+		//************ PHTOT NODE***************88
+		designPage.dragAndDropphotoNode();
 
-		designPage.clickonVideoGearIcon();
+		log.info("create photo node as single image");
 
-		VideoPage videoPage = new VideoPage(driver);
+		designPage.clickonPhotoGearIcon();
+
+		PhotoPage photopage = new PhotoPage(driver);
+
+		Thread.sleep(1500);
+
+		createPhotoPage createPhoto = new createPhotoPage(driver);
 
 		int value = ran.nextInt();
 
-		String nameooVideo = "VideoName" + String.valueOf(value);
-
-		log.info("click on create new video option");
+		String nameofphoto = "photonumber" + String.valueOf(value);
 		
-		videoPage.clickonCreateVideoButton();
-
-		log.info("fill the neccessory details in video");
-
-		createVideoPage createVideo = new createVideoPage(driver);
-
-		createVideo.createGifwithOverlay(nameooVideo);
-		
-
-		//***********SHARE NODE*************
+		photopage.createNewSinglePhoto(nameofphoto);
 		
 		
+		
+		
+		
+		
+		
+		
+		//************ SHARE NODE***************
+		
+
+		log.info("create Sahre node ");
+
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
 
-		sharepage sharenode = new sharepage(driver);
 
-		log.info("select the share options ");
+		sharepage sharenode = new sharepage(driver);
 
 		sharenode.CreateNewShareNode("print");
 
-		designPage.clickNextButton();
+		sharenode.CreateNewShareNodemore("email", "smugmug");
+
 
 		log.info("click on next button");
+
+		designPage.clickNextButton();
+
 		reviewPage = new reviewPage(driver);
 
 		reviewPage.clickNextButton();
 
 		CheckoutPage checkoutPage = new CheckoutPage(driver);
 
-		log.info("fill the neccessory data ");
-
+		log.info("fill credit details");
+		
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 
 		Thread.sleep(4000);
 
-		log.info("assser the valid data for new  event ");
 		org.testng.Assert.assertTrue(true);
 
-		log.info("Event is created ");
+		System.err.println("Event is created ");
 
 	}
 }

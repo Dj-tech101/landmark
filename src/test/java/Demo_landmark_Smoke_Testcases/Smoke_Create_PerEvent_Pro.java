@@ -1,17 +1,15 @@
-package demo_testCases;
+package Demo_landmark_Smoke_Testcases;
 
 import java.io.IOException;
 import java.util.Random;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
-import Utility.TakescreenShotUtils;
-import Utility.logger;
+import Utility.propertyFile;
 import dev.failsafe.internal.util.Assert;
 import pages.CheckoutPage;
 import pages.PhotoPage;
@@ -25,7 +23,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
+public class Smoke_Create_PerEvent_Pro extends baseclass {
 
 	// public WebDriver driver;
 
@@ -41,61 +39,63 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 	public reviewPage reviewPage;
 
-	public Logger log;
+	public propertyFile pro;
 
-	@Test()
+	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
+
 
 	public void validate_Per_Event_information() throws InterruptedException, IOException {
 
-		log = logger.getlogger();
-
-		log.info("login with valid credential");
+		pro= new propertyFile();
+		
 		login = new loginpage(driver);
 
-		login.loginwithCredential("mahesh127@user.com", "Mahesh@123");
+		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage(driver);
 
-		log.info("click on create new event button");
-
 		creatEvent.clickoncreatEventButton();
-		Thread.sleep(2000);
+//
+//		
+		Thread.sleep(3000);
 
 		packageselect = new packagePage(driver);
 
-		log.info("click on package");
-
 		packageselect.clickOnPackage();
 
-		packageDetails = new packageDetails(driver);
-		
-		log.info("select package");
+		System.out.println("click on new package button");
 
+		// packageselect.clickonnewPackageButton();
+
+		packageDetails = new packageDetails(driver);
 
 		packageDetails.selectPackage("PER EVENT", "Pro");
 
+		System.out.println("fill the neccessory details");
 
 		eventDetails = new eventDetailsPage(driver);
 		Random ran = new Random();
 
 		int number = ran.nextInt();
-		String name = "TestEmailShare" + String.valueOf(number);
-
-		log.info("fill necccessory data");
+		String name = "TestAutomation" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
+//		eventDetails.eventNameSendkeys("testAutomation");
+//		eventDetails.startNowRadioButton();
+//		eventDetails.timeZoneSelection("Delhi");
+//		eventDetails.contrySelection("India");
+//		eventDetails.stateSelection("Maharashtra");
+//		eventDetails.citySendkeys("pune");
+//		eventDetails.clickNextButton();
+//		System.out.println("click on next button ");
 
+		// eventDetails.eventSubmission();
 		designPage = new boothDesignPage(driver);
 
-		
-		
-		
-		
-		
-		//************ PHTOT NODE***************88
+		System.out.println("drag photo to destination");
 		designPage.dragAndDropphotoNode();
 
-		log.info("create photo node as single image");
+		System.out.println("click on phto gear icon ");
 
 		designPage.clickonPhotoGearIcon();
 
@@ -103,38 +103,42 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		Thread.sleep(1500);
 
+		// photopage.clickonCreatePhotoButton();
+
+		// photopage.clickOnSingleImageButton();
+
 		createPhotoPage createPhoto = new createPhotoPage(driver);
 
 		int value = ran.nextInt();
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
-		
 		photopage.createNewSinglePhoto(nameofphoto);
-		
-		
-		
-		
-		
-		
-		
-		
-		//************ SHARE NODE***************
-		
 
-		log.info("create Sahre node ");
+//		createPhoto.sendNameTextField(nameofphoto);
+//
+//		createPhoto.sendKeysOverlayField();
+//
+//		createPhoto.clickonSaveButton();
+//
+//		photopage.clickOnClosedPhotoWindow(nameofphoto);
+
+		System.out.println("closed the window ");
 
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
 
+		System.out.println("lets click on share gear icon");
 
 		sharepage sharenode = new sharepage(driver);
 
+//		sharenode.getlistofshareOptions("print");
+//
+//		sharenode.clickonPrintSwitch();
+//
+//		sharenode.clickOnClosedPhotoWindow();
 
-		sharenode.CreateNewShareNodemore("email", "smugmug");
-
-
-		log.info("click on next button");
+		sharenode.CreateNewShareNode("print");
 
 		designPage.clickNextButton();
 
@@ -144,10 +148,6 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		CheckoutPage checkoutPage = new CheckoutPage(driver);
 
-		log.info("fill credit details");
-		
-		TakescreenShotUtils.GetScreenShot(driver);
-		
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 
 		Thread.sleep(4000);
@@ -156,5 +156,6 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		System.err.println("Event is created ");
 
-	}
-}
+
+	
+	}}

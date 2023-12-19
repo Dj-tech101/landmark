@@ -1,4 +1,4 @@
-package demo_testCases;
+package Demo_landmark_UserCreation;
 
 import java.io.IOException;
 

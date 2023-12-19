@@ -1,4 +1,4 @@
-package demo_testCases;
+package Demo_landmark_Smoke_Testcases;
 
 import java.io.IOException;
 import java.util.Random;
@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
+import Utility.propertyFile;
 import dev.failsafe.internal.util.Assert;
 import pages.CheckoutPage;
 import pages.PhotoPage;
@@ -22,7 +23,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class Smoke_Create_Event_ExistingList extends baseclass {
+public class Smoke_Create_PerMonth_Pro extends baseclass {
 
 	// public WebDriver driver;
 
@@ -37,16 +38,21 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 	public boothDesignPage designPage;
 
 	public reviewPage reviewPage;
+	public propertyFile pro;
+	
 
 
 	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 
-	public void validate_existingEvent() throws InterruptedException, IOException {
+	public void validate_Per_Event_information() throws InterruptedException, IOException {
 
+		
+		pro= new propertyFile();
+		
 		login = new loginpage(driver);
 
-		login.loginwithCredential("mahesh127@user.com", "Mahesh@123");
+		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage(driver);
 
@@ -65,7 +71,7 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 
 		packageDetails = new packageDetails(driver);
 
-		packageDetails.selectPackage("MONTH", "Pro");
+		packageDetails.selectPackage("PER MONTH", "Pro");
 
 		System.out.println("fill the neccessory details");
 

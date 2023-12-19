@@ -1,4 +1,4 @@
-package demo_testCases;
+package Demo_landmark_Smoke_Testcases;
 
 import java.io.IOException;
 import java.util.Random;
@@ -11,6 +11,7 @@ import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
 import Utility.logger;
+import Utility.propertyFile;
 import dev.failsafe.internal.util.Assert;
 import pages.CheckoutPage;
 import pages.GifPage;
@@ -43,18 +44,21 @@ public class Smoke_Create_Event_Gif_Test extends baseclass {
 	public reviewPage reviewPage;
 
 	public Logger log;
+	public propertyFile pro;
 
 	@Test(groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void Validate_Creation_event_with_Gif() throws InterruptedException, IOException {
 
+		pro= new propertyFile();
+		
 		log = logger.getlogger();
 
 		login = new loginpage(driver);
 
 		log.info("login with valid credential");
 
-		login.loginwithCredential("mahesh127@user.com", "Mahesh@123");
+		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage(driver);
 

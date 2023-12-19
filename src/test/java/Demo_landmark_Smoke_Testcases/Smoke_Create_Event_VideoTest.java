@@ -1,4 +1,4 @@
-package demo_testCases;
+package Demo_landmark_Smoke_Testcases;
 
 import java.io.IOException;
 import java.util.Random;
@@ -11,12 +11,17 @@ import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
 import Utility.logger;
+import Utility.propertyFile;
 import dev.failsafe.internal.util.Assert;
 import pages.CheckoutPage;
+import pages.GifPage;
 import pages.PhotoPage;
+import pages.VideoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
+import pages.createGifPage;
 import pages.createPhotoPage;
+import pages.createVideoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
 import pages.packageDetails;
@@ -24,7 +29,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class Smoke_Create_Event_WithGreenScreen extends baseclass {
+public class Smoke_Create_Event_VideoTest extends baseclass {
 
 	// public WebDriver driver;
 
@@ -41,18 +46,22 @@ public class Smoke_Create_Event_WithGreenScreen extends baseclass {
 	public reviewPage reviewPage;
 
 	public Logger log;
+	public propertyFile pro;
 
-	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class,groups = "smoke")
+	@Test(groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
-	public void name() throws InterruptedException, IOException {
+	public void Validate_Creation_event_with_Gif() throws InterruptedException, IOException {
 
+		
+		pro= new propertyFile();
+		
 		log = logger.getlogger();
 
 		login = new loginpage(driver);
 
 		log.info("login with valid credential");
 
-		login.loginwithCredential("mahesh127@user.com", "Mahesh@123");
+		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage(driver);
 
@@ -81,68 +90,44 @@ public class Smoke_Create_Event_WithGreenScreen extends baseclass {
 
 		log.info("fill the event details");
 
-		String name = "TestAutomation" + String.valueOf(number);
+		String name = "TestVideoCREATION" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-//		eventDetails.eventNameSendkeys("testAutomation");
-//		eventDetails.startNowRadioButton();
-//		eventDetails.timeZoneSelection("Delhi");
-//		eventDetails.contrySelection("India");
-//		eventDetails.stateSelection("Maharashtra");
-//		eventDetails.citySendkeys("pune");
-//		eventDetails.clickNextButton();
-//		System.out.println("click on next button ");
-
-		// eventDetails.eventSubmission();
 		designPage = new boothDesignPage(driver);
 
-		log.info("drag Photo in Boothdesign");
+		log.info("drag Videonode in Boothdesign");
 
-		designPage.dragAndDropphotoNode();
+		
+		//**************Video NODE *****************
+		designPage.dragAndDropVideoNode();
 
-		designPage.clickonPhotoGearIcon();
+		designPage.clickonVideoGearIcon();
 
-		PhotoPage photopage = new PhotoPage(driver);
-
-		Thread.sleep(1500);
-
-		// photopage.clickonCreatePhotoButton();
-
-		// photopage.clickOnSingleImageButton();
-
-		log.info("create new photo");
-
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		VideoPage videoPage = new VideoPage(driver);
 
 		int value = ran.nextInt();
 
-		String nameofphoto = "photonumber" + String.valueOf(value);
+		String nameooVideo = "VideoName" + String.valueOf(value);
 
-		log.info("select the new single photo options");
+		log.info("click on create new video option");
+		
+		videoPage.clickonCreateVideoButton();
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		log.info("fill the neccessory details in video");
 
-//		createPhoto.sendNameTextField(nameofphoto);
-//
-//		createPhoto.sendKeysOverlayField();
-//
-//		createPhoto.clickonSaveButton();
-//
-//		photopage.clickOnClosedPhotoWindow(nameofphoto);
+		createVideoPage createVideo = new createVideoPage(driver);
 
-		log.info("drag the share options ");
+		createVideo.createGifwithOverlay(nameooVideo);
+		
 
+		//***********SHARE NODE*************
+		
+		
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
 
 		sharepage sharenode = new sharepage(driver);
-
-//		sharenode.getlistofshareOptions("print");
-//
-//		sharenode.clickonPrintSwitch();
-//
-//		sharenode.clickOnClosedPhotoWindow();
 
 		log.info("select the share options ");
 
@@ -165,7 +150,7 @@ public class Smoke_Create_Event_WithGreenScreen extends baseclass {
 
 		log.info("assser the valid data for new  event ");
 		org.testng.Assert.assertTrue(true);
-		
+
 		log.info("Event is created ");
 
 	}

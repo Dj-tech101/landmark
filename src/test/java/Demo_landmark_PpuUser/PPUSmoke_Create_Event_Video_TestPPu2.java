@@ -1,4 +1,4 @@
-package demo_testCases;
+package Demo_landmark_PpuUser;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -9,12 +9,15 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 import BaseClass.baseclass;
+import Utility.TakescreenShotUtils;
 import Utility.logger;
 import pages.CheckoutPage;
 import pages.PhotoPage;
+import pages.VideoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
 import pages.createPhotoPage;
+import pages.createVideoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
 import pages.packageDetails;
@@ -22,7 +25,7 @@ import pages.packagePage;
 import pages.reviewPage;
 import pages.sharepage;
 
-public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
+public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 	// public WebDriver driver;
 
@@ -42,7 +45,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 	@Test(groups = "smoke", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
-	public void Validate_Creation_event_with_Photo() throws InterruptedException, IOException {
+	public void Validate_Creation_event_with_Video() throws InterruptedException, IOException {
 
 		log = logger.getlogger();
 
@@ -58,7 +61,7 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 
 		creatEvent.clickoncreatEventButton();
 
-		Thread.sleep(300);
+		Thread.sleep(1000);
 
 		packageselect = new packagePage(driver);
 
@@ -78,38 +81,38 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 		int number = ran.nextInt();
 
 		log.info("fill the event details");
-		
-		Date date= new Date();
-		
-		SimpleDateFormat formatter=new SimpleDateFormat("dd");
 
-		
-		String name = "testPHOTOSharing" + String.valueOf(number);
+		Date date = new Date();
+
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/hh:mm");
+
+		String name = "testVIDEOSharing" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage(driver);
 
 		log.info("drag photo in Boothdesign");
 
-		// **************pHOTO NODE *****************
-		designPage = new boothDesignPage(driver);
+		// **************GIF NODE *****************
+		designPage.dragAndDropVideoNode();
 
-		designPage.dragAndDropphotoNode();
+		designPage.clickonVideoGearIcon();
 
-
-		designPage.clickonPhotoGearIcon();
-
-		PhotoPage photopage = new PhotoPage(driver);
-
-		Thread.sleep(1500);
-
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		VideoPage videoPage = new VideoPage(driver);
 
 		int value = ran.nextInt();
 
-		String nameofphoto = "photonumber" + String.valueOf(value);
+		String nameooVideo = "VideoName" + String.valueOf(value);
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		log.info("click on create new video option");
+
+		videoPage.clickonCreateVideoButton();
+
+		log.info("fill the neccessory details in video");
+
+		createVideoPage createVideo = new createVideoPage(driver);
+
+		createVideo.createGifwithOverlay(nameooVideo);
 
 		// ***********SHARE NODE*************
 
@@ -122,11 +125,14 @@ public class PPUSmoke_Create_Event_Photo_TestPPu extends baseclass {
 		log.info("select the share options ");
 
 		sharenode.CreateNewShareNode("print");
+		sharenode.CreateNewShareNodemore("email","smugmug");
 
 		designPage.clickNextButton();
 
 		log.info("click on next button");
 		reviewPage = new reviewPage(driver);
+
+		TakescreenShotUtils.GetScreenShot(driver);
 
 		reviewPage.clickNextButton();
 
