@@ -27,7 +27,7 @@ import pages.sharepage;
 
 public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
-	// public WebDriver driver;
+	// public Web ;
 
 	public loginpage login;
 	public creatEventPage creatEvent;
@@ -49,13 +49,13 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		log = logger.getlogger();
 
-		login = new loginpage(driver);
+		login = new loginpage();
 
 		log.info("login with valid credential");
 
 		login.loginwithCredential("pputest@gmail.com", "ppu12345");
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		log.info("click on create event button");
 
@@ -63,19 +63,19 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		Thread.sleep(1000);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		log.info("select the package");
 
 		packageselect.clickOnPackage();
 
-		packageDetails = new packageDetails(driver);
+		packageDetails = new packageDetails();
 
 		log.info("select month and pro options");
 
 		packageDetails.selectPackage("MONTH", "Pro");
 
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
@@ -89,7 +89,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 		String name = "testVIDEOSharing" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
 		log.info("drag photo in Boothdesign");
 
@@ -98,7 +98,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		designPage.clickonVideoGearIcon();
 
-		VideoPage videoPage = new VideoPage(driver);
+		VideoPage videoPage = new VideoPage();
 
 		int value = ran.nextInt();
 
@@ -110,7 +110,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		log.info("fill the neccessory details in video");
 
-		createVideoPage createVideo = new createVideoPage(driver);
+		createVideoPage createVideo = new createVideoPage();
 
 		createVideo.createGifwithOverlay(nameooVideo);
 
@@ -120,7 +120,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		designPage.clickonShareGearIcon();
 
-		sharepage sharenode = new sharepage(driver);
+		sharepage sharenode = new sharepage();
 
 		log.info("select the share options ");
 
@@ -130,13 +130,13 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 		designPage.clickNextButton();
 
 		log.info("click on next button");
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
 
-		TakescreenShotUtils.GetScreenShot(driver);
+		TakescreenShotUtils.GetScreenShot(driver,"next button");
 
 		reviewPage.clickNextButton();
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		CheckoutPage checkoutPage = new CheckoutPage();
 
 		log.info("fill the neccessory data ");
 

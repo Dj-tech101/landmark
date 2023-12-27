@@ -9,7 +9,7 @@ public class propertyFile {
 
 	public Properties pro;
 
-	public String path="C:\\Users\\webca\\eclipse-workspace\\Laphotoparty\\propertiesDetails.properties";
+	public String path=System.getProperty("user.dir")+"\\propertiesDetails.properties";
 	
 
 	public propertyFile() throws IOException {
@@ -35,4 +35,11 @@ public class propertyFile {
 		return pro.getProperty("password");
 
 	}
+	
+	public String getUrl() {
+
+		return pro.getProperty("url");
+
+	}
+	
 }

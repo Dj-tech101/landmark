@@ -24,7 +24,7 @@ import pages.sharepage;
 
 public class PPUSmoke_Create_Event_Photo extends baseclass {
 
-	// public WebDriver driver;
+	// public Web ;
 
 	public loginpage login;
 	public creatEventPage creatEvent;
@@ -46,13 +46,13 @@ public class PPUSmoke_Create_Event_Photo extends baseclass {
 
 		log = logger.getlogger();
 
-		login = new loginpage(driver);
+		login = new loginpage();
 
 		log.info("login with valid credential");
 
 		login.loginwithCredential("pputest@gmail.com", "ppu12345");
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		log.info("click on create event button");
 
@@ -60,19 +60,19 @@ public class PPUSmoke_Create_Event_Photo extends baseclass {
 
 		Thread.sleep(300);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		log.info("select the package");
 
 		packageselect.clickOnPackage();
 
-		packageDetails = new packageDetails(driver);
+		packageDetails = new packageDetails();
 
 		log.info("select month and pro options");
 
 		packageDetails.selectPackage("MONTH", "Pro");
 
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
@@ -87,23 +87,23 @@ public class PPUSmoke_Create_Event_Photo extends baseclass {
 		String name = "testPHOTOSharing" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
 		log.info("drag photo in Boothdesign");
 
 		// **************pHOTO NODE *****************
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
 		designPage.dragAndDropphotoNode();
 
 
 		designPage.clickonPhotoGearIcon();
 
-		PhotoPage photopage = new PhotoPage(driver);
+		PhotoPage photopage = new PhotoPage();
 
 		Thread.sleep(1500);
 
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		createPhotoPage createPhoto = new createPhotoPage();
 
 		int value = ran.nextInt();
 
@@ -117,7 +117,7 @@ public class PPUSmoke_Create_Event_Photo extends baseclass {
 
 		designPage.clickonShareGearIcon();
 
-		sharepage sharenode = new sharepage(driver);
+		sharepage sharenode = new sharepage();
 
 		log.info("select the share options ");
 
@@ -126,11 +126,11 @@ public class PPUSmoke_Create_Event_Photo extends baseclass {
 		designPage.clickNextButton();
 
 		log.info("click on next button");
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
 
 		reviewPage.clickNextButton();
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		CheckoutPage checkoutPage = new CheckoutPage();
 
 		log.info("fill the neccessory data ");
 

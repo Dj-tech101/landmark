@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
@@ -28,7 +27,7 @@ import pages.sharepage;
 
 public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
-	// public WebDriver driver;
+	// public Web ;
 
 	public loginpage login;
 	public creatEventPage creatEvent;
@@ -54,30 +53,30 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 		log = logger.getlogger();
 
 		log.info("login with valid credential");
-		login = new loginpage(driver);
+		login = new loginpage();
 
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		log.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		log.info("click on package");
 
 		packageselect.clickOnPackage();
 
-		packageDetails = new packageDetails(driver);
+		packageDetails = new packageDetails();
 
 		log.info("select package");
 
 		packageDetails.selectPackage("PER EVENT", "Pro");
 
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
@@ -87,7 +86,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
 		// ************ PHTOT NODE***************88
 		designPage.dragAndDropphotoNode();
@@ -96,11 +95,11 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		designPage.clickonPhotoGearIcon();
 
-		PhotoPage photopage = new PhotoPage(driver);
+		PhotoPage photopage = new PhotoPage();
 
 		Thread.sleep(1500);
 
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		createPhotoPage createPhoto = new createPhotoPage();
 
 		int value = ran.nextInt();
 
@@ -110,29 +109,30 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		// ************ SHARE NODE***************
 
-		log.info("create Sahre node ");
+		log.info("create Share node ");
 
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
 
-		sharepage sharenode = new sharepage(driver);
+		sharepage sharenode = new sharepage();
 
+		sharenode.CreateNewShareNode("print");
 		sharenode.CreateNewShareNodemore("email", "smugmug");
 
 		log.info("click on next button");
 
 		designPage.clickNextButton();
 
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
 
 		reviewPage.clickNextButton();
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		CheckoutPage checkoutPage = new CheckoutPage();
 
 		log.info("fill credit details");
 
-		TakescreenShotUtils.GetScreenShot(driver);
+	//	TakescreenShotUtils.GetScreenShot(driver, "Creditdetailspage");
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 

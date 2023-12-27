@@ -24,7 +24,7 @@ import pages.sharepage;
 
 public class smoke_Create_Event_NewFresh extends baseclass {
 
-	// public WebDriver driver;
+	// public Web ;
 
 	public loginpage login;
 	public creatEventPage creatEvent;
@@ -38,18 +38,20 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 	public reviewPage reviewPage;
 
+	public CheckoutPage check;
+
 	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void TestNewUserCreation() throws InterruptedException, IOException {
 
-		RegistrationPage reg = new RegistrationPage(driver);
+		RegistrationPage reg = new RegistrationPage();
 		String pass = reg.createNewUser();
 
-		login = new loginpage(driver);
+		login = new loginpage();
 
 		login.loginForNewreg(pass);
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		creatEvent.clickoncreatEventButton();
 
@@ -57,7 +59,7 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 		Thread.sleep(3000);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		// packageselect.clickOnPackage();
 
@@ -65,13 +67,13 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 		// packageselect.clickonnewPackageButton();
 
-		packageDetails = new packageDetails(driver);
+		packageDetails = new packageDetails();
 
 		packageDetails.selectPackage("PER MONTH", "Pro");
 
 		System.out.println("fill the neccessory details");
 
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
@@ -88,10 +90,10 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 //		System.out.println("click on next button ");
 
 		// eventDetails.eventSubmission();
-		
-		//*****************PhotoNode************
-		
-		designPage = new boothDesignPage(driver);
+
+		// *****************PhotoNode************
+
+		designPage = new boothDesignPage();
 
 		System.out.println("drag photo to destination");
 		designPage.dragAndDropphotoNode();
@@ -100,52 +102,53 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 
 		designPage.clickonPhotoGearIcon();
 
-		PhotoPage photopage = new PhotoPage(driver);
+		PhotoPage photopage = new PhotoPage();
 
 		Thread.sleep(1500);
 
-
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		createPhotoPage createPhoto = new createPhotoPage();
 
 		int value = ran.nextInt();
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
 		photopage.createNewSinglePhoto(nameofphoto);
 
-
 		System.out.println("closed the window ");
 
-		
-		//****************SHARE NODE*************
+		// ****************SHARE NODE*************
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
 
 		System.out.println("lets click on share gear icon");
 
-		sharepage sharenode = new sharepage(driver);
-
+		sharepage sharenode = new sharepage();
+		System.out.println("fll neccessory11 ");
 
 		sharenode.CreateNewShareNode("print");
 
+		System.out.println("fll neccessory 12");
 		designPage.clickNextButton();
 
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
+		System.out.println("fll neccessory 13");
 
 		reviewPage.clickNextButton();
+		System.out.println("fll neccessory14");
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		check = new CheckoutPage();
 
-		checkoutPage.FillNeccessoryCardDetails("New");
+		System.out.println("fll neccessory15");
 
-		MyEventsPage myEvents = new MyEventsPage(driver);
+		check.FillNeccessoryCardDetails("New");
+
+		MyEventsPage myEvents = new MyEventsPage();
 
 		String actualName = myEvents.GetEventName();
 
 		Assert.assertEquals(actualName, name);
 
 		System.err.println("Event is created ");
-
 
 	}
 }

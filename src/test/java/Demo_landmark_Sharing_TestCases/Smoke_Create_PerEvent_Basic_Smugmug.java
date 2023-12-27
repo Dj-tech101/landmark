@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
@@ -27,7 +26,7 @@ import pages.sharepage;
 
 public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
-	// public WebDriver driver;
+	// public Web ;
 
 	public loginpage login;
 	public creatEventPage creatEvent;
@@ -44,87 +43,71 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 	public Logger log;
 
 	public propertyFile pro;
-	
-	
+
 	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void validate_Per_Event_information() throws InterruptedException, IOException {
 
-		pro= new propertyFile();
-		
+		pro = new propertyFile();
+
 		log = logger.getlogger();
 
 		log.info("login with valid credential");
-		login = new loginpage(driver);
+		login = new loginpage();
 
-		login.loginwithCredential(pro.getusername() ,pro.getpassword());
+		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		log.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		log.info("click on package");
 
 		packageselect.clickOnPackage();
 
-		packageDetails = new packageDetails(driver);
-		
-		log.info("select package");
+		packageDetails = new packageDetails();
 
+		log.info("select package");
 
 		packageDetails.selectPackage("PER EVENT", "Basic");
 
-
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
-		String name = "TestsmugShare" + String.valueOf(number);
+		String name = "oldSharingSystem" + String.valueOf(number);
 
 		log.info("fill necccessory data");
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
-		
-		
-		
-		
-		
-		//************ PHTOT NODE***************88
+		// ************ PHTOT NODE***************88
 		designPage.dragAndDropphotoNode();
 
 		log.info("create photo node as single image");
 
 		designPage.clickonPhotoGearIcon();
 
-		PhotoPage photopage = new PhotoPage(driver);
+		PhotoPage photopage = new PhotoPage();
 
 		Thread.sleep(1500);
 
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		createPhotoPage createPhoto = new createPhotoPage();
 
 		int value = ran.nextInt();
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
-		
+
 		photopage.createNewSinglePhoto(nameofphoto);
-		
-		
-		
-		
-		
-		
-		
-		
-		//************ SHARE NODE***************
-		
+
+		// ************ SHARE NODE***************
 
 		log.info("create Sahre node ");
 
@@ -132,26 +115,24 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 		designPage.clickonShareGearIcon();
 
+		sharepage sharenode = new sharepage();
 
-		sharepage sharenode = new sharepage(driver);
-
-		sharenode.CreateNewShareNode("print");
+		//
 
 		sharenode.CreateNewShareNodemore("email", "smugmug");
-
 
 		log.info("click on next button");
 
 		designPage.clickNextButton();
 
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
 
 		reviewPage.clickNextButton();
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		CheckoutPage checkoutPage = new CheckoutPage();
 
 		log.info("fill credit details");
-		
+
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 
 		Thread.sleep(4000);

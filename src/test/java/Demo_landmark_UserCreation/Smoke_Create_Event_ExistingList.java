@@ -3,7 +3,6 @@ package Demo_landmark_UserCreation;
 import java.io.IOException;
 import java.util.Random;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
@@ -25,7 +24,7 @@ import pages.sharepage;
 
 public class Smoke_Create_Event_ExistingList extends baseclass {
 
-	// public WebDriver driver;
+	// public Web ;
 
 	public loginpage login;
 	public creatEventPage creatEvent;
@@ -51,18 +50,18 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 		pro= new propertyFile()
 				;
 		
-		login = new loginpage(driver);
+		login = new loginpage();
 
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		creatEvent.clickoncreatEventButton();
 //
 //		
 		Thread.sleep(3000);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		packageselect.clickOnPackage();
 
@@ -70,13 +69,13 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 
 		// packageselect.clickonnewPackageButton();
 
-		packageDetails = new packageDetails(driver);
+		packageDetails = new packageDetails();
 
 		packageDetails.selectPackage("MONTH", "Pro");
 
 		System.out.println("fill the neccessory details");
 
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
@@ -93,7 +92,7 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 //		System.out.println("click on next button ");
 
 		// eventDetails.eventSubmission();
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
 		System.out.println("drag photo to destination");
 		designPage.dragAndDropphotoNode();
@@ -102,7 +101,7 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 
 		designPage.clickonPhotoGearIcon();
 
-		PhotoPage photopage = new PhotoPage(driver);
+		PhotoPage photopage = new PhotoPage();
 
 		Thread.sleep(1500);
 
@@ -110,7 +109,7 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 
 		// photopage.clickOnSingleImageButton();
 
-		createPhotoPage createPhoto = new createPhotoPage(driver);
+		createPhotoPage createPhoto = new createPhotoPage();
 
 		int value = ran.nextInt();
 
@@ -133,7 +132,7 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 
 		System.out.println("lets click on share gear icon");
 
-		sharepage sharenode = new sharepage(driver);
+		sharepage sharenode = new sharepage();
 
 //		sharenode.getlistofshareOptions("print");
 //
@@ -145,11 +144,11 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 
 		designPage.clickNextButton();
 
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
 
 		reviewPage.clickNextButton();
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		CheckoutPage checkoutPage = new CheckoutPage();
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 

@@ -51,13 +51,13 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		log = logger.getlogger();
 
-		login = new loginpage(driver);
+		login = new loginpage();
 
 		log.info("login with valid credential");
 
 		login.loginwithCredential("pputest@gmail.com", "ppu12345");
 
-		creatEvent = new creatEventPage(driver);
+		creatEvent = new creatEventPage();
 
 		log.info("click on create event button");
 
@@ -65,19 +65,19 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		Thread.sleep(2000);
 
-		packageselect = new packagePage(driver);
+		packageselect = new packagePage();
 
 		log.info("select the package");
 
 		packageselect.clickOnPackage();
 
-		packageDetails = new packageDetails(driver);
+		packageDetails = new packageDetails();
 
 		log.info("select month and pro options");
 
 		packageDetails.selectPackage("MONTH", "Pro");
 
-		eventDetails = new eventDetailsPage(driver);
+		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
 		int number = ran.nextInt();
@@ -92,7 +92,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 		String name = "TestGifsharing" + String.valueOf(number);;
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-		designPage = new boothDesignPage(driver);
+		designPage = new boothDesignPage();
 
 		log.info("drag photo in Boothdesign");
 
@@ -101,7 +101,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		designPage.clickonGifGearIcon();
 
-		GifPage gifPage = new GifPage(driver);
+		GifPage gifPage = new GifPage();
 
 		//Thread.sleep(1500);
 
@@ -117,7 +117,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		log.info("fill the neccessory details in gif");
 
-		createGifPage createGif = new createGifPage(driver);
+		createGifPage createGif = new createGifPage();
 
 		createGif.createGifwithOverlay(nameofGif);
 		
@@ -127,7 +127,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		designPage.clickonShareGearIcon();
 
-		sharepage sharenode = new sharepage(driver);
+		sharepage sharenode = new sharepage();
 
 		log.info("select the share options ");
 
@@ -136,12 +136,12 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 		designPage.clickNextButton();
 
 		log.info("click on next button");
-		reviewPage = new reviewPage(driver);
+		reviewPage = new reviewPage();
 
-		TakescreenShotUtils.GetScreenShot(driver);
+		TakescreenShotUtils.GetScreenShot(driver,"nextbutton");
 		reviewPage.clickNextButton();
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
+		CheckoutPage checkoutPage = new CheckoutPage();
 
 		log.info("fill the neccessory data ");
 

@@ -14,19 +14,22 @@ import org.openqa.selenium.io.FileHandler;
 
 public class TakescreenShotUtils {
 
-	public static String path=System.getProperty("user.dir")+"\\ScreenShotlist\\ShotScreen";
+	protected static String path="C:\\Users\\webca\\eclipse-workspace\\Laphotoparty\\screen\\";
+		//	System.getProperty("user.dir")+"\\ScreenShotlist\\ShotScreen";
+	
 	
 
-	public static void GetScreenShot(WebDriver driver) throws IOException {
+	public static void GetScreenShot(WebDriver driver,String name) throws IOException {
 
 		
 		try {
+			
 			Date date = new Date();
 
 			SimpleDateFormat formatter = new SimpleDateFormat("dd-mm-yyyy");
 			String dateFormate = formatter.format(date);
 
-			String pathdesti=path+dateFormate+".png";
+			String pathdesti=path+name+".png";
 			
 			TakesScreenshot tc=(TakesScreenshot)driver;
 			

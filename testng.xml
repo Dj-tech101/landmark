@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_Smugmug"/>
-      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_EmailShare"/>
+      <class name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_Event_Photo_Test_WithPaylater2"/>
+      <class name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_PhotoTemplate_ValdiationMessage"/>
+      <class name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_PhotoTemplate_Share"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
