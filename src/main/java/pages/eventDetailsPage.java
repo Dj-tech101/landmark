@@ -51,7 +51,7 @@ public class eventDetailsPage extends controlAction {
 
 	public void startNowRadioButton() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		js = (JavascriptExecutor) driver;
 
@@ -79,7 +79,7 @@ public class eventDetailsPage extends controlAction {
 
 	public void clickonCountryButton() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(3));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		js = (JavascriptExecutor) driver;
 

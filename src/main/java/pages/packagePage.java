@@ -88,7 +88,7 @@ public class packagePage  extends controlAction{
 	
 	public void clickOnPackage() {
 		
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		
 		wait.until(ExpectedConditions.visibilityOf(ChangePackage)).click();
 

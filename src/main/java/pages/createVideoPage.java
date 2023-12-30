@@ -41,8 +41,8 @@ public class createVideoPage extends controlAction {
 
 	public void sendVideoname(String name) {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		wait.until(ExpectedConditions.visibilityOf(nameField)).sendKeys(name);
 
@@ -56,7 +56,7 @@ public class createVideoPage extends controlAction {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMillis(3));
+		wait = new WebDriverWait(driver, Duration.ofMillis(1));
 		try {
 			Thread.sleep(2000);
 			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(openFileForOverlay));
@@ -81,9 +81,9 @@ public class createVideoPage extends controlAction {
 
 		Thread.sleep(4000);
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.elementToBeClickable(nextButton));
 		;
@@ -99,7 +99,7 @@ public class createVideoPage extends controlAction {
 
 	public void clickonSaveButton() throws InterruptedException {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(4));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 //		FluentWait<WebDriver> waitfluent = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
 //				.pollingEvery(Duration.ofMinutes(1))
@@ -108,7 +108,7 @@ public class createVideoPage extends controlAction {
 //
 //		WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(saveButton));
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		js = (JavascriptExecutor) driver;
 
@@ -128,8 +128,8 @@ public class createVideoPage extends controlAction {
 		Random ran = new Random();
 		int number=ran.nextInt(15);
 		
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		wait.until(ExpectedConditions.visibilityOf(lenthField)).sendKeys(String.valueOf(number));
 

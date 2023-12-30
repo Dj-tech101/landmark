@@ -69,9 +69,9 @@ public class GifPage extends controlAction {
 	public void clickOnClosedGifWindow(String expectedname) throws InterruptedException {
 
 	
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(3));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		Thread.sleep(2500);
 

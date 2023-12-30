@@ -60,7 +60,7 @@ public class createPhotoPage extends controlAction{
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMillis(3));
+		wait = new WebDriverWait(driver, Duration.ofMillis(1));
 		try {
 			Thread.sleep(3000);
 			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(openFileForOverlay));
@@ -195,7 +195,7 @@ public class createPhotoPage extends controlAction{
 
 	public void clickonaddPhotoTemplatePlace() throws InterruptedException {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(1000));
 
@@ -215,7 +215,7 @@ public class createPhotoPage extends controlAction{
 	
 	public String getValidationText() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		
 		String text=wait.until(ExpectedConditions.elementToBeClickable(ValidationmessagePhototemplate)).getText();
 

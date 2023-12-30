@@ -58,7 +58,7 @@ public class boothDesignPage extends controlAction {
 
 	public void clickNextButton() {
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1));
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(1500));
 
@@ -96,11 +96,11 @@ public class boothDesignPage extends controlAction {
 
 		Thread.sleep(3000);
 		try {
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 			Actions act = new Actions(driver);
 
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(3));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 			WebElement source = wait.until(ExpectedConditions.visibilityOf(sharesource));
 			WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
@@ -161,7 +161,7 @@ public class boothDesignPage extends controlAction {
 
 	public void clickonPhotoGearIcon() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement gear = wait.until(ExpectedConditions.elementToBeClickable(photoGearIcon));
 
@@ -200,7 +200,7 @@ public class boothDesignPage extends controlAction {
 
 	public void clickonCustomeInsertGearIcon() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement gear = wait.until(ExpectedConditions.elementToBeClickable(gearIcon));
 
@@ -220,7 +220,7 @@ public class boothDesignPage extends controlAction {
 
 	public void clickonGifGearIcon() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement gear = wait.until(ExpectedConditions.elementToBeClickable(photoGearIcon));
 
@@ -269,7 +269,7 @@ public class boothDesignPage extends controlAction {
 
 	public void clickonVideoGearIcon() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement gear = wait.until(ExpectedConditions.elementToBeClickable(photoGearIcon));
 
@@ -292,11 +292,11 @@ public class boothDesignPage extends controlAction {
 
 		Thread.sleep(2000);
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		Actions act = new Actions(driver);
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(3));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement source = wait.until(ExpectedConditions.visibilityOf(previewsource));
 		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
@@ -311,11 +311,11 @@ public class boothDesignPage extends controlAction {
 
 		Thread.sleep(2000);
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		Actions act = new Actions(driver);
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(3));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement source = wait.until(ExpectedConditions.visibilityOf(CustomeInsertNode));
 		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));

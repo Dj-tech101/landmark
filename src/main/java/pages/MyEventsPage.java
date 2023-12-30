@@ -42,9 +42,9 @@ public class MyEventsPage extends controlAction {
 
 		// Thread.sleep(3000);
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(5));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(3));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(eventName));
 

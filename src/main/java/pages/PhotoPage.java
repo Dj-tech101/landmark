@@ -42,7 +42,7 @@ public class PhotoPage extends controlAction {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(3));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.elementToBeClickable(createPhotoButton));
 
@@ -62,7 +62,7 @@ public class PhotoPage extends controlAction {
 
 	public void clickOnSingleImageButton() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(singleImgaeButton));
@@ -77,14 +77,14 @@ public class PhotoPage extends controlAction {
 
 	public void clickOnPhotoTemplateButton() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(PhotoTempalteButton));
 
 		Actions act = new Actions(driver);
 		act.click(e1).perform();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 		
 
 	}
@@ -97,9 +97,9 @@ public class PhotoPage extends controlAction {
 
 	public void clickOnClosedPhotoWindow(String expectedname) {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(3));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement element = wait.until(ExpectedConditions.visibilityOf(closedPhotoButton));
 

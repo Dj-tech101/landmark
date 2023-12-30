@@ -65,7 +65,7 @@ public abstract class controlAction {
 			}
 		}
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 	}
 
 	protected void setText() {

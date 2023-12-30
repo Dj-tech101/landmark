@@ -46,7 +46,7 @@ public class creatEventPage extends controlAction {
 	}
 
 	public void HandleAlert() {
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 

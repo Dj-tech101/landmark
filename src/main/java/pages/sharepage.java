@@ -54,7 +54,7 @@ public class sharepage extends controlAction {
 		
 		for (WebElement shareList : listOfShareOptions) {
 
-			wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 			wait.until(ExpectedConditions.visibilityOfAllElements(listOfShareOptions));
 
@@ -75,7 +75,7 @@ public class sharepage extends controlAction {
 
 		loadpage(2);
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(printSwitch));
 
@@ -90,10 +90,10 @@ public class sharepage extends controlAction {
 
 	public void clickOnClosedPhotoWindow() throws IOException {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		try {
-			wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 			WebElement element = wait.until(ExpectedConditions.visibilityOf(closedPhotoButton));
 
@@ -139,7 +139,7 @@ public class sharepage extends controlAction {
 
 	public void SendNameField() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(nameField));
 
@@ -172,7 +172,7 @@ public class sharepage extends controlAction {
 
 		sharenode.clickonPrintSwitch();
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		Thread.sleep(500);
 		//TakescreenShotUtils.GetScreenShot(driver);
 		sharenode.clickOnClosedPhotoWindow();

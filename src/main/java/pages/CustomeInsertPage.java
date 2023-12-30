@@ -57,7 +57,7 @@ public class CustomeInsertPage extends controlAction {
 
 	public void clickOnClosedCustomeInsertWindow() throws IOException {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(3));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		try {
 

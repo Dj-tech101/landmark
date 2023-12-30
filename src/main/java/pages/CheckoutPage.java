@@ -39,7 +39,7 @@ public class CheckoutPage extends controlAction {
 
 	public static void sendFirstName(String name) {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 
@@ -59,7 +59,7 @@ public class CheckoutPage extends controlAction {
 
 	public static void sendLastName(String name) {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 
@@ -78,7 +78,7 @@ public class CheckoutPage extends controlAction {
 	static WebElement zip;
 
 	public static void sendZip(String zipvalue) throws InterruptedException {
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 //		System.out.println("enter zip number");
 		zip.sendKeys(zipvalue);
@@ -91,7 +91,7 @@ public class CheckoutPage extends controlAction {
 
 	public static void selectCardType() {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 
@@ -122,7 +122,7 @@ public class CheckoutPage extends controlAction {
 
 	public static void sendCsv(String cardNumberDat) {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 
@@ -144,7 +144,7 @@ public class CheckoutPage extends controlAction {
 
 	public static void selectExpireMonth(int Month) {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 
@@ -187,7 +187,7 @@ public class CheckoutPage extends controlAction {
 
 	public static void selectExpireYear(String year) {
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		try {
 
@@ -277,7 +277,7 @@ public class CheckoutPage extends controlAction {
 		} else {
 
 			try {
-				wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+				wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 				WebElement element = wait.until(ExpectedConditions.visibilityOf(saveNow));
 

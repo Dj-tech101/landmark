@@ -222,7 +222,7 @@ public class packageDetails extends controlAction {
 	WebElement GreenScreenToggle;
 
 	public void switchGreenScreenToggle() {
-		wait = new WebDriverWait(driver, Duration.ofMinutes(5));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		wait.until(ExpectedConditions.visibilityOf(GreenScreenToggle)).click();
 	}

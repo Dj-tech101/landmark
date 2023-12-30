@@ -30,7 +30,7 @@ public class baseclass {
 	@AfterMethod
 	public void tearDown() throws IOException {
 
-		//controlAction.closeBrowser();
+		controlAction.closeBrowser();
 	}
 
 }

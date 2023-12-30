@@ -41,7 +41,7 @@ public class previewPage extends controlAction {
 	public void clickonPreviewSwitch() {
 
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(previewToggle));
 
@@ -56,10 +56,10 @@ public class previewPage extends controlAction {
 
 	public void clickOnClosedPreviewWindow() throws IOException {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		try {
-			wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 			WebElement element = wait.until(ExpectedConditions.visibilityOf(closedPhotoButton));
 

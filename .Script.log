@@ -4469,3 +4469,36 @@
 2023-12-27 19:27:29 INFO  logger:88 - click on edit button
 2023-12-27 19:27:29 INFO  logger:94 - copy button click
 2023-12-27 19:27:37 INFO  logger:68 - login with valid credential
+2023-12-30 16:32:31 INFO  logger:66 - login with valid credential
+2023-12-30 16:32:34 INFO  logger:72 - click on create event button
+2023-12-30 16:32:45 INFO  logger:80 - select the package
+2023-12-30 16:32:45 INFO  logger:86 - select month and pro options
+2023-12-30 16:32:49 INFO  logger:95 - fill the event details
+2023-12-30 16:32:54 INFO  logger:102 - drag Gif in Boothdesign
+2023-12-30 16:32:57 INFO  logger:115 - create new photo
+2023-12-30 16:32:57 INFO  logger:123 - select the new  photo template  options
+2023-12-30 16:33:08 INFO  logger:137 - select the share options 
+2023-12-30 16:33:10 INFO  logger:143 - click on next button
+2023-12-30 16:33:11 INFO  logger:150 - fill the neccessory data 
+2023-12-30 16:33:16 INFO  logger:156 - Search Event 
+2023-12-30 16:33:16 INFO  logger:162 - assser the valid data for new  event 
+2023-12-30 16:33:22 INFO  logger:59 - login with valid credential
+2023-12-30 16:33:25 INFO  logger:66 - click on create new event button
+2023-12-30 16:33:32 INFO  logger:73 - click on package
+2023-12-30 16:33:32 INFO  logger:79 - select package
+2023-12-30 16:33:36 INFO  logger:90 - fill necccessory data
+2023-12-30 16:33:44 INFO  logger:106 - create new photo
+2023-12-30 16:33:44 INFO  logger:114 - select the new  photo template  options
+2023-12-30 16:33:48 INFO  logger:59 - login with valid credential
+2023-12-30 16:34:31 INFO  logger:59 - login with valid credential
+2023-12-30 16:36:07 INFO  logger:59 - login with valid credential
+2023-12-30 16:36:34 INFO  logger:57 - login with valid credential
+2023-12-30 16:36:48 INFO  logger:64 - click on create new event button
+2023-12-30 16:38:34 INFO  logger:71 - click on package
+2023-12-30 16:38:34 INFO  logger:77 - select package
+2023-12-30 16:38:37 INFO  logger:88 - fill necccessory data
+2023-12-30 16:38:46 INFO  logger:105 - create new photo
+2023-12-30 16:38:46 INFO  logger:113 - select the new  photo template  options
+2023-12-30 16:38:54 INFO  logger:120 - create Sahre node 
+2023-12-30 16:38:59 INFO  logger:130 - click on next button
+2023-12-30 16:39:00 INFO  logger:140 - fill credit details
