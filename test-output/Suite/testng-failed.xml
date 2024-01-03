@@ -3,13 +3,29 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="demo_testCases.PPUSmoke_Create_Event_Video_TestPPu2">
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest">
         <methods>
+          <include name="Create_Event_Video_EditTest"/>
           <include name="setup"/>
-          <include name="Validate_Creation_event_with_Video"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- demo_testCases.PPUSmoke_Create_Event_Video_TestPPu2 -->
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest -->
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy">
+        <methods>
+          <include name="validateCopyFunction"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="Validate_Creation_event_with_Gif_with_Paylater"/>
+        </methods>
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy -->
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest">
+        <methods>
+          <include name="validateCopyFunction"/>
+          <include name="Create_Event_Photo_copyTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

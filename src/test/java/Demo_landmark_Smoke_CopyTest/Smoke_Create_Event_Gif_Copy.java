@@ -1,138 +1,140 @@
 package Demo_landmark_Smoke_CopyTest;
-
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 import java.util.Random;
 
-import org.apache.log4j.Logger;
-import org.testng.ITestResult;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
-import Utility.TakescreenShotUtils;
 import Utility.logger;
 import Utility.propertyFile;
-import base.controlAction;
-import dev.failsafe.internal.util.Assert;
 import pages.CheckoutPage;
 import pages.GifPage;
 import pages.MyEventsPage;
-import pages.PhotoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
 import pages.createGifPage;
-import pages.createPhotoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
-import pages.packageDetails;
 import pages.packagePage;
-import pages.reviewPage;
 import pages.sharepage;
+
 
 public class Smoke_Create_Event_Gif_Copy extends baseclass {
 
-	// public Web ;
+    private loginpage login;
+    private creatEventPage creatEvent;
+    private packagePage packageselect;
+    private pages.packageDetails packageDetails;
+    private eventDetailsPage eventDetails;
+    private boothDesignPage designPage;
+    private pages.reviewPage reviewPage;
+    private MyEventsPage myEvents;
+    private org.apache.log4j.Logger log;
+    private propertyFile property;
+    
+    public String eventNameUse;
 
-	public loginpage login;
-	public creatEventPage creatEvent;
-	public packagePage packageselect;
+    @Test
+    public void verifyCreationOfGif() throws IOException, InterruptedException {
+        property = new propertyFile();
+        log = logger.getlogger();
 
-	public packageDetails packageDetails;
+        login = new loginpage();
+        log.info("Logging in with valid credentials");
+        login.loginwithCredential(property.getusername(), property.getpassword());
 
-	public eventDetailsPage eventDetails;
+        creatEvent = new creatEventPage();
+        log.info("Clicking on create event button");
+        creatEvent.clickoncreatEventButton();
+        Thread.sleep(3000);
 
-	public boothDesignPage designPage;
+        packageselect = new packagePage();
+        log.info("Selecting the package");
+        packageselect.clickOnPackage();
 
-	public reviewPage reviewPage;
+        packageDetails = new pages.packageDetails();
+        log.info("Selecting package options");
+        packageDetails.selectPackage("PER EVENT", "Pro");
 
-	public MyEventsPage myEvents;
+        eventDetails = new eventDetailsPage();
+        log.info("Filling event details");
+        fillEventDetails(eventDetails);
 
-	public Logger log;
-	public propertyFile pro;
-	
-	public String EventnameUse;
-	
+        designPage = new boothDesignPage();
+        log.info("Dragging and dropping Gif node");
+        dragAndDropGifNode(designPage);
 
-//groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class
-	@Test()
-	public void Validate_Creation_event_with_Gif_with_Paylater() throws InterruptedException, IOException {
+        designPage.clickonGifGearIcon();
+        log.info("Creating new Gif");
+        createNewGif(designPage);
 
-		pro = new propertyFile();
+        designPage.dragAndDropShare();
+        designPage.clickonShareGearIcon();
+        log.info("Creating new Share node");
+        createNewShareNode(designPage);
 
-		log = logger.getlogger();
+        log.info("Reviewing and checking out");
+        reviewAndCheckout();
+    }
 
-		//controlAction.minimizeBrowser();
-		login = new loginpage();
-
-		log.info("login with valid credential");
-
-		login.loginwithCredential(pro.getusername(), pro.getpassword());
-		
-//
-//
-		packageselect = new packagePage();
-//
-		eventDetails = new eventDetailsPage();
-		log.info("Search Event ");
-
-		myEvents = new MyEventsPage();
-		
-		EventnameUse="Test paylater for photo -2122472000";
-		
-
-		myEvents.serachEventsAction(EventnameUse);
-
-		log.info("click on edit button");
-
-	}
-
-	@Test(dependsOnMethods = "Validate_Creation_event_with_Gif_with_Paylater")
-	public void validateCopyFunction() throws InterruptedException {
-		log.info("copy button click");
-
-		Random ran= new Random();
-		
-		
-		String NeweventName="copyEvent"+EventnameUse+String.valueOf(ran.nextInt(120));
-		myEvents.copyExistEvent(NeweventName);
-		
-		log.info("click on next button");
-
-		packageselect.clickNextButton();
-		
-		log.info("foll date oonly");
-		eventDetails.copyEventFillNeccessoryDetailsForEvent();
-		
-		designPage= new  boothDesignPage();
-		
-		designPage.clickNextButton();
-
-		log.info("click on next button");
-		reviewPage = new reviewPage();
-
-		reviewPage.clickNextButton();
-
-		CheckoutPage checkoutPage = new CheckoutPage();
-
-		log.info("fill the neccessory data ");
-
-		checkoutPage.clickOnPayLaterButton();
-
-		Thread.sleep(4000);
-		
-		
-		log.info("Search Event ");
+    private void fillEventDetails(eventDetailsPage eventDetails) throws InterruptedException {
+        Random ran = new Random();
+        int number = ran.nextInt(100);
+         eventNameUse = "Test copy for gif " + String.valueOf(number);
+        eventDetails.PaylaterFillNeccessoryDetailsForEvent(eventNameUse);
+    }
 
 
-		myEvents.serachEventsAction(NeweventName);
+    private void dragAndDropGifNode(boothDesignPage designPage) {
+        designPage.dragAndDropGifNode();
+    }
 
-		
-		
-		
-		
+    private void createNewGif(boothDesignPage designPage) throws InterruptedException, IOException {
+        GifPage gifPage = new GifPage();
+        int value = new Random().nextInt();
+        String gifName = "gifName" + String.valueOf(value);
+        gifPage.clickonCreateGifButton();
+        createGifPage createGif = new createGifPage();
+        createGif.createGifwithOverlay(gifName);
+    }
 
-	}
+    private void createNewShareNode(boothDesignPage designPage) throws IOException {
+        sharepage shareNode = new sharepage();
+        log.info("Selecting the share options");
+        shareNode.CreateNewShareNode("print");
+    }
+
+    private void reviewAndCheckout() throws InterruptedException {
+        designPage.clickNextButton();
+
+        reviewPage = new pages.reviewPage();
+        reviewPage.clickNextButton();
+
+        CheckoutPage checkoutPage = new CheckoutPage();
+        log.info("Filling necessary checkout data");
+        checkoutPage.clickOnPayLaterButton();
+
+        Thread.sleep(4000);
+
+        myEvents = new MyEventsPage();
+        log.info("Searching for the event");
+        myEvents.serachEventsAction(eventNameUse);
+    }
+
+    @Test(dependsOnMethods = "verifyCreationOfGif")
+    public void validateCopyFunction() throws InterruptedException {
+        log.info("Copy button click");
+
+        Random ran = new Random();
+        String newEventName = "copyEvent" + eventNameUse + String.valueOf(ran.nextInt(120));
+        myEvents.copyExistEvent(newEventName);
+
+        packageselect.clickNextButton();
+        eventDetails.copyEventFillNeccessoryDetailsForEvent();
+
+        designPage = new boothDesignPage();
+        designPage.clickNextButton();
+
+        reviewAndCheckout();
+    }
 }

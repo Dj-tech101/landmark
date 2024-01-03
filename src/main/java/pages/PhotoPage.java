@@ -67,8 +67,9 @@ public class PhotoPage extends controlAction {
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(singleImgaeButton));
 
+		
 		Actions act = new Actions(driver);
-		act.click(e1).perform();
+		act.click(waitForElementToBeVisible(singleImgaeButton)).perform();
 
 	}
 
@@ -83,7 +84,7 @@ public class PhotoPage extends controlAction {
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(PhotoTempalteButton));
 
 		Actions act = new Actions(driver);
-		act.click(e1).perform();
+		act.click(waitForElementToBeVisible(PhotoTempalteButton)).perform();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 		
 

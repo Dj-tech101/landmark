@@ -94,7 +94,7 @@ public class createPhotoPage extends controlAction{
 
 			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(GreenScreenToggle));
 
-			String areaChecked = e2.getAttribute("aria-checked");
+			String areaChecked = waitForElementToBeVisible(GreenScreenToggle).getAttribute("aria-checked");
 			if (CheckedGreenScreenToggle()) {
 				System.out.println("Toggle is on");
 			} else {
@@ -148,7 +148,7 @@ public class createPhotoPage extends controlAction{
 
 			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(GreenScreenToggle));
 
-			String areaChecked = e2.getAttribute("aria-checked");
+			String areaChecked = waitForElementToBeVisible(GreenScreenToggle).getAttribute("aria-checked");
 
 			if (areaChecked.equals("true")) {
 

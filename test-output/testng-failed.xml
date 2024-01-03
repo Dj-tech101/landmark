@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest">
+      <class name="Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality">
         <methods>
-          <include name="validateCopyFunction"/>
-          <include name="Create_Event_Photo_copyTest"/>
+          <include name="SearchUserFunctionTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest -->
+      </class> <!-- Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

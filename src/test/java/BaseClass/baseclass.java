@@ -27,10 +27,10 @@ public class baseclass {
 		controlAction.launchBrowser();
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void tearDown() throws IOException {
 
-		controlAction.closeBrowser();
+		//controlAction.closeBrowser();
 	}
 
 }

@@ -36,32 +36,38 @@ import pages.sharepage;
 
 public class Smoke_Create_Event_Video_editTest extends baseclass {
 
-	// public Web ;
+	private loginpage login;
+	private creatEventPage creatEvent;
+	private packagePage packageselect;
 
-	public loginpage login;
-	public creatEventPage creatEvent;
-	public packagePage packageselect;
+	private packageDetails packageDetails;
 
-	public packageDetails packageDetails;
+	private eventDetailsPage eventDetails;
 
-	public eventDetailsPage eventDetails;
+	private boothDesignPage designPage;
 
-	public boothDesignPage designPage;
+	private reviewPage reviewPage;
 
-	public reviewPage reviewPage;
+	private MyEventsPage myEvents;
 
-	public MyEventsPage myEvents;
-	
-	public Logger log;
-	public propertyFile pro;
+	private Logger log;
+	private propertyFile pro;
+
+	public Random ran;
+
+	private String EventnameUse;
+
 //groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class
 	@Test()
 
 	public void Create_Event_Video_EditTest() throws InterruptedException, IOException {
 
-		pro= new propertyFile();
-		
+		// property use
+		pro = new propertyFile();
+
 		log = logger.getlogger();
+
+		// login functionality
 
 		login = new loginpage();
 
@@ -69,48 +75,68 @@ public class Smoke_Create_Event_Video_editTest extends baseclass {
 
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
+		// create event functionality
 		creatEvent = new creatEventPage();
 
-		log.info("click on create event button");
+		clickOncreateEventButton(creatEvent);
 
-		creatEvent.clickoncreatEventButton();
-
-		Thread.sleep(3000);
+		// package selection
 
 		packageselect = new packagePage();
+		packageSelection(packageselect);
 
-		log.info("select the package");
-
-		packageselect.clickOnPackage();
-
-		packageDetails = new packageDetails();
-
-		log.info("select month and pro options");
-
-		packageDetails.selectPackage("PER EVENT", "Pro");
+		// Event details
 
 		eventDetails = new eventDetailsPage();
-		Random ran = new Random();
 
-		int number = ran.nextInt();
+		fillEventDetails(eventDetails);
 
-		log.info("fill the event details");
+		// **************PHOTO NODE *****************
 
-		String name = "Test paylater for video " + String.valueOf(number);
-
-		eventDetails.PaylaterFillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage();
 
-		log.info("drag Gif in Boothdesign");
-
-		
-		//**************VIDEO NODE *****************
-		
 		designPage.createVideoNode();
-		
-		//***********SHARE NODE*************
-		
-		
+
+		// ***********SHARE NODE*************
+
+		createShareDesign(designPage);
+
+		// Review page
+
+		reviewAndCheckoutPage();
+
+	}
+
+	private void reviewAndCheckoutPage() throws InterruptedException {
+		// TODO Auto-generated method stub
+		reviewPage = new pages.reviewPage();
+		reviewPage.clickNextButton();
+
+		CheckoutPage checkoutPage = new CheckoutPage();
+		log.info("Filling necessary checkout data");
+		checkoutPage.clickOnPayLaterButton();
+
+		Thread.sleep(4000);
+
+		myEvents = new MyEventsPage();
+		log.info("Searching for the event");
+		myEvents.serachEventsAction(EventnameUse);
+	}
+
+	private void ClickonSaveButtonForCopy() throws InterruptedException {
+		// TODO Auto-generated method stub
+		reviewPage = new pages.reviewPage();
+		reviewPage.clickNextButton();
+
+
+		Thread.sleep(4000);
+
+		myEvents = new MyEventsPage();
+		log.info("Searching for the event");
+		myEvents.serachEventsAction(EventnameUse);
+	}
+	private void createShareDesign(boothDesignPage designPage2) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
@@ -124,31 +150,58 @@ public class Smoke_Create_Event_Video_editTest extends baseclass {
 		designPage.clickNextButton();
 
 		log.info("click on next button");
-		reviewPage = new reviewPage();
 
-		reviewPage.clickNextButton();
+	}
 
-		CheckoutPage checkoutPage = new CheckoutPage();
+	private void fillEventDetails(eventDetailsPage eventDetails2) throws InterruptedException {
+		ran = new Random();
 
-		log.info("fill the neccessory data ");
+		int number = ran.nextInt();
 
-		checkoutPage.clickOnPayLaterButton();
+		log.info("fill the event details");
 
-		Thread.sleep(4000);
-		
-		log.info("Search Event ");
-		
-		myEvents =new MyEventsPage();
-		
-		myEvents.serachEventsAction(name);
+		EventnameUse = "TestVideoCopy" + String.valueOf(number);
 
-		log.info("click on edit button");
-		
-		myEvents.clickOnEditButton();
-		
-		controlAction.takeScreenshot("test video edit event");
-		
-		org.testng.Assert.assertEquals("Video", designPage.getVideoNodeText());
+		eventDetails.PaylaterFillNeccessoryDetailsForEvent(EventnameUse);
 
+	}
+
+	private void clickOncreateEventButton(creatEventPage creatEvent) throws InterruptedException {
+		log.info("click on create event button");
+
+		creatEvent.clickoncreatEventButton();
+
+		Thread.sleep(3000);
+	}
+
+	private void packageSelection(packagePage packageselect) throws InterruptedException {
+		log.info("select the package");
+
+		packageselect.clickOnPackage();
+
+		packageDetails = new packageDetails();
+
+		log.info("select month and pro options");
+
+		packageDetails.selectPackage("PER EVENT", "Pro");
+
+	}
+
+	@Test(dependsOnMethods = "Create_Event_Video_EditTest")
+	public void validateCopyFunction() throws InterruptedException {
+
+		log.info("Copy button click");
+
+		Random ran = new Random();
+		String newEventName = "copyEvent" + EventnameUse + String.valueOf(ran.nextInt(120));
+		myEvents.copyExistEvent(newEventName);
+
+		packageselect.clickNextButton();
+		eventDetails.copyEventFillNeccessoryDetailsForEvent();
+
+		designPage = new boothDesignPage();
+		designPage.clickNextButton();
+
+		ClickonSaveButtonForCopy();
 	}
 }

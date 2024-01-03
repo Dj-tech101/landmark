@@ -52,7 +52,7 @@ public abstract class controlAction {
 				driver.get(propOperations.getUrl());
 
 				// Check if a condition indicating a successful load is met
-				if (driver.getCurrentUrl().equals("https://lkdev.photopartyupload.com/Account/LogOnFromUser")) {
+				if (driver.getCurrentUrl().contains("photopartyupload.com/Account/LogOnFromUser")) {
 					System.out.println("Page loaded successfully.");
 					break; // Break out of the loop if successful
 				}
@@ -65,7 +65,7 @@ public abstract class controlAction {
 			}
 		}
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+		wait = new WebDriverWait(driver, Duration.ofMinutes(2));
 	}
 
 	protected void setText() {
@@ -199,6 +199,12 @@ public abstract class controlAction {
 		}
 	}
 
+	
+	
+	protected static void waitUntillVsibilityOfAllElement(List<WebElement>listogele) {
+		
+		wait.until(ExpectedConditions.visibilityOfAllElements(listogele));
+	}
    public static void minimizeBrowser() {
 		
 		driver.manage().window().minimize();
@@ -213,7 +219,7 @@ public abstract class controlAction {
 		try {
 			Date date = new Date();
 
-			SimpleDateFormat formatter = new SimpleDateFormat("dd-mm");
+			SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd");
 			String dateFormate = formatter.format(date);
 
 			FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screen\\" + fileName+dateFormate + ".png"));

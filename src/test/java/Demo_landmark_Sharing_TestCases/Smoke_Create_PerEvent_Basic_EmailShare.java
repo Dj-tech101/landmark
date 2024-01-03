@@ -53,6 +53,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 		log = logger.getlogger();
 
 		log.info("login with valid credential");
+		
 		login = new loginpage();
 
 		login.loginwithCredential(pro.getusername(), pro.getpassword());

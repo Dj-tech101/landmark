@@ -23,7 +23,7 @@ import base.controlAction;
 
 public class createVideoPage extends controlAction {
 
-	//public WebDriver driver;
+	// public WebDriver driver;
 	public WebDriverWait wait;
 
 	public JavascriptExecutor js;
@@ -31,7 +31,7 @@ public class createVideoPage extends controlAction {
 	public createVideoPage() {
 		// TODO Auto-generated constructor stub
 
-	//	this.driver = driver;
+		// this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
@@ -80,7 +80,7 @@ public class createVideoPage extends controlAction {
 	public void clickNextButton() throws InterruptedException {
 
 		Thread.sleep(4000);
-		
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1));
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -118,24 +118,27 @@ public class createVideoPage extends controlAction {
 
 	}
 
-	
 	@FindBy(xpath = "//input[@name='Length']")
 
 	WebElement lenthField;
-	
+
 	public void sendLength() {
+		for (int i = 0; i < 2; i++) {
 
-		Random ran = new Random();
-		int number=ran.nextInt(15);
-		
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
-		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+			Random ran = new Random();
+			int number = ran.nextInt(15);
 
-		wait.until(ExpectedConditions.visibilityOf(lenthField)).sendKeys(String.valueOf(number));
+			if (number != 0) {
+				driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+				wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
+				wait.until(ExpectedConditions.visibilityOf(lenthField)).sendKeys(String.valueOf(number));
+				break;
+			}
+
+		}
 	}
-	
-	
+
 	public void createGifwithOverlay(String name) throws IOException, InterruptedException {
 
 		createVideoPage video = new createVideoPage();
@@ -143,16 +146,14 @@ public class createVideoPage extends controlAction {
 		video.sendVideoname(name);
 
 		video.sendKeysOverlayField();
-		
-		
 
 		video.clickNextButton();
 		video.sendLength();
 //		
 		video.clickonSaveButton();
-		
+
 		VideoPage videoPage = new VideoPage();
-		
+
 		videoPage.clickOnClosedGifWindow(name);
 //		
 

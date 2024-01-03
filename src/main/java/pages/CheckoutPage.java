@@ -222,6 +222,8 @@ public class CheckoutPage extends controlAction {
 		}
 
 	}
+	
+	
 
 	@FindBy(xpath = "//button[contains(text(),'PAY NOW ')]")
 	WebElement PayNowButton;

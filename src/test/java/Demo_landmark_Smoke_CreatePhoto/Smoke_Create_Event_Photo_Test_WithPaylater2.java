@@ -114,7 +114,6 @@ public class Smoke_Create_Event_Photo_Test_WithPaylater2 extends baseclass {
 
 		log.info("create new photo");
 
-		createPhotoPage createPhoto = new createPhotoPage();
 
 		int value = ran.nextInt();
 

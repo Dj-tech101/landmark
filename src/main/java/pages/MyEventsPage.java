@@ -71,7 +71,7 @@ public class MyEventsPage extends controlAction {
 
 		Actions act = new Actions(driver);
 
-		act.sendKeys(searchEventFiled, eventName).perform();
+		act.sendKeys((searchEventFiled), eventName).perform();
 
 		js = (JavascriptExecutor) driver;
 
@@ -93,7 +93,7 @@ public class MyEventsPage extends controlAction {
 
 		
 	}
-	@FindBy(xpath = "(//div[@class='row'])[4]/div[4]/a[2]")
+	@FindBy(xpath = "//a[@title='Copy']")
 	private WebElement CopyButton;
 	
 	public void clickOnCopyButton() throws InterruptedException {

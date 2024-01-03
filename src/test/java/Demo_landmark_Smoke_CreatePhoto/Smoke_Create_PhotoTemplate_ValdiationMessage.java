@@ -53,87 +53,69 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 	public void Validate_Creation_Phototemplate() throws InterruptedException, IOException {
 
 		pro = new propertyFile();
-
 		log = logger.getlogger();
 
-		log.info("login with valid credential");
+		// Log in with valid credentials
+		log.info("Login with valid credentials");
 		login = new loginpage();
-
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
+		// Navigate to create event page
 		creatEvent = new creatEventPage();
-
-		log.info("click on create new event button");
-
+		log.info("Click on create new event button");
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
+		// Select a package
 		packageselect = new packagePage();
-
-		log.info("click on package");
-
+		log.info("Click on package");
 		packageselect.clickOnPackage();
 
+		// Select package details
 		packageDetails = new packageDetails();
-
-		log.info("select package");
-
+		log.info("Select package");
 		packageDetails.selectPackage("PER YEAR", "Pro");
 
+		// Fill necessary event details
 		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
-
 		int number = ran.nextInt(100);
-
 		String name = "PhotoTemplateTest" + String.valueOf(number);
-
-		log.info("fill necccessory data");
-
+		log.info("Fill necessary data for the event");
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
+		// Navigate to booth design page
 		designPage = new boothDesignPage();
 
 		// ************ PHOTO NODE***************
 
+		// Drag and drop photo node
 		designPage.dragAndDropphotoNode();
 
+		// Click on photo gear icon
 		designPage.clickonPhotoGearIcon();
 
+		// Navigate to create photo page
 		PhotoPage photopage = new PhotoPage();
-
 		Thread.sleep(1500);
+		log.info("Create a new photo");
 
-		log.info("create new photo");
-
+		// Create a new photo
 		createPhotoPage createPhoto = new createPhotoPage();
-
 		int value = ran.nextInt();
-
 		String nameofphoto = "photonumber" + String.valueOf(value);
-
-		log.info("select the new  photo template  options");
-
+		log.info("Select the new photo template options");
 		photopage.clickonCreatePhotoButton();
-
 		photopage.clickOnPhotoTemplateButton();
-
 		createPhoto.sendNameTextField(nameofphoto);
-
-		// createPhoto.sendKeysBackgroundImage();
-
 		createPhoto.sendKeysOverlayField();
-
-		// createPhoto.clickonaddPhotoTemplatePlace();
-
 		createPhoto.clickonSaveButton();
 
-		String expectedMessage="Please add placeholders.";
-		
-		String actualMessage=createPhoto.getValidationText();
-		
+		// Validate that a message is displayed
+		String expectedMessage = "Please add placeholders.";
+		String actualMessage = createPhoto.getValidationText();
 		TakescreenShotUtils.GetScreenShot(driver, "Validationmessage");
 		org.testng.Assert.assertEquals(expectedMessage, actualMessage);
-		
 		// ************ SHARE NODE***************
 
 //		log.info("create Sahre node ");
