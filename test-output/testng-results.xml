@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="7" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-03T15:39:57 IST" name="Default suite" finished-at="2024-01-03T15:52:14 IST" duration-ms="736903">
+  <suite started-at="2024-01-05T14:26:35 IST" name="Suite" finished-at="2024-01-05T14:36:36 IST" duration-ms="601203">
     <groups>
     </groups>
-    <test started-at="2024-01-03T15:39:57 IST" name="Default test" finished-at="2024-01-03T15:52:14 IST" duration-ms="736903">
-      <class name="Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality@5b7a5baa]" started-at="2024-01-03T15:39:57 IST" name="setup" finished-at="2024-01-03T15:40:05 IST" duration-ms="8065" status="PASS">
+    <test started-at="2024-01-05T14:26:35 IST" name="smokeTestCases" finished-at="2024-01-05T14:27:06 IST" duration-ms="31279">
+      <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality@4c402120]" started-at="2024-01-05T14:26:35 IST" name="setup" finished-at="2024-01-05T14:26:44 IST" duration-ms="8846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b59d246]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="SearchUserFunctionTest()[pri:0, instance:Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality@5b7a5baa]" started-at="2024-01-03T15:40:05 IST" name="SearchUserFunctionTest" finished-at="2024-01-03T15:40:13 IST" duration-ms="7866" status="SKIP">
-          <exception class="java.lang.NumberFormatException">
+        <test-method signature="SearchEventNameFunction()[pri:0, instance:Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality@4c402120]" started-at="2024-01-05T14:26:44 IST" name="SearchEventNameFunction" finished-at="2024-01-05T14:27:05 IST" duration-ms="21715" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[For input string: "»»"]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "»»"
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-at java.base/java.lang.Integer.parseInt(Integer.java:665)
-at java.base/java.lang.Integer.parseInt(Integer.java:781)
-at Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality.SearchUserFunctionTest(VerifySAAdminShowAllEventsFunctionality.java:84)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality.SearchEventNameFunction(DemoSaAdminSearchFunctionality.java:71)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -50,261 +58,98 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchUserFunctionTest -->
-        <test-method retried="true" signature="SearchUserFunctionTest()[pri:0, instance:Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality@5b7a5baa]" started-at="2024-01-03T15:40:13 IST" name="SearchUserFunctionTest" finished-at="2024-01-03T15:44:13 IST" duration-ms="240206" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.91)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2ffe2eaa96a9d5ec543b54f4a43ae494, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.91, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52119}, msedge: {msedgedriverVersion: 120.0.2210.91 (f469d579f138..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 120.0.2210.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ffe2eaa96a9d5ec543b54f4a43ae494]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.91)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2ffe2eaa96a9d5ec543b54f4a43ae494, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.91, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52119}, msedge: {msedgedriverVersion: 120.0.2210.91 (f469d579f138..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 120.0.2210.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ffe2eaa96a9d5ec543b54f4a43ae494
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4230)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
-at java.base/java.lang.String.valueOf(String.java:4230)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at base.controlAction.waitForElementToBeVisible(controlAction.java:157)
-at pages.loginpage.passwordnamesendkey(loginpage.java:51)
-at pages.loginpage.loginwithCredential(loginpage.java:71)
-at Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality.SearchUserFunctionTest(VerifySAAdminShowAllEventsFunctionality.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        </test-method> <!-- SearchEventNameFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality@4c402120]" started-at="2024-01-05T14:27:05 IST" name="checkStatus" finished-at="2024-01-05T14:27:06 IST" duration-ms="431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality.SearchEventNameFunction() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SearchEventNameFunction status=FAILURE method=DemoSaAdminSearchFunctionality.SearchEventNameFunction()[pri:0, instance:Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality@4c402120] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchUserFunctionTest -->
-        <test-method retried="true" signature="SearchUserFunctionTest()[pri:0, instance:Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality@5b7a5baa]" started-at="2024-01-03T15:44:13 IST" name="SearchUserFunctionTest" finished-at="2024-01-03T15:48:13 IST" duration-ms="240303" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.91)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2ffe2eaa96a9d5ec543b54f4a43ae494, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.91, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52119}, msedge: {msedgedriverVersion: 120.0.2210.91 (f469d579f138..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 120.0.2210.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ffe2eaa96a9d5ec543b54f4a43ae494]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.91)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2ffe2eaa96a9d5ec543b54f4a43ae494, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.91, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52119}, msedge: {msedgedriverVersion: 120.0.2210.91 (f469d579f138..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 120.0.2210.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ffe2eaa96a9d5ec543b54f4a43ae494
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4230)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
-at java.base/java.lang.String.valueOf(String.java:4230)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at base.controlAction.waitForElementToBeVisible(controlAction.java:157)
-at pages.loginpage.passwordnamesendkey(loginpage.java:51)
-at pages.loginpage.loginwithCredential(loginpage.java:71)
-at Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality.SearchUserFunctionTest(VerifySAAdminShowAllEventsFunctionality.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchUserFunctionTest -->
-        <test-method signature="SearchUserFunctionTest()[pri:0, instance:Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality@5b7a5baa]" started-at="2024-01-03T15:48:13 IST" name="SearchUserFunctionTest" finished-at="2024-01-03T15:52:14 IST" duration-ms="240426" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.91)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2ffe2eaa96a9d5ec543b54f4a43ae494, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.91, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52119}, msedge: {msedgedriverVersion: 120.0.2210.91 (f469d579f138..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 120.0.2210.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ffe2eaa96a9d5ec543b54f4a43ae494]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.91)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2ffe2eaa96a9d5ec543b54f4a43ae494, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.91, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52119}, msedge: {msedgedriverVersion: 120.0.2210.91 (f469d579f138..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 120.0.2210.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ffe2eaa96a9d5ec543b54f4a43ae494
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4230)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
-at java.base/java.lang.String.valueOf(String.java:4230)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at base.controlAction.waitForElementToBeVisible(controlAction.java:157)
-at pages.loginpage.passwordnamesendkey(loginpage.java:51)
-at pages.loginpage.loginwithCredential(loginpage.java:71)
-at Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality.SearchUserFunctionTest(VerifySAAdminShowAllEventsFunctionality.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchUserFunctionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality@5b7a5baa]" started-at="2024-01-03T15:52:14 IST" name="tearDown" finished-at="2024-01-03T15:52:14 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality@4c402120]" started-at="2024-01-05T14:27:06 IST" name="tearDown" finished-at="2024-01-05T14:27:06 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality -->
+    </test> <!-- smokeTestCases -->
+    <test started-at="2024-01-05T14:27:06 IST" name="editTest" finished-at="2024-01-05T14:36:36 IST" duration-ms="569892">
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest">
+        <test-method is-config="true" signature="initializedExtendReport()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:26:34 IST" name="initializedExtendReport" finished-at="2024-01-05T14:26:35 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializedExtendReport -->
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:27:06 IST" name="setup" finished-at="2024-01-05T14:27:22 IST" duration-ms="15713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3fbf4614]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Create_Event_Video_EditTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:27:22 IST" name="Create_Event_Video_EditTest" finished-at="2024-01-05T14:28:44 IST" duration-ms="82128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Event_Video_EditTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:28:44 IST" name="checkStatus" finished-at="2024-01-05T14:28:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create_Event_Video_EditTest status=SUCCESS method=Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:28:44 IST" name="validateCopyFunction" finished-at="2024-01-05T14:36:36 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest" duration-ms="471874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:36:36 IST" name="checkStatus" finished-at="2024-01-05T14:36:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateCopyFunction status=SUCCESS method=Smoke_Create_Event_Video_editTest.validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:36:36 IST" name="tearDown" finished-at="2024-01-05T14:36:36 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="generateExtendReport()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@7a8c8dcf]" started-at="2024-01-05T14:36:36 IST" name="generateExtendReport" finished-at="2024-01-05T14:36:36 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtendReport -->
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest -->
+    </test> <!-- editTest -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -4,29 +4,22 @@ import java.io.IOException;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import BaseClass.baseclass;
 import Utility.logger;
 import Utility.propertyFile;
-import dev.failsafe.internal.util.Assert;
-import jdk.internal.org.jline.utils.Log;
 import pages.CheckoutPage;
 import pages.PhotoPage;
-import pages.VideoPage;
 import pages.boothDesignPage;
 import pages.creatEventPage;
 import pages.createPhotoPage;
-import pages.createVideoPage;
 import pages.eventDetailsPage;
 import pages.loginpage;
 import pages.packageDetails;
 import pages.packagePage;
 import pages.previewPage;
 import pages.reviewPage;
-import pages.sharepage;
 
 public class Smoke_Create_PreviewNode extends baseclass {
 

@@ -209,23 +209,27 @@ public abstract class controlAction {
 		
 		driver.manage().window().minimize();
 	}
-	public static void takeScreenshot(String fileName) {
+	public static String takeScreenshot(String fileName) {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		File srcFile = ts.getScreenshotAs(OutputType.FILE);
+		String base64 = ts.getScreenshotAs(OutputType.BASE64);
+		File destFile = null;
+
 		
 		try {
 			Date date = new Date();
 
 			SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd");
 			String dateFormate = formatter.format(date);
-
-			FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screen\\" + fileName+dateFormate + ".png"));
-		} catch (IOException e) {
+			String destpath=System.getProperty("user.dir") + "\\screen\\" + fileName+dateFormate + ".png";
+			 destFile=new File(destpath);
+		//	FileUtils.copyFile(srcFile, destFile);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return base64;
 	}
 
 	protected List<String> getElementTextList(List<WebElement> listOfWebElements) {

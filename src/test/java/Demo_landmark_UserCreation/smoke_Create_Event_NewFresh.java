@@ -77,19 +77,9 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 		Random ran = new Random();
 
 		int number = ran.nextInt();
-		String name = "TESTAUTOMATION" + String.valueOf(number);
+		String name = "CreateNewUserTest" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-//		eventDetails.eventNameSendkeys("testAutomation");
-//		eventDetails.startNowRadioButton();
-//		eventDetails.timeZoneSelection("Delhi");
-//		eventDetails.contrySelection("India");
-//		eventDetails.stateSelection("Maharashtra");
-//		eventDetails.citySendkeys("pune");
-//		eventDetails.clickNextButton();
-//		System.out.println("click on next button ");
-
-		// eventDetails.eventSubmission();
 
 		// *****************PhotoNode************
 

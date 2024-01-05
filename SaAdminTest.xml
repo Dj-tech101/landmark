@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality"/>
-      <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminUserNameSearchFunction"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="SaAdminTestCases">
+		<classes>
+			<class
+				name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality" />
+			<class
+				name="Demo_landmark_SaAdminTestCases.DemoSaAdminUserNameSearchFunction" />
+			<class
+				name="Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality" />
+			<class
+				name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserSelectUserDetails" />
+			<class
+				name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserFunction" />
+		</classes>
+	</test>
+	<test thread-count="5" name="editTestCases">
+		<classes>
+			<class
+				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest" />
+			<class
+				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy" />
+			<class
+				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="smokeTestCases">
+		<classes>
+			<class
+				name="Demo_landmark_Smoke_EventType.Smoke_Create_CustomeInsertNode" />
+			<class
+				name="Demo_landmark_Smoke_EventType.Smoke_Create_PerEvent_Pro" />
+			<class
+				name="Demo_landmark_Smoke_EventType.Smoke_Create_Event_WithGreenScreen" />
+			<class name="Demo_landmark_Smoke_EventType.Smoke_Create_PreviewNode" />
+			<class
+				name="Demo_landmark_Smoke_EventType.Smoke_Create_PerMonth_Pro" />
+			<class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerYearPro" />
+		</classes>
+	</test> 
+</suite> <!--
+Suite -->

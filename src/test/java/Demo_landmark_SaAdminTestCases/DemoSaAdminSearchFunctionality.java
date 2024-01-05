@@ -46,8 +46,8 @@ public class DemoSaAdminSearchFunctionality extends baseclass {
 	public CheckoutPage check;
 
 	public Logger log;
-
-	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
+//retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class
+	@Test()
 
 	public void SearchEventNameFunction() throws InterruptedException, IOException {
 
@@ -64,12 +64,11 @@ public class DemoSaAdminSearchFunctionality extends baseclass {
 
 		for (String eventname : EventNameCollections) {
 
-			System.out.println(eventname);
 
 			if (eventname.contains(testName)) {
 
 				log.log(Level.INFO, "Test Passed! User");
-				Assert.assertTrue(true);
+				Assert.assertTrue(false);
 			} else {
 				controlAction.takeScreenshot("fail_SearchEventNameFunction");
 				Assert.assertTrue(false);

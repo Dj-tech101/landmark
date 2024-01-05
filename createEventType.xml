@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Demo_landmark_Smoke_EventType.Smoke_Create_CustomeInsertNode"/>
-      <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerEvent_Pro"/>
-      <class name="Demo_landmark_Smoke_EventType.Smoke_Create_Event_WithGreenScreen"/>
-      <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PreviewNode"/>
-      <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerMonth_Pro"/>
-      <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerYearPro"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="smokeTestCases">
+		<classes>
+			<class
+				name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="editTest">
+		<classes>
+			<class
+				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest" />
+		</classes>
+	</test><!--
+	Test -->
+</suite> <!--
+Suite -->

@@ -154,20 +154,17 @@ public class MyEventsPage_SaAdmin extends controlAction {
 
 	public void clickOnlastPaginationButton() throws InterruptedException {
 
+		js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", waitForElementToBeVisible(lastPaginationButton));
 
-			js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].click();", waitForElementToBeVisible(lastPaginationButton));
-
-			Thread.sleep(500);
+		Thread.sleep(500);
 	}
-	
+
 	public String getTextOfPegiButton() {
-		
-	return waitForElementToBeVisible(lastPaginationButton).getText();
-	
+
+		return waitForElementToBeVisible(lastPaginationButton).getText();
+
 	}
-	
-	
 
 	@FindBy(xpath = "(//div[@class='col-12'])/div[1]")
 	private WebElement totalCountBeforeSwitch;
@@ -177,12 +174,66 @@ public class MyEventsPage_SaAdmin extends controlAction {
 		return (totalCountBeforeSwitch.getText());
 
 	}
-	
-	
 
 	public String getTotalCountAfterSwitch() throws InterruptedException {
 		Thread.sleep(4000);
 		return (waitForElementToBeVisible(totalCountBeforeSwitch).getText());
+
+	}
+
+	@FindBy(xpath = "(//li[@id='manageusers']/a)[1]")
+	private WebElement manageUserButton;
+
+	public void clickOnManageUserButton() {
+
+		js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].click();", waitForElementToBeVisible(manageUserButton));
+
+	}
+
+	@FindBy(xpath = "//input[@type='submit']")
+	private WebElement SearchUsernameFileds;
+
+	public void searchUserNameManageUser(String Name) {
+
+		waitForElementToBeClickable(userNameField).click();
+
+		waitForElementToBeVisible(SearchUsername).sendKeys(Name);
+		Actions act = new Actions(driver);
+
+		act.keyDown(Keys.ENTER).perform();
+
+		js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].click();", waitForElementToBeClickable(SearchUsernameFileds));
+
+	}
+
+	@FindBy(xpath = "//tr[@class='#3C444C']/td")
+	private List<WebElement> userInformation;
+
+	public List<String> getInformationOfUser() throws InterruptedException {
+		List<String> info = new ArrayList<String>();
+		int attempt = 0;
+		while (attempt < 3) {
+
+			try {
+				for (WebElement element : userInformation) {
+
+					String text=element.getText();
+					
+					info.add(text);
+					
+				}
+			} catch (StaleElementReferenceException e) {
+				// TODO: handle exception
+				System.out.println(e.getLocalizedMessage());
+			}
+			attempt++;
+
+		}
+		return info;
 
 	}
 
