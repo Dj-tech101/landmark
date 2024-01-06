@@ -80,7 +80,7 @@ public class Smoke_Create_Event_Gif_Copy extends baseclass {
     private void fillEventDetails(eventDetailsPage eventDetails) throws InterruptedException {
         Random ran = new Random();
         int number = ran.nextInt(100);
-         eventNameUse = "Test copy for gif " + String.valueOf(number);
+         eventNameUse = "GifContainEvent" + String.valueOf(number);
         eventDetails.PaylaterFillNeccessoryDetailsForEvent(eventNameUse);
     }
 
@@ -121,6 +121,22 @@ public class Smoke_Create_Event_Gif_Copy extends baseclass {
         myEvents.serachEventsAction(eventNameUse);
     }
 
+    private void reviewAndCheckoutAfterEdit() throws InterruptedException {
+        designPage.clickNextButton();
+
+        reviewPage = new pages.reviewPage();
+        reviewPage.clickNextButton();
+
+//        CheckoutPage checkoutPage = new CheckoutPage();
+//        log.info("Filling necessary checkout data");
+//        checkoutPage.clickOnPayLaterButton();
+
+        Thread.sleep(4000);
+
+        myEvents = new MyEventsPage();
+        log.info("Searching for the event");
+        myEvents.serachEventsAction(eventNameUse);
+    }
     @Test(dependsOnMethods = "verifyCreationOfGif")
     public void validateCopyFunction() throws InterruptedException {
         log.info("Copy button click");
@@ -135,6 +151,6 @@ public class Smoke_Create_Event_Gif_Copy extends baseclass {
         designPage = new boothDesignPage();
         designPage.clickNextButton();
 
-        reviewAndCheckout();
+        reviewAndCheckoutAfterEdit();
     }
 }

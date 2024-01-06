@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserSelectUserDetails">
+      <class name="Demo_landmark_UserCreation.smoke_Create_Event_NewFresh">
         <methods>
-          <include name="ManageUserViewUserDetails"/>
+          <include name="TestNewUserCreation"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="initializedExtendReport"/>
+          <include name="generateExtendReport"/>
+          <include name="checkStatus"/>
         </methods>
-      </class> <!-- Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserSelectUserDetails -->
+      </class> <!-- Demo_landmark_UserCreation.smoke_Create_Event_NewFresh -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

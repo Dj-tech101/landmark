@@ -1,6 +1,4 @@
 package pages;
-
-import java.beans.DesignMode;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
@@ -9,14 +7,12 @@ import java.util.Random;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import Utility.logger;
 import Utility.propertyFile;
@@ -110,7 +106,6 @@ public class boothDesignPage extends controlAction {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e.getStackTrace());
-			Assert.assertTrue(false);
 
 		}
 

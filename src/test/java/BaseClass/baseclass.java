@@ -21,6 +21,7 @@ import org.testng.annotations.BeforeMethod;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import Utility.TakescreenShotUtils;
 import Utility.propertyFile;
@@ -53,7 +54,7 @@ public class baseclass {
 		
 		Date date = new Date();
 
-		SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd_hh_mm_ss");
 		String dateFormate = formatter.format(date);
 		String path = System.getProperty("user.dir") + "\\screen\\report"+dateFormate+".html";
 		sparkReporter = new ExtentSparkReporter(new File(path));
@@ -69,8 +70,12 @@ public class baseclass {
 		extentReports.setSystemInfo("App url", new propertyFile().getUrl());
 
 		// add config.
-		
-		sparkReporter.loadJSONConfig(new File(System.getProperty("user.dir") + "\\src\\test\\resource\\extent-report-config.json"));
+		sparkReporter.config().setDocumentTitle("Landmark test Report");
+		sparkReporter.config().setReportName("User tester");
+		sparkReporter.config().setTheme(Theme.DARK);
+		sparkReporter.config().setTimeStampFormat("MM-dd-yyyy HH:mm:ss");
+
+	//	sparkReporter.loadJSONConfig(new File(System.getProperty("user.dir") + "\\src\\test\\resource\\extent-report-config.json"));
 	}
 
 	@AfterSuite
@@ -78,38 +83,19 @@ public class baseclass {
 		extentReports.flush();
 	}
 	
-		
-	
 	@AfterMethod
 	public void checkStatus(Method m,ITestResult result) {
 		
-		System.out.println("result of test case is "+result.getStatus());
-		System.out.println(ITestResult.FAILURE);
-		System.out.println(ITestResult.SUCCESS);
-
-		
-		
 		if (result.getStatus()==ITestResult.FAILURE) {
-			
-		
 			String ScreenShotPath=null;
-			
 			ScreenShotPath=controlAction.takeScreenshot(result.getTestContext().getName());
-			
 		//	extenttest.addScreenCaptureFromPath(ScreenShotPath, "Demo of fail Test case");
-		
 			extenttest.addScreenCaptureFromBase64String(controlAction.takeScreenshot(m.getName()));
-			
 			extenttest.fail(result.getThrowable());
-			
-		
 		}
 		else if (result.getStatus()==ITestResult.SUCCESS) {
 			
 			extenttest.pass(m.getName()+" is passed");
 		} 
-			
 	}
-	
-
 }

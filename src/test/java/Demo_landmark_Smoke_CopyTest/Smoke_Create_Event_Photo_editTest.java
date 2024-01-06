@@ -171,7 +171,7 @@ public class Smoke_Create_Event_Photo_editTest extends baseclass {
 
 		log.info("fill the event details");
 
-		 EventnameUse = "Test paylater for photo " + String.valueOf(number);
+		 EventnameUse = "PhotoContainEvent" + String.valueOf(number);
 
 		eventDetails.PaylaterFillNeccessoryDetailsForEvent(EventnameUse);
 
@@ -197,6 +197,23 @@ public class Smoke_Create_Event_Photo_editTest extends baseclass {
 		packageDetails.selectPackage("PER EVENT", "Pro");
 
 	}
+	
+	
+	private void reviewAndCheckoutPageAfterEdit() throws InterruptedException {
+		// TODO Auto-generated method stub
+		 reviewPage = new pages.reviewPage();
+	        reviewPage.clickNextButton();
+
+//	        CheckoutPage checkoutPage = new CheckoutPage();
+//	        log.info("Filling necessary checkout data");
+//	        checkoutPage.clickOnPayLaterButton();
+
+	        Thread.sleep(4000);
+
+	        myEvents = new MyEventsPage();
+	        log.info("Searching for the event");
+	        myEvents.serachEventsAction(EventnameUse);
+	}
 
 	@Test(dependsOnMethods = "Create_Event_Photo_copyTest")
 	public void validateCopyFunction() throws InterruptedException {
@@ -213,6 +230,6 @@ public class Smoke_Create_Event_Photo_editTest extends baseclass {
         designPage = new boothDesignPage();
         designPage.clickNextButton();
 
-        reviewAndCheckoutPage();
+        reviewAndCheckoutPageAfterEdit();
 	}
 }

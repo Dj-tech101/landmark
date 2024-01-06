@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="smokeTestCases(failed)">
+  <test thread-count="5" name="SaAdminTestCases(failed)">
     <classes>
       <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality">
         <methods>
@@ -14,5 +14,31 @@
         </methods>
       </class> <!-- Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality -->
     </classes>
-  </test> <!-- smokeTestCases(failed) -->
+  </test> <!-- SaAdminTestCases(failed) -->
+  <test thread-count="5" name="editTestCases(failed)">
+    <classes>
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy">
+        <methods>
+          <include name="validateCopyFunction"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyCreationOfGif"/>
+          <include name="initializedExtendReport"/>
+          <include name="generateExtendReport"/>
+          <include name="checkStatus"/>
+        </methods>
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy -->
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest">
+        <methods>
+          <include name="validateCopyFunction"/>
+          <include name="Create_Event_Photo_copyTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="initializedExtendReport"/>
+          <include name="generateExtendReport"/>
+          <include name="checkStatus"/>
+        </methods>
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest -->
+    </classes>
+  </test> <!-- editTestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

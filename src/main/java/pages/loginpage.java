@@ -1,5 +1,4 @@
 package pages;
-
 import java.time.Duration;
 
 import org.openqa.selenium.WebElement;
@@ -7,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert.*;
 
 import base.controlAction;
+
 
 public class loginpage extends controlAction {
 	public WebDriverWait wait;
@@ -22,15 +21,14 @@ public class loginpage extends controlAction {
 	}
 
 	@FindBy(xpath = "//input[@id='Email']")
-	WebElement email;
+	  private WebElement email;
 
+	@SuppressWarnings("unused")
 	public void usernamesendkey(String name) {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
 		try {
 			wait = new WebDriverWait(driver, Duration.ofMinutes(2));
-			WebElement usernameInput = wait.until(ExpectedConditions.visibilityOf(email));
-			// usernameInput.sendKeys(name);
 
 			waitForElementToBeVisible(email).sendKeys(name);
 			
