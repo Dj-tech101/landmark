@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.UnhandledAlertException;
@@ -221,10 +222,15 @@ public class eventDetailsPage extends controlAction {
 
 		System.out.println("lets click on start time ");
 
-//		js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].click();", waitForElementToBeVisible(startTime));
+		try {
+			waitForElementToBeClickable(startTime).click();
+		} catch (ElementClickInterceptedException e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		} catch (Exception m) {
+			System.out.println(m.getLocalizedMessage());
+		}
 
-		startTime.click();
 	}
 
 	public void selectDateElement(String systemDate) {

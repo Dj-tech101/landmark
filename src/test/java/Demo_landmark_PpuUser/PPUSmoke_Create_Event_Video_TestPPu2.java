@@ -51,13 +51,13 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		login = new loginpage();
 
-		log.info("login with valid credential");
+		extenttest.info("login with valid credential");
 
 		login.loginwithCredential("pputest@gmail.com", "ppu12345");
 
 		creatEvent = new creatEventPage();
 
-		log.info("click on create event button");
+		extenttest.info("click on create event button");
 
 		creatEvent.clickoncreatEventButton();
 
@@ -65,13 +65,13 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		packageselect = new packagePage();
 
-		log.info("select the package");
+		extenttest.info("select the package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails();
 
-		log.info("select month and pro options");
+		extenttest.info("select month and pro options");
 
 		packageDetails.selectPackage("MONTH", "Pro");
 
@@ -80,7 +80,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		int number = ran.nextInt();
 
-		log.info("fill the event details");
+		extenttest.info("fill the event details");
 
 		Date date = new Date();
 
@@ -91,7 +91,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage();
 
-		log.info("drag photo in Boothdesign");
+		extenttest.info("drag photo in Boothdesign");
 
 		// **************GIF NODE *****************
 		designPage.dragAndDropVideoNode();
@@ -104,7 +104,7 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		String nameooVideo = "VideoName" + String.valueOf(value);
 
-		log.info("click on create new video option");
+		extenttest.info("click on create new video option");
 
 		videoPage.clickonCreateVideoButton();
 
@@ -122,14 +122,14 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		sharepage sharenode = new sharepage();
 
-		log.info("select the share options ");
+		extenttest.info("select the share options ");
 
 		sharenode.CreateNewShareNode("print");
 		sharenode.CreateNewShareNodemore("email","smugmug");
 
 		designPage.clickNextButton();
 
-		log.info("click on next button");
+		extenttest.info("click on next button");
 		reviewPage = new reviewPage();
 
 		TakescreenShotUtils.GetScreenShot(driver,"next button");
@@ -138,16 +138,16 @@ public class PPUSmoke_Create_Event_Video_TestPPu2 extends baseclass {
 
 		CheckoutPage checkoutPage = new CheckoutPage();
 
-		log.info("fill the neccessory data ");
+		extenttest.info("fill the neccessory data ");
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 
 		Thread.sleep(4000);
 
-		log.info("assser the valid data for new  event ");
+		extenttest.info("assser the valid data for new  event ");
 		org.testng.Assert.assertTrue(true);
 
-		log.info("Event is created ");
+		extenttest.info("Event is created ");
 
 	}
 }

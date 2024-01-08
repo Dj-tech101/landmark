@@ -56,7 +56,7 @@ public class DemoSaAdminSearchFunctionality extends baseclass {
 
 		MyEventsPage_SaAdmin myEvent = login.loginwithCredential("sadmin@lapp.com", "ppu12345");
 		String testName = "PAYLATER";
-		log.info("search event name start with :" + testName);
+		extenttest.info("search event name start with :" + testName);
 
 		myEvent.getSearchFunction(testName);
 
@@ -67,8 +67,8 @@ public class DemoSaAdminSearchFunctionality extends baseclass {
 
 			if (eventname.contains(testName)) {
 
-				log.log(Level.INFO, "Test Passed! User");
-				Assert.assertTrue(false);
+				extenttest.info("test case is pass:");
+				Assert.assertTrue(true);
 			} else {
 				controlAction.takeScreenshot("fail_SearchEventNameFunction");
 				Assert.assertTrue(false);

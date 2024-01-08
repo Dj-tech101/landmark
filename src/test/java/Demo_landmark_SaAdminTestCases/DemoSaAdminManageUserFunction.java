@@ -55,15 +55,15 @@ public class DemoSaAdminManageUserFunction extends baseclass {
 		login = new loginpage();
 
 		MyEventsPage_SaAdmin myEvent = login.loginwithCredential("sadmin@lapp.com", "ppu12345");
-		log.info("click on manage user button");
+		extenttest.info("click on manage user button");
 		myEvent.clickOnManageUserButton();
 
 		String username = "MAHESH100";
 
-		log.info("search username");
+		extenttest.info("search username");
 		myEvent.searchUserNameManageUser(username);
 
-		log.info("get the information and validate ");
+		extenttest.info("get the information and validate ");
 
 		List<String> information = myEvent.getInformationOfUser();
 

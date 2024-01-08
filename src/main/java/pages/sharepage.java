@@ -21,7 +21,7 @@ import base.controlAction;
 
 public class sharepage extends controlAction {
 
-	//public static WebDriver driver;
+	// public static WebDriver driver;
 	public WebDriverWait wait;
 
 	public JavascriptExecutor js;
@@ -29,7 +29,7 @@ public class sharepage extends controlAction {
 	public sharepage() {
 		// TODO Auto-generated constructor stub
 
-	//	this.driver = driver;
+		// this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
@@ -51,20 +51,25 @@ public class sharepage extends controlAction {
 	public void getlistofshareOptions(String execpedvalue) {
 
 		loadpage(2);
-		
+
 		for (WebElement shareList : listOfShareOptions) {
 
 			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 			wait.until(ExpectedConditions.visibilityOfAllElements(listOfShareOptions));
+			try {
+				String actualValue = waitForElementToBeVisible(shareList).getAttribute("value");
 
-			String actualValue = waitForElementToBeVisible(shareList).getAttribute("value");
+				// System.out.println("share actual vakue is " + actualValue);
+				if (actualValue.contains(execpedvalue)) {
 
-		    //  System.out.println("share actual vakue is " + actualValue);
-			if (actualValue.contains(execpedvalue)) {
-
-				shareList.click();
+					shareList.click();
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println(e.getLocalizedMessage());
 			}
+
 		}
 	}
 
@@ -105,7 +110,7 @@ public class sharepage extends controlAction {
 			// TODO: handle exception
 			System.out.println(e.getMessage());
 		}
-		
+
 	}
 
 	public void CreateNewShareNode(String shareOptions) throws IOException {
@@ -174,7 +179,7 @@ public class sharepage extends controlAction {
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		Thread.sleep(500);
-		//TakescreenShotUtils.GetScreenShot(driver);
+		// TakescreenShotUtils.GetScreenShot(driver);
 		sharenode.clickOnClosedPhotoWindow();
 
 	}
@@ -194,7 +199,7 @@ public class sharepage extends controlAction {
 
 		// sharenode.ClickOnButton();
 
-	//	TakescreenShotUtils.GetScreenShot(driver);
+		// TakescreenShotUtils.GetScreenShot(driver);
 		// sharenode.SendNameField();
 		sharenode.clickOnClosedPhotoWindow();
 

@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo_landmark_UserCreation.smoke_Create_Event_NewFresh">
+      <class name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3">
         <methods>
-          <include name="TestNewUserCreation"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="Validate_Creation_event_with_Gif"/>
           <include name="initializedExtendReport"/>
           <include name="generateExtendReport"/>
           <include name="checkStatus"/>
         </methods>
-      </class> <!-- Demo_landmark_UserCreation.smoke_Create_Event_NewFresh -->
+      </class> <!-- Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

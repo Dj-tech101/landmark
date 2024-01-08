@@ -56,7 +56,7 @@ public class Smoke_Create_CustomeInsertNode extends baseclass {
 
 		log = logger.getlogger();
 
-		log.info("login with valid credential");
+		extenttest.info("login with valid credential");
 		
 		login = new loginpage();
 		
@@ -65,20 +65,20 @@ public class Smoke_Create_CustomeInsertNode extends baseclass {
 
 		creatEvent = new creatEventPage();
 
-		log.info("click on create new event button");
+		extenttest.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
 		packageselect = new packagePage();
 
-		log.info("click on package");
+		extenttest.info("click on package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails();
 
-		log.info("select package");
+		extenttest.info("select package");
 
 		packageDetails.selectPackage("PER YEAR", "Pro");
 
@@ -89,7 +89,7 @@ public class Smoke_Create_CustomeInsertNode extends baseclass {
 
 		String name = "CustomeInsertTest" + String.valueOf(number);
 
-		log.info("fill necccessory data");
+		extenttest.info("fill necccessory data");
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
@@ -105,7 +105,7 @@ public class Smoke_Create_CustomeInsertNode extends baseclass {
 
 		Thread.sleep(1500);
 
-		log.info("create new photo");
+		extenttest.info("create new photo");
 
 		createPhotoPage createPhoto = new createPhotoPage();
 
@@ -119,7 +119,7 @@ public class Smoke_Create_CustomeInsertNode extends baseclass {
 
 		// ************ CUSTOME INSERT NODE***************
 
-		log.info("create Preview node ");
+		extenttest.info("create Preview node ");
 
 		designPage.dragAndDropCustomeInsertNode();
 
@@ -135,7 +135,7 @@ public class Smoke_Create_CustomeInsertNode extends baseclass {
 
 		CheckoutPage checkoutPage = new CheckoutPage();
 
-		log.info("fill credit details");
+		extenttest.info("fill credit details");
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 

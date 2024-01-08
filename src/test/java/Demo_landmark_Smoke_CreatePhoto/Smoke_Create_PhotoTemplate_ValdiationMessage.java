@@ -56,24 +56,24 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 		log = logger.getlogger();
 
 		// Log in with valid credentials
-		log.info("Login with valid credentials");
+		extenttest.info("Login with valid credentials");
 		login = new loginpage();
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		// Navigate to create event page
 		creatEvent = new creatEventPage();
-		log.info("Click on create new event button");
+		extenttest.info("Click on create new event button");
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
 		// Select a package
 		packageselect = new packagePage();
-		log.info("Click on package");
+		extenttest.info("Click on package");
 		packageselect.clickOnPackage();
 
 		// Select package details
 		packageDetails = new packageDetails();
-		log.info("Select package");
+		extenttest.info("Select package");
 		packageDetails.selectPackage("PER YEAR", "Pro");
 
 		// Fill necessary event details
@@ -81,7 +81,7 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 		Random ran = new Random();
 		int number = ran.nextInt(100);
 		String name = "PhotoTemplateTest" + String.valueOf(number);
-		log.info("Fill necessary data for the event");
+		extenttest.info("Fill necessary data for the event");
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
 		// Navigate to booth design page
@@ -98,7 +98,7 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 		// Navigate to create photo page
 		PhotoPage photopage = new PhotoPage();
 		Thread.sleep(1500);
-		log.info("Create a new photo");
+		extenttest.info("Create a new photo");
 
 		// Create a new photo
 		createPhotoPage createPhoto = new createPhotoPage();
@@ -118,35 +118,6 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 		org.testng.Assert.assertEquals(expectedMessage, actualMessage);
 		// ************ SHARE NODE***************
 
-//		log.info("create Sahre node ");
-//
-//		designPage.dragAndDropShare();
-//
-//		designPage.clickonShareGearIcon();
-//
-//		sharepage sharenode = new sharepage();
-//
-//		sharenode.CreateNewShareNode("print");
-//
-//		log.info("click on next button");
-//
-//		designPage.clickNextButton();
-//
-//		reviewPage = new reviewPage();
-//
-//		reviewPage.clickNextButton();
-//
-//		CheckoutPage checkoutPage = new CheckoutPage();
-//
-//		log.info("fill credit details");
-//
-//		checkoutPage.FillNeccessoryCardDetails("Exist");
-//
-//		Thread.sleep(4000);
-//
-//		org.testng.Assert.assertTrue(true);
-//
-//		System.err.println("Event is created ");
 
 	}
 }

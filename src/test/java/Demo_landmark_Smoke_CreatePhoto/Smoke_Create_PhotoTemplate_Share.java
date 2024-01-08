@@ -54,27 +54,27 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		log = logger.getlogger();
 
-		log.info("login with valid credential");
+		extenttest.info("login with valid credential");
 		login = new loginpage();
 
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage();
 
-		log.info("click on create new event button");
+		extenttest.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
 		packageselect = new packagePage();
 
-		log.info("click on package");
+		extenttest.info("click on package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails();
 
-		log.info("select package");
+		extenttest.info("select package");
 
 		packageDetails.selectPackage("PER MONTH", "Pro");
 
@@ -85,7 +85,7 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		String name = "PhotoTemplateTest" + String.valueOf(number);
 
-		log.info("fill necccessory data");
+		extenttest.info("fill necccessory data");
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
@@ -102,7 +102,7 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		Thread.sleep(1500);
 
-		log.info("create new photo");
+		extenttest.info("create new photo");
 
 		createPhotoPage createPhoto = new createPhotoPage();
 
@@ -110,14 +110,14 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
 
-		log.info("select the new  photo template  options");
+		extenttest.info("select the new  photo template  options");
 
 		photopage.createNewPhotoTemplate(nameofphoto);
 		
 
 		// ************ SHARE NODE***************
 
-		log.info("create Sahre node ");
+		extenttest.info("create Sahre node ");
 
 		designPage.dragAndDropShare();
 
@@ -127,7 +127,7 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		sharenode.CreateNewShareNode("print");
 
-		log.info("click on next button");
+		extenttest.info("click on next button");
 
 		designPage.clickNextButton();
 
@@ -137,7 +137,7 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		CheckoutPage checkoutPage = new CheckoutPage();
 
-		log.info("fill credit details");
+		extenttest.info("fill credit details");
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 

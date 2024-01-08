@@ -56,7 +56,7 @@ public class VerifySAAdminShowAllEventsFunctionality extends baseclass {
 		MyEventsPage_SaAdmin myEvent = login.loginwithCredential("sadmin@lapp.com", "ppu12345");
 
 		// click on show all button
-		log.info("click on  show all button");
+		extenttest.info("click on  show all button");
 
 		String before = myEvent.getTotalCountBeforeSwitch();
 
@@ -64,7 +64,7 @@ public class VerifySAAdminShowAllEventsFunctionality extends baseclass {
 
 		myEvent.clickOnShowAllSwitch();
 
-		log.info(" count  page event list");
+		extenttest.info(" count  page event list");
 
 		String after = myEvent.getTotalCountAfterSwitch();
 

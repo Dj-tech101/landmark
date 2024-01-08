@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import BaseClass.baseclass;
 import Utility.TakescreenShotUtils;
 import Utility.logger;
+import Utility.propertyFile;
 import pages.CheckoutPage;
 import pages.GifPage;
 import pages.PhotoPage;
@@ -44,6 +45,8 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 	public reviewPage reviewPage;
 
 	public Logger log;
+	
+	
 
 	@Test(groups = "smoke", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
@@ -53,13 +56,14 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		login = new loginpage();
 
-		log.info("login with valid credential");
+		extenttest.info("login with valid credential");
 
-		login.loginwithCredential("pputest@gmail.com", "ppu12345");
+		
+		login.loginwithCredential(new propertyFile().getusername(), new propertyFile().getpassword());
 
 		creatEvent = new creatEventPage();
 
-		log.info("click on create event button");
+		extenttest.info("click on create event button");
 
 		creatEvent.clickoncreatEventButton();
 
@@ -67,13 +71,13 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		packageselect = new packagePage();
 
-		log.info("select the package");
+		extenttest.info("select the package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails();
 
-		log.info("select month and pro options");
+		extenttest.info("select month and pro options");
 
 		packageDetails.selectPackage("MONTH", "Pro");
 
@@ -82,7 +86,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		int number = ran.nextInt();
 
-		log.info("fill the event details");
+		extenttest.info("fill the event details");
 		
 		Date date= new Date();
 		
@@ -94,7 +98,7 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage();
 
-		log.info("drag photo in Boothdesign");
+		extenttest.info("drag photo in Boothdesign");
 
 		// **************GIF NODE *****************
 		designPage.dragAndDropGifNode();
@@ -111,11 +115,11 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		String nameofGif = "gifName" + String.valueOf(value);
 
-		log.info("click on create new gif option");
+		extenttest.info("click on create new gif option");
 		
 		gifPage.clickonCreateGifButton();
 
-		log.info("fill the neccessory details in gif");
+		extenttest.info("fill the neccessory details in gif");
 
 		createGifPage createGif = new createGifPage();
 
@@ -129,30 +133,29 @@ public class PPUSmoke_Create_Event_Gif_TestPPu3 extends baseclass {
 
 		sharepage sharenode = new sharepage();
 
-		log.info("select the share options ");
+		extenttest.info("select the share options ");
 
 		sharenode.CreateNewShareNode("print");
 
 		designPage.clickNextButton();
 
-		log.info("click on next button");
+		extenttest.info("click on next button");
 		reviewPage = new reviewPage();
 
-		TakescreenShotUtils.GetScreenShot(driver,"nextbutton");
 		reviewPage.clickNextButton();
 
 		CheckoutPage checkoutPage = new CheckoutPage();
 
-		log.info("fill the neccessory data ");
+		extenttest.info("fill the neccessory data ");
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 
 		Thread.sleep(4000);
 
-		log.info("assser the valid data for new  event ");
+		extenttest.info("assser the valid data for new  event ");
 		org.testng.Assert.assertTrue(true);
 
-		log.info("Event is created ");
+		extenttest.info("Event is created ");
 
 	}
 }

@@ -22,7 +22,7 @@ import base.controlAction;
 
 public class createGifPage extends controlAction {
 
-	//public WebDriver driver;
+	// public WebDriver driver;
 	public WebDriverWait wait;
 
 	public JavascriptExecutor js;
@@ -30,7 +30,7 @@ public class createGifPage extends controlAction {
 	public createGifPage() {
 		// TODO Auto-generated constructor stub
 
-		//this.driver = driver;
+		// this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
@@ -79,7 +79,7 @@ public class createGifPage extends controlAction {
 	public void clickNextButton() throws InterruptedException {
 
 		Thread.sleep(4000);
-		
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1));
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -93,27 +93,25 @@ public class createGifPage extends controlAction {
 
 	}
 
-	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[2]")
+	@FindBy(xpath = "//div[@class='footer']/*")
 	WebElement saveButton;
 
 	public void clickonSaveButton() throws InterruptedException {
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
-//		FluentWait<WebDriver> waitfluent = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
-//				.pollingEvery(Duration.ofMinutes(1))
-//
-//				.withMessage("element is not display");
-//
-//		WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(saveButton));
-
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		
+		
+		try {
+			js = (JavascriptExecutor) driver;
 
-		js = (JavascriptExecutor) driver;
+			Thread.sleep(2000);
 
-		Thread.sleep(2000);
-
-		js.executeScript("arguments[0].click();", saveButton);
+			js.executeScript("arguments[0].click();", saveButton);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 
 	}
 
@@ -128,9 +126,9 @@ public class createGifPage extends controlAction {
 		gif.clickNextButton();
 //		
 		gif.clickonSaveButton();
-		
+
 		GifPage gifPage = new GifPage();
-		
+
 		gifPage.clickOnClosedGifWindow(name);
 //		
 

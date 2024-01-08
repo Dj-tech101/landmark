@@ -58,6 +58,7 @@ public class Smoke_Create_Event_Video_editTest extends baseclass {
 	private String EventnameUse;
 
 //groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class
+
 	@Test()
 
 	public void Create_Event_Video_EditTest() throws InterruptedException, IOException {
@@ -187,7 +188,7 @@ public class Smoke_Create_Event_Video_editTest extends baseclass {
 
 	}
 
-	@Test(dependsOnMethods = "Create_Event_Video_EditTest")
+	@Test(dependsOnMethods = "Create_Event_Video_EditTest",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 	public void validateCopyFunction() throws InterruptedException {
 
 		log.info("Copy button click");

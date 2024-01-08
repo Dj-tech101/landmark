@@ -59,25 +59,25 @@ public class DemoSaAdminManageUserSelectUserDetails extends baseclass {
 		login = new loginpage();
 
 		MyEventsPage_SaAdmin myEvent = login.loginwithCredential("sadmin@lapp.com", "ppu12345");
-		log.info("click on manage user button");
+		extenttest.info("click on manage user button");
 		myEvent.clickOnManageUserButton();
 
 		String username = "MAHESH100";
 
-		log.info("search username");
+		extenttest.info("search username");
 		myEvent.searchUserNameManageUser(username);
 
-		log.info("get the information ");
+		extenttest.info("get the information ");
 
 		String actual = getInformationUser(myEvent, username);
 
 		manageUser = new ManageUser_SaAdmin();
 
-		log.info("click on view button");
+		extenttest.info("click on view button");
 
 		manageUser.clickOnViewButton();
 
-		log.info("validateUserName");
+		extenttest.info("validateUserName");
 
 		if (actual.contains(manageUser.getIUserEmailText())) {
 
