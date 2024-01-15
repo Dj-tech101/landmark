@@ -71,9 +71,15 @@ public class MyEventsPage_SaAdmin extends controlAction {
 		for (WebElement eventsElement : eventNames) {
 
 			// get one by one element
-			Thread.sleep(1500);
 
-			values.add(waitForElementToBeVisible(eventsElement).getText());
+			Thread.sleep(1500);
+			try {
+				values.add(waitForElementToBeVisible(eventsElement).getText());
+			} catch (Exception e) {
+
+				System.out.println(e.getMessage());
+			}
+
 		}
 
 		return values;
@@ -129,12 +135,7 @@ public class MyEventsPage_SaAdmin extends controlAction {
 
 	public void clickOnShowAllSwitch() throws InterruptedException {
 
-//		js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].click();", showAllSwitch);
-
 		Actions act = new Actions(driver);
-
-		// act.click(showAllSwitch).perform();
 
 		showAllSwitch.click();
 	}
@@ -221,10 +222,10 @@ public class MyEventsPage_SaAdmin extends controlAction {
 			try {
 				for (WebElement element : userInformation) {
 
-					String text=element.getText();
-					
+					String text = element.getText();
+
 					info.add(text);
-					
+
 				}
 			} catch (StaleElementReferenceException e) {
 				// TODO: handle exception
@@ -235,6 +236,25 @@ public class MyEventsPage_SaAdmin extends controlAction {
 		}
 		return info;
 
+	}
+
+	@FindBy(xpath = "(//a[@title='Share'])[1]")
+	private WebElement shareIcon;
+
+	public void getClickShareIcon() {
+
+		try {
+
+			Thread.sleep(1500);
+
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(shareIcon));
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getLocalizedMessage());
+		}
 	}
 
 }

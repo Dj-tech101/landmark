@@ -139,7 +139,7 @@ public class Smoke_Create_Event_Gif_editTest extends baseclass {
 
 		extenttest.info("select the share options ");
 
-		sharenode.CreateNewShareNode("print");
+		sharenode.CreateNewShareNodemore("email","smugmug");
 
 		designPage.clickNextButton();
 

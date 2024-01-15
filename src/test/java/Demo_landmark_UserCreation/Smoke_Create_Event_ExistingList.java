@@ -114,7 +114,7 @@ public class Smoke_Create_Event_ExistingList extends baseclass {
 		int value = ran.nextInt();
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
-		photopage.createNewSinglePhoto(nameofphoto);
+		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
 //		createPhoto.sendNameTextField(nameofphoto);
 //

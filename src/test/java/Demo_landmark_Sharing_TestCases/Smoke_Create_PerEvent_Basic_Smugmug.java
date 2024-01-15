@@ -40,7 +40,6 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 	public reviewPage reviewPage;
 
-	public Logger log;
 
 	public propertyFile pro;
 
@@ -50,29 +49,28 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 		pro = new propertyFile();
 
-		log = logger.getlogger();
 
-		log.info("login with valid credential");
+		extenttest.info("login with valid credential");
 		login = new loginpage();
 
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage();
 
-		log.info("click on create new event button");
+		extenttest.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
 		packageselect = new packagePage();
 
-		log.info("click on package");
+		extenttest.info("click on package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails();
 
-		log.info("select package");
+		extenttest.info("select package");
 
 		packageDetails.selectPackage("PER EVENT", "Basic");
 
@@ -80,9 +78,9 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 		Random ran = new Random();
 
 		int number = ran.nextInt();
-		String name = "oldSharingSystem" + String.valueOf(number);
+		String name = "Background removal photo" + String.valueOf(number);
 
-		log.info("fill necccessory data");
+		extenttest.info("fill necccessory data");
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
@@ -91,7 +89,7 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 		// ************ PHTOT NODE***************88
 		designPage.dragAndDropphotoNode();
 
-		log.info("create photo node as single image");
+		extenttest.info("create photo node as single image");
 
 		designPage.clickonPhotoGearIcon();
 
@@ -105,11 +103,11 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
 		// ************ SHARE NODE***************
 
-		log.info("create Sahre node ");
+		extenttest.info("create Sahre node ");
 
 		designPage.dragAndDropShare();
 
@@ -121,7 +119,7 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 		sharenode.CreateNewShareNodemore("email", "smugmug");
 
-		log.info("click on next button");
+		extenttest.info("click on next button");
 
 		designPage.clickNextButton();
 
@@ -131,7 +129,7 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 
 		CheckoutPage checkoutPage = new CheckoutPage();
 
-		log.info("fill credit details");
+		extenttest.info("fill credit details");
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 
@@ -142,4 +140,5 @@ public class Smoke_Create_PerEvent_Basic_Smugmug extends baseclass {
 		System.err.println("Event is created ");
 
 	}
+	
 }

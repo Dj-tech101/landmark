@@ -215,6 +215,7 @@ public class CheckoutPage extends controlAction {
 			js = (JavascriptExecutor) driver;
 
 			js.executeScript("arguments[0].click();", waitForElementToBeVisible(paylaterButton));
+			
 		} catch (UnhandledAlertException e) {
 			// TODO: handle exception
 

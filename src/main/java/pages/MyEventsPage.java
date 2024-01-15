@@ -71,7 +71,7 @@ public class MyEventsPage extends controlAction {
 
 		Actions act = new Actions(driver);
 
-		act.sendKeys((searchEventFiled), eventName).perform();
+		act.sendKeys((waitForElementToBeVisible(searchEventFiled)), eventName).perform();
 
 		js = (JavascriptExecutor) driver;
 

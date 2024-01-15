@@ -1,59 +1,880 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="6" ignored="6" total="18" passed="3" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-08T10:47:44 IST" name="Default suite" finished-at="2024-01-08T10:48:59 IST" duration-ms="75463">
+  <suite started-at="2024-01-15T09:42:26 IST" name="Suite" finished-at="2024-01-15T10:00:23 IST" duration-ms="1077497">
     <groups>
       <group name="smoke">
-        <method signature="PPUSmoke_Create_Event_Gif_TestPPu3.Validate_Creation_event_with_Gif()[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" name="Validate_Creation_event_with_Gif" class="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3"/>
+        <method signature="Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" name="Create_Event_Photo_copyTest" class="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-01-08T10:47:44 IST" name="Default test" finished-at="2024-01-08T10:48:59 IST" duration-ms="75463">
-      <class name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3">
-        <test-method is-config="true" signature="initializedExtendReport()[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" started-at="2024-01-08T10:47:44 IST" name="initializedExtendReport" finished-at="2024-01-08T10:47:44 IST" duration-ms="262" status="PASS">
+    <test started-at="2024-01-15T09:42:26 IST" name="Copy function" finished-at="2024-01-15T10:00:23 IST" duration-ms="1077497">
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest">
+        <test-method is-config="true" signature="initializedExtendReport()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:42:25 IST" name="initializedExtendReport" finished-at="2024-01-15T09:42:26 IST" duration-ms="421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializedExtendReport -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" started-at="2024-01-08T10:47:44 IST" name="setup" finished-at="2024-01-08T10:48:00 IST" duration-ms="15840" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:42:26 IST" name="setup" finished-at="2024-01-15T09:42:48 IST" duration-ms="22278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@44bc2449]]>
+                <![CDATA[org.testng.TestRunner@2d935682]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Validate_Creation_event_with_Gif()[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" started-at="2024-01-08T10:48:00 IST" name="Validate_Creation_event_with_Gif" finished-at="2024-01-08T10:48:59 IST" duration-ms="59367" status="PASS">
+        <test-method signature="Create_Event_Video_EditTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:42:48 IST" name="Create_Event_Video_EditTest" finished-at="2024-01-15T09:43:41 IST" duration-ms="53262" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Creation_event_with_Gif -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" started-at="2024-01-08T10:48:59 IST" name="checkStatus" finished-at="2024-01-08T10:48:59 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- Create_Event_Video_EditTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:41 IST" name="checkStatus" finished-at="2024-01-15T09:43:41 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3.Validate_Creation_event_with_Gif() throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest() throws java.lang.InterruptedException,java.io.IOException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=Validate_Creation_event_with_Gif status=SUCCESS method=PPUSmoke_Create_Event_Gif_TestPPu3.Validate_Creation_event_with_Gif()[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249] output={null}]]]>
+                <![CDATA[[TestResult name=Create_Event_Video_EditTest status=SUCCESS method=Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" started-at="2024-01-08T10:48:59 IST" name="tearDown" finished-at="2024-01-08T10:48:59 IST" duration-ms="219" status="PASS">
+        <test-method retried="true" signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:41 IST" name="validateCopyFunction" finished-at="2024-01-15T09:43:49 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest" duration-ms="7778" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button class="theme-btn btn-style-threess btn-style-one link-box" id="btnEventData" type="submit" name="submit-form">...</button> is not clickable at point (953, 675). Other element would receive the click: <div class="edc-loader">...</div>
+  (Session info: MicrosoftEdge=120.0.2210.133)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, clickElement {id=2DE3E8EEE7914CB176396D9E56F45231_element_724}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f3281563d9c386ccf399849aeba81bd0)] -> id: btnEventData]
+Session ID: f3281563d9c386ccf399849aeba81bd0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="theme-btn btn-style-threess btn-style-one link-box" id="btnEventData" type="submit" name="submit-form">...</button> is not clickable at point (953, 675). Other element would receive the click: <div class="edc-loader">...</div>
+  (Session info: MicrosoftEdge=120.0.2210.133)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, clickElement {id=2DE3E8EEE7914CB176396D9E56F45231_element_724}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f3281563d9c386ccf399849aeba81bd0)] -> id: btnEventData]
+Session ID: f3281563d9c386ccf399849aeba81bd0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pages.eventDetailsPage.clickNextButton(eventDetailsPage.java:176)
+at pages.eventDetailsPage.copyEventFillNeccessoryDetailsForEvent(eventDetailsPage.java:323)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:201)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="checkStatus" finished-at="2024-01-15T09:43:49 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateCopyFunction status=SKIP method=Smoke_Create_Event_Video_editTest.validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method retried="true" signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="validateCopyFunction" finished-at="2024-01-15T09:43:49 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest" duration-ms="36" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Copy']"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title='Copy']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3281563d9c386ccf399849aeba81bd0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Copy']"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title='Copy']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3281563d9c386ccf399849aeba81bd0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pages.MyEventsPage.clickOnCopyButton(MyEventsPage.java:116)
+at pages.MyEventsPage.copyExistEvent(MyEventsPage.java:154)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:198)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="checkStatus" finished-at="2024-01-15T09:43:49 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateCopyFunction status=SKIP method=Smoke_Create_Event_Video_editTest.validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method retried="true" signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="validateCopyFunction" finished-at="2024-01-15T09:43:49 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest" duration-ms="33" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Copy']"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title='Copy']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3281563d9c386ccf399849aeba81bd0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Copy']"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title='Copy']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3281563d9c386ccf399849aeba81bd0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pages.MyEventsPage.clickOnCopyButton(MyEventsPage.java:116)
+at pages.MyEventsPage.copyExistEvent(MyEventsPage.java:154)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:198)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="checkStatus" finished-at="2024-01-15T09:43:49 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateCopyFunction status=SKIP method=Smoke_Create_Event_Video_editTest.validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="validateCopyFunction" finished-at="2024-01-15T09:43:49 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.Create_Event_Video_EditTest" duration-ms="30" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Copy']"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title='Copy']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3281563d9c386ccf399849aeba81bd0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Copy']"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title='Copy']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3281563d9c386ccf399849aeba81bd0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pages.MyEventsPage.clickOnCopyButton(MyEventsPage.java:116)
+at pages.MyEventsPage.copyExistEvent(MyEventsPage.java:154)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:198)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="checkStatus" finished-at="2024-01-15T09:43:49 IST" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateCopyFunction status=FAILURE method=Smoke_Create_Event_Video_editTest.validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T09:43:49 IST" name="tearDown" finished-at="2024-01-15T09:43:50 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="generateExtendReport()[pri:0, instance:Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3@22ff4249]" started-at="2024-01-08T10:48:59 IST" name="generateExtendReport" finished-at="2024-01-08T10:49:00 IST" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="generateExtendReport()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest@327514f]" started-at="2024-01-15T10:00:23 IST" name="generateExtendReport" finished-at="2024-01-15T10:00:24 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtendReport -->
-      </class> <!-- Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest -->
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:45:02 IST" name="setup" finished-at="2024-01-15T09:45:11 IST" duration-ms="8703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2d935682]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:45:11 IST" name="Create_Event_Photo_copyTest" finished-at="2024-01-15T09:48:21 IST" duration-ms="190557" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[EdgeDriver: MicrosoftEdge on windows (d21def3b8144e885c655e7c67aeb8f3f)] -> xpath: //button[@id='btnPayLater']] (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d21def3b8144e885c655e7c67aeb8f3f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[EdgeDriver: MicrosoftEdge on windows (d21def3b8144e885c655e7c67aeb8f3f)] -> xpath: //button[@id='btnPayLater']] (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d21def3b8144e885c655e7c67aeb8f3f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
+at pages.CheckoutPage.clickOnPayLaterButton(CheckoutPage.java:217)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.reviewAndCheckoutPage(Smoke_Create_Event_Photo_editTest.java:114)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:103)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Event_Photo_copyTest -->
+        <test-method retried="true" signature="Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:48:21 IST" name="Create_Event_Photo_copyTest" finished-at="2024-01-15T09:52:22 IST" duration-ms="240126" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: Password' (tried for 120 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: Password' (tried for 120 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
+at pages.loginpage.passwordnamesendkey(loginpage.java:49)
+at pages.loginpage.loginwithCredential(loginpage.java:69)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Password"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d21def3b8144e885c655e7c67aeb8f3f, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d21def3b8144e885c655e7c67aeb8f3f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Event_Photo_copyTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:48:21 IST" name="checkStatus" finished-at="2024-01-15T09:48:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create_Event_Photo_copyTest status=SKIP method=Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method retried="true" signature="Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:52:22 IST" name="Create_Event_Photo_copyTest" finished-at="2024-01-15T09:56:22 IST" duration-ms="240522" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: Password' (tried for 120 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: Password' (tried for 120 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
+at pages.loginpage.passwordnamesendkey(loginpage.java:49)
+at pages.loginpage.loginwithCredential(loginpage.java:69)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Password"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d21def3b8144e885c655e7c67aeb8f3f, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d21def3b8144e885c655e7c67aeb8f3f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Event_Photo_copyTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:52:22 IST" name="checkStatus" finished-at="2024-01-15T09:52:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create_Event_Photo_copyTest status=SKIP method=Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:56:22 IST" name="checkStatus" finished-at="2024-01-15T09:56:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create_Event_Photo_copyTest status=SKIP method=Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T09:56:22 IST" name="Create_Event_Photo_copyTest" finished-at="2024-01-15T10:00:22 IST" duration-ms="240355" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: Password' (tried for 120 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: Password' (tried for 120 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
+at pages.loginpage.passwordnamesendkey(loginpage.java:49)
+at pages.loginpage.loginwithCredential(loginpage.java:69)
+at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Password"}
+  (Session info: MicrosoftEdge=120.0.2210.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d21def3b8144e885c655e7c67aeb8f3f, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d21def3b8144e885c655e7c67aeb8f3f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Event_Photo_copyTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T10:00:22 IST" name="checkStatus" finished-at="2024-01-15T10:00:23 IST" duration-ms="463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create_Event_Photo_copyTest status=FAILURE method=Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T10:00:23 IST" name="validateCopyFunction" finished-at="2024-01-15T10:00:23 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.validateCopyFunction() on instance Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695 depends on not successfully finished methods 
+[Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() on instance Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.validateCopyFunction() on instance Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695 depends on not successfully finished methods 
+[Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() on instance Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]" started-at="2024-01-15T10:00:23 IST" name="tearDown" finished-at="2024-01-15T10:00:23 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest -->
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec]" started-at="2024-01-15T09:43:50 IST" name="setup" finished-at="2024-01-15T09:43:57 IST" duration-ms="7139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2d935682]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCreationOfGif()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec]" started-at="2024-01-15T09:43:57 IST" name="verifyCreationOfGif" finished-at="2024-01-15T09:44:51 IST" duration-ms="54080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreationOfGif -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec]" started-at="2024-01-15T09:44:51 IST" name="checkStatus" finished-at="2024-01-15T09:44:51 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy.verifyCreationOfGif() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=verifyCreationOfGif status=SUCCESS method=Smoke_Create_Event_Gif_Copy.verifyCreationOfGif()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec]" started-at="2024-01-15T09:44:51 IST" name="validateCopyFunction" finished-at="2024-01-15T09:45:02 IST" depends-on-methods="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy.verifyCreationOfGif" duration-ms="10916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCopyFunction -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec]" started-at="2024-01-15T09:45:02 IST" name="checkStatus" finished-at="2024-01-15T09:45:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy.validateCopyFunction() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateCopyFunction status=SUCCESS method=Smoke_Create_Event_Gif_Copy.validateCopyFunction()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy@6150c3ec]" started-at="2024-01-15T09:45:02 IST" name="tearDown" finished-at="2024-01-15T09:45:02 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy -->
+    </test> <!-- Copy function -->
+  </suite> <!-- Suite -->
 </testng-results>

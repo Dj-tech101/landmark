@@ -20,9 +20,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.controlAction;
 
-public class createPhotoPage extends controlAction{
+public class createPhotoPage extends controlAction {
 
-	//public WebDriver driver;
+	// public WebDriver driver;
 	public WebDriverWait wait;
 
 	public JavascriptExecutor js;
@@ -30,8 +30,8 @@ public class createPhotoPage extends controlAction{
 	public createPhotoPage() {
 		// TODO Auto-generated constructor stub
 
-		//this.driver = driver;
-		PageFactory.initElements(driver,this);
+		// this.driver = driver;
+		PageFactory.initElements(driver, this);
 
 	}
 
@@ -50,6 +50,24 @@ public class createPhotoPage extends controlAction{
 
 //		e2.sendKeys(nameofphoto);
 
+	}
+
+	@FindBy(xpath = "//input[@role='switch']")
+	private WebElement autoRemovalButton;
+
+	public void getClickonAAutoRemovalbackButton() {
+
+		try {
+
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(autoRemovalButton));
+
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getMessage());
+		}
 	}
 
 	@FindBy(xpath = "(//button[contains(text(),' OPEN FILE ')])[2]")
@@ -78,53 +96,84 @@ public class createPhotoPage extends controlAction{
 
 	}
 
-	@FindBy(xpath = "//input[@role='switch']")
-	WebElement GreenScreenToggle;
+	@FindBy(xpath = "(//div[@class='mat-radio-outer-circle'])[1]")
+	private WebElement GreenScreenToggle;
 
-	@FindBy(xpath = "(//button[contains(text(),' OPEN FILE ')])[1]")
-	WebElement openBackroundSection;
+	public void clickOnGreenScreenToggle() {
 
-	@SuppressWarnings("deprecation")
-	public Boolean sendKeysBackgroundImage() throws IOException, InterruptedException {
-		boolean value = false;
-
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 		try {
-			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+			js = (JavascriptExecutor) driver;
 
-			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(GreenScreenToggle));
-
-			String areaChecked = waitForElementToBeVisible(GreenScreenToggle).getAttribute("aria-checked");
-			if (CheckedGreenScreenToggle()) {
-				System.out.println("Toggle is on");
-			} else {
-				js = (JavascriptExecutor) driver;
-
-				js.executeScript("arguments[0].click();", e2);
-
-			}
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(GreenScreenToggle));
 
 		} catch (Exception e) {
 			// TODO: handle exception
-
 			System.out.println(e.getMessage());
 		}
+	}
+
+	@FindBy(xpath = "(//div[@class='mat-radio-outer-circle'])[2]")
+	private WebElement backgroundRemoval;
+
+	public void clickOnAutoBackgroundRemovalToggle() {
+
+		try {
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(backgroundRemoval));
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+	}
+
+	@FindBy(xpath = "((//div[@class='image-setting-buttons'])/*[@class='btn-create'])[1]")
+	private WebElement openBackroundSection;
+
+	public WebElement getopenBackroundSectionElement() {
+		return waitForElementToBeVisible(openBackroundSection);
+	}
+
+	@SuppressWarnings("deprecation")
+	public void sendKeysBackgroundImage() throws IOException, InterruptedException {
+//		boolean value = false;
+//
+//		try {
+//
+//			String areaChecked = waitForElementToBeVisible(GreenScreenToggle).getAttribute("class");
+//			if (CheckedGreenScreenToggle()) {
+//				System.out.println("Toggle is on");
+//			} else {
+//				js = (JavascriptExecutor) driver;
+//
+//				js.executeScript("arguments[0].click();", waitForElementToBeVisible(GreenScreenToggle));
+//
+//			}
+//
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//
+//			System.out.println(e.getMessage());
+//		}
 
 		Thread.sleep(1200);
 
 		try {
 
-			System.out.println("ready to click on background");
-			WebElement background = wait.until(ExpectedConditions.elementToBeClickable(openBackroundSection));
+//			System.out.println("ready to click on background");
+//			WebElement background = wait.until(ExpectedConditions.elementToBeClickable(openBackroundSection));
 
 //			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
 //					.pollingEvery(Duration.ofSeconds(100)).withMessage("not define");
 //
 //			WebElement background = wait.until(ExpectedConditions.visibilityOf(openBackroundSection));
 
-			
-			
-			background.click();
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(openBackroundSection));
+
+//			background.click();
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -132,8 +181,6 @@ public class createPhotoPage extends controlAction{
 		}
 
 		Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\backround autoIt.exe");
-
-		return value;
 
 	}
 
@@ -143,8 +190,8 @@ public class createPhotoPage extends controlAction{
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 		try {
-			
-			wait= new WebDriverWait(driver, Duration.ofMinutes(1));
+
+			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
 			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(GreenScreenToggle));
 
@@ -166,7 +213,7 @@ public class createPhotoPage extends controlAction{
 		return value;
 	}
 
-	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[2]")
+	@FindBy(xpath = "//div[@class='footer']/*")
 	WebElement saveButton;
 
 	public void clickonSaveButton() throws InterruptedException {
@@ -209,15 +256,14 @@ public class createPhotoPage extends controlAction{
 
 	}
 
-	
 	@FindBy(xpath = "//div[@class='messages']/span")
 	private WebElement ValidationmessagePhototemplate;
-	
+
 	public String getValidationText() {
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
-		
-		String text=wait.until(ExpectedConditions.elementToBeClickable(ValidationmessagePhototemplate)).getText();
+
+		String text = wait.until(ExpectedConditions.elementToBeClickable(ValidationmessagePhototemplate)).getText();
 
 		return text;
 	}

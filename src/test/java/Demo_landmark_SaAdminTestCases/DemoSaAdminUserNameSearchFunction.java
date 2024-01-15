@@ -54,7 +54,7 @@ public class DemoSaAdminUserNameSearchFunction extends baseclass {
 
 	        MyEventsPage_SaAdmin myEvent = login.loginwithCredential("sadmin@lapp.com", "ppu12345");
 
-	        log.info("search userName ");
+	        extenttest.info("search userName ");
 	        
 	        String userName = "MAHESH100";
 
@@ -62,10 +62,10 @@ public class DemoSaAdminUserNameSearchFunction extends baseclass {
 
 	        String names = myEvent.getNameOfUserNames();
 
-	        log.info("Actual name of user is : "+names);
+	        extenttest.info("Actual name of user is : "+names);
 
 	        if (names.contains(userName)) {
-	           log.info("Test Passed! User with name {0} found.");
+	        	extenttest.info("Test Passed!");
 	            Assert.assertTrue(true);
 	        } else {
 	            Assert.assertTrue(false);

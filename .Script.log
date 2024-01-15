@@ -5988,3 +5988,540 @@
 2024-01-08 10:17:42 INFO  logger:123 - Searching for the event
 2024-01-08 10:17:43 INFO  logger:194 - Copy button click
 2024-01-08 10:17:53 INFO  logger:136 - Searching for the event
+2024-01-08 15:33:23 INFO  logger:97 - drag Videonode in Boothdesign
+2024-01-08 15:55:42 INFO  logger:75 - login with valid credential
+2024-01-08 15:55:47 INFO  logger:171 - click on create event button
+2024-01-08 15:56:00 INFO  logger:179 - select the package
+2024-01-08 15:56:00 INFO  logger:185 - select month and pro options
+2024-01-08 15:56:03 INFO  logger:162 - fill the event details
+2024-01-08 15:56:09 INFO  logger:365 - click on create new video option
+2024-01-08 15:56:10 INFO  logger:369 - fill the neccessory details in video
+2024-01-08 15:56:25 INFO  logger:147 - select the share options 
+2024-01-08 15:56:27 INFO  logger:153 - click on next button
+2024-01-08 15:56:27 INFO  logger:117 - Filling necessary checkout data
+2024-01-08 15:56:32 INFO  logger:123 - Searching for the event
+2024-01-08 15:56:33 INFO  logger:194 - Copy button click
+2024-01-08 15:56:42 INFO  logger:136 - Searching for the event
+2024-01-08 16:41:03 INFO  logger:75 - login with valid credential
+2024-01-08 16:41:07 INFO  logger:171 - click on create event button
+2024-01-08 16:41:18 INFO  logger:179 - select the package
+2024-01-08 16:41:18 INFO  logger:185 - select month and pro options
+2024-01-08 16:41:22 INFO  logger:162 - fill the event details
+2024-01-08 16:41:29 INFO  logger:365 - click on create new video option
+2024-01-08 16:41:30 INFO  logger:369 - fill the neccessory details in video
+2024-01-08 16:42:13 INFO  logger:147 - select the share options 
+2024-01-08 16:42:15 INFO  logger:153 - click on next button
+2024-01-08 16:42:17 INFO  logger:117 - Filling necessary checkout data
+2024-01-08 16:42:22 INFO  logger:123 - Searching for the event
+2024-01-08 16:42:23 INFO  logger:194 - Copy button click
+2024-01-08 16:42:24 INFO  logger:194 - Copy button click
+2024-01-08 16:42:44 INFO  logger:136 - Searching for the event
+2024-01-08 16:52:20 INFO  logger:75 - login with valid credential
+2024-01-08 16:52:28 INFO  logger:171 - click on create event button
+2024-01-08 16:52:46 INFO  logger:179 - select the package
+2024-01-08 16:52:47 INFO  logger:185 - select month and pro options
+2024-01-08 16:52:50 INFO  logger:162 - fill the event details
+2024-01-08 16:52:58 INFO  logger:365 - click on create new video option
+2024-01-08 16:52:59 INFO  logger:369 - fill the neccessory details in video
+2024-01-08 16:53:15 INFO  logger:147 - select the share options 
+2024-01-08 16:53:18 INFO  logger:153 - click on next button
+2024-01-08 16:53:24 INFO  logger:117 - Filling necessary checkout data
+2024-01-08 16:53:28 INFO  logger:123 - Searching for the event
+2024-01-08 16:53:29 INFO  logger:194 - Copy button click
+2024-01-08 17:18:44 INFO  logger:194 - Copy button click
+2024-01-08 17:18:44 INFO  logger:194 - Copy button click
+2024-01-08 17:18:44 INFO  logger:194 - Copy button click
+2024-01-08 17:46:12 INFO  logger:75 - login with valid credential
+2024-01-08 17:46:16 INFO  logger:171 - click on create event button
+2024-01-08 17:46:27 INFO  logger:179 - select the package
+2024-01-08 17:46:27 INFO  logger:185 - select month and pro options
+2024-01-08 17:46:30 INFO  logger:162 - fill the event details
+2024-01-08 17:46:37 INFO  logger:365 - click on create new video option
+2024-01-08 17:46:37 INFO  logger:369 - fill the neccessory details in video
+2024-01-08 17:46:53 INFO  logger:147 - select the share options 
+2024-01-08 17:46:54 INFO  logger:153 - click on next button
+2024-01-08 17:46:56 INFO  logger:117 - Filling necessary checkout data
+2024-01-08 17:47:00 INFO  logger:123 - Searching for the event
+2024-01-08 17:47:01 INFO  logger:194 - Copy button click
+2024-01-08 17:47:08 INFO  logger:194 - Copy button click
+2024-01-08 17:47:08 INFO  logger:194 - Copy button click
+2024-01-08 17:47:08 INFO  logger:194 - Copy button click
+2024-01-08 17:49:28 INFO  logger:75 - login with valid credential
+2024-01-08 17:49:31 INFO  logger:171 - click on create event button
+2024-01-08 17:49:43 INFO  logger:179 - select the package
+2024-01-08 17:49:44 INFO  logger:185 - select month and pro options
+2024-01-08 17:49:47 INFO  logger:162 - fill the event details
+2024-01-08 17:49:54 INFO  logger:365 - click on create new video option
+2024-01-08 17:49:55 INFO  logger:369 - fill the neccessory details in video
+2024-01-08 17:50:12 INFO  logger:147 - select the share options 
+2024-01-08 17:50:13 INFO  logger:153 - click on next button
+2024-01-08 17:50:14 INFO  logger:117 - Filling necessary checkout data
+2024-01-08 17:50:19 INFO  logger:123 - Searching for the event
+2024-01-08 17:50:19 INFO  logger:194 - Copy button click
+2024-01-08 17:50:37 INFO  logger:136 - Searching for the event
+2024-01-08 18:40:41 INFO  logger:75 - login with valid credential
+2024-01-08 18:40:45 INFO  logger:171 - click on create event button
+2024-01-08 18:40:56 INFO  logger:179 - select the package
+2024-01-08 18:40:56 INFO  logger:185 - select month and pro options
+2024-01-08 18:41:00 INFO  logger:162 - fill the event details
+2024-01-08 18:41:07 INFO  logger:365 - click on create new video option
+2024-01-08 18:41:07 INFO  logger:369 - fill the neccessory details in video
+2024-01-08 18:41:23 INFO  logger:147 - select the share options 
+2024-01-08 18:41:24 INFO  logger:153 - click on next button
+2024-01-08 18:41:25 INFO  logger:117 - Filling necessary checkout data
+2024-01-08 18:41:30 INFO  logger:123 - Searching for the event
+2024-01-08 18:41:30 INFO  logger:194 - Copy button click
+2024-01-08 18:41:53 INFO  logger:136 - Searching for the event
+2024-01-09 00:50:24 INFO  logger:75 - login with valid credential
+2024-01-09 00:50:26 INFO  logger:171 - click on create event button
+2024-01-09 00:51:04 INFO  logger:179 - select the package
+2024-01-09 00:51:05 INFO  logger:185 - select month and pro options
+2024-01-09 00:51:08 INFO  logger:162 - fill the event details
+2024-01-09 00:51:14 INFO  logger:365 - click on create new video option
+2024-01-09 00:51:16 INFO  logger:369 - fill the neccessory details in video
+2024-01-09 00:51:31 INFO  logger:147 - select the share options 
+2024-01-09 00:51:33 INFO  logger:153 - click on next button
+2024-01-09 00:52:40 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 00:52:48 INFO  logger:47 - Clicking on create event button
+2024-01-09 00:53:22 INFO  logger:52 - Selecting the package
+2024-01-09 00:53:22 INFO  logger:56 - Selecting package options
+2024-01-09 00:53:25 INFO  logger:60 - Filling event details
+2024-01-09 00:53:31 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 00:53:33 INFO  logger:68 - Creating new Gif
+2024-01-09 00:53:59 INFO  logger:73 - Creating new Share node
+2024-01-09 00:53:59 INFO  logger:103 - Selecting the share options
+2024-01-09 00:54:00 INFO  logger:76 - Reviewing and checking out
+2024-01-09 00:54:02 INFO  logger:114 - Filling necessary checkout data
+2024-01-09 00:54:07 INFO  logger:120 - Searching for the event
+2024-01-09 00:54:08 INFO  logger:142 - Copy button click
+2024-01-09 00:56:11 INFO  logger:75 - login with valid credential
+2024-01-09 00:56:12 INFO  logger:171 - click on create event button
+2024-01-09 00:56:46 INFO  logger:179 - select the package
+2024-01-09 00:56:46 INFO  logger:185 - select month and pro options
+2024-01-09 00:56:49 INFO  logger:162 - fill the event details
+2024-01-09 00:56:56 INFO  logger:365 - click on create new video option
+2024-01-09 00:56:57 INFO  logger:369 - fill the neccessory details in video
+2024-01-09 00:57:13 INFO  logger:147 - select the share options 
+2024-01-09 00:57:14 INFO  logger:153 - click on next button
+2024-01-09 00:57:15 INFO  logger:117 - Filling necessary checkout data
+2024-01-09 00:57:21 INFO  logger:123 - Searching for the event
+2024-01-09 00:57:21 INFO  logger:194 - Copy button click
+2024-01-09 01:00:28 INFO  logger:194 - Copy button click
+2024-01-09 01:00:28 INFO  logger:194 - Copy button click
+2024-01-09 01:00:28 INFO  logger:194 - Copy button click
+2024-01-09 01:00:33 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 01:00:38 INFO  logger:47 - Clicking on create event button
+2024-01-09 01:01:22 INFO  logger:52 - Selecting the package
+2024-01-09 01:01:22 INFO  logger:56 - Selecting package options
+2024-01-09 01:01:25 INFO  logger:60 - Filling event details
+2024-01-09 01:01:31 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 01:01:34 INFO  logger:68 - Creating new Gif
+2024-01-09 01:01:58 INFO  logger:73 - Creating new Share node
+2024-01-09 01:01:58 INFO  logger:103 - Selecting the share options
+2024-01-09 01:09:01 INFO  logger:75 - login with valid credential
+2024-01-09 01:09:03 INFO  logger:171 - click on create event button
+2024-01-09 01:09:40 INFO  logger:179 - select the package
+2024-01-09 01:09:40 INFO  logger:185 - select month and pro options
+2024-01-09 01:09:44 INFO  logger:162 - fill the event details
+2024-01-09 01:09:50 INFO  logger:365 - click on create new video option
+2024-01-09 01:09:51 INFO  logger:369 - fill the neccessory details in video
+2024-01-09 01:10:07 INFO  logger:147 - select the share options 
+2024-01-09 01:10:09 INFO  logger:153 - click on next button
+2024-01-09 01:10:09 INFO  logger:117 - Filling necessary checkout data
+2024-01-09 01:10:14 INFO  logger:123 - Searching for the event
+2024-01-09 01:10:14 INFO  logger:194 - Copy button click
+2024-01-09 01:10:31 INFO  logger:136 - Searching for the event
+2024-01-09 01:10:31 INFO  logger:194 - Copy button click
+2024-01-09 01:10:31 INFO  logger:194 - Copy button click
+2024-01-09 01:10:31 INFO  logger:194 - Copy button click
+2024-01-09 01:10:36 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 01:10:38 INFO  logger:47 - Clicking on create event button
+2024-01-09 01:11:26 INFO  logger:52 - Selecting the package
+2024-01-09 01:11:26 INFO  logger:56 - Selecting package options
+2024-01-09 01:11:30 INFO  logger:60 - Filling event details
+2024-01-09 01:11:35 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 01:11:36 INFO  logger:68 - Creating new Gif
+2024-01-09 01:11:53 INFO  logger:73 - Creating new Share node
+2024-01-09 01:11:53 INFO  logger:103 - Selecting the share options
+2024-01-09 01:11:54 INFO  logger:76 - Reviewing and checking out
+2024-01-09 01:11:55 INFO  logger:114 - Filling necessary checkout data
+2024-01-09 01:12:00 INFO  logger:120 - Searching for the event
+2024-01-09 01:12:00 INFO  logger:142 - Copy button click
+2024-01-09 01:12:16 INFO  logger:137 - Searching for the event
+2024-01-09 01:14:58 INFO  logger:116 - select the new  photo template  options
+2024-01-09 01:17:59 INFO  logger:75 - login with valid credential
+2024-01-09 01:18:02 INFO  logger:171 - click on create event button
+2024-01-09 01:18:39 INFO  logger:179 - select the package
+2024-01-09 01:18:39 INFO  logger:185 - select month and pro options
+2024-01-09 01:18:44 INFO  logger:162 - fill the event details
+2024-01-09 01:18:51 INFO  logger:365 - click on create new video option
+2024-01-09 01:18:52 INFO  logger:369 - fill the neccessory details in video
+2024-01-09 01:19:07 INFO  logger:147 - select the share options 
+2024-01-09 01:19:08 INFO  logger:153 - click on next button
+2024-01-09 01:19:09 INFO  logger:117 - Filling necessary checkout data
+2024-01-09 01:19:14 INFO  logger:123 - Searching for the event
+2024-01-09 01:19:14 INFO  logger:194 - Copy button click
+2024-01-09 01:19:24 INFO  logger:136 - Searching for the event
+2024-01-09 01:19:59 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 01:20:01 INFO  logger:47 - Clicking on create event button
+2024-01-09 01:20:35 INFO  logger:52 - Selecting the package
+2024-01-09 01:20:36 INFO  logger:56 - Selecting package options
+2024-01-09 01:20:39 INFO  logger:60 - Filling event details
+2024-01-09 01:20:43 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 01:20:44 INFO  logger:68 - Creating new Gif
+2024-01-09 01:21:01 INFO  logger:73 - Creating new Share node
+2024-01-09 01:21:01 INFO  logger:103 - Selecting the share options
+2024-01-09 01:21:01 INFO  logger:76 - Reviewing and checking out
+2024-01-09 01:21:02 INFO  logger:114 - Filling necessary checkout data
+2024-01-09 01:21:07 INFO  logger:120 - Searching for the event
+2024-01-09 01:21:07 INFO  logger:142 - Copy button click
+2024-01-09 09:36:28 INFO  logger:75 - login with valid credential
+2024-01-09 09:36:33 INFO  logger:171 - click on create event button
+2024-01-09 09:37:18 INFO  logger:179 - select the package
+2024-01-09 09:37:18 INFO  logger:185 - select month and pro options
+2024-01-09 09:37:22 INFO  logger:162 - fill the event details
+2024-01-09 09:37:29 INFO  logger:365 - click on create new video option
+2024-01-09 09:37:30 INFO  logger:369 - fill the neccessory details in video
+2024-01-09 09:37:49 INFO  logger:147 - select the share options 
+2024-01-09 09:37:53 INFO  logger:153 - click on next button
+2024-01-09 09:37:55 INFO  logger:117 - Filling necessary checkout data
+2024-01-09 09:38:00 INFO  logger:123 - Searching for the event
+2024-01-09 09:38:02 INFO  logger:194 - Copy button click
+2024-01-09 09:47:59 INFO  logger:136 - Searching for the event
+2024-01-09 09:48:31 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 09:49:19 INFO  logger:47 - Clicking on create event button
+2024-01-09 09:49:53 INFO  logger:52 - Selecting the package
+2024-01-09 09:49:53 INFO  logger:56 - Selecting package options
+2024-01-09 09:49:59 INFO  logger:60 - Filling event details
+2024-01-09 09:50:07 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 09:50:08 INFO  logger:68 - Creating new Gif
+2024-01-09 09:50:24 INFO  logger:73 - Creating new Share node
+2024-01-09 09:50:24 INFO  logger:103 - Selecting the share options
+2024-01-09 09:50:25 INFO  logger:76 - Reviewing and checking out
+2024-01-09 09:50:26 INFO  logger:114 - Filling necessary checkout data
+2024-01-09 09:50:31 INFO  logger:120 - Searching for the event
+2024-01-09 09:50:31 INFO  logger:142 - Copy button click
+2024-01-09 09:50:51 INFO  logger:137 - Searching for the event
+2024-01-09 09:54:40 INFO  logger:116 - select the new  photo template  options
+2024-01-09 09:56:19 INFO  logger:51 - login with valid credential
+2024-01-09 09:56:21 INFO  logger:58 - click on create new event button
+2024-01-09 09:56:46 INFO  logger:65 - click on package
+2024-01-09 09:56:46 INFO  logger:71 - select package
+2024-01-09 09:56:51 INFO  logger:82 - fill necccessory data
+2024-01-09 09:57:04 INFO  logger:98 - create new photo
+2024-01-09 09:57:04 INFO  logger:106 - select the new  photo template  options
+2024-01-09 09:57:16 INFO  logger:112 - create Preview node 
+2024-01-09 09:57:21 INFO  logger:146 - fill credit details
+2024-01-09 10:15:21 INFO  logger:57 - login with valid credential
+2024-01-09 10:15:50 INFO  logger:64 - click on create new event button
+2024-01-09 10:17:00 INFO  logger:71 - click on package
+2024-01-09 10:17:00 INFO  logger:57 - login with valid credential
+2024-01-09 10:21:00 INFO  logger:57 - login with valid credential
+2024-01-09 10:25:01 INFO  logger:57 - login with valid credential
+2024-01-09 10:49:59 INFO  logger:102 - drag Gif in Boothdesign
+2024-01-09 10:54:54 INFO  logger:102 - drag Gif in Boothdesign
+2024-01-09 11:03:16 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 11:03:21 INFO  logger:47 - Clicking on create event button
+2024-01-09 11:05:10 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 11:05:13 INFO  logger:47 - Clicking on create event button
+2024-01-09 11:05:24 INFO  logger:52 - Selecting the package
+2024-01-09 11:05:24 INFO  logger:56 - Selecting package options
+2024-01-09 11:05:27 INFO  logger:60 - Filling event details
+2024-01-09 11:05:32 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 11:05:33 INFO  logger:68 - Creating new Gif
+2024-01-09 11:05:49 INFO  logger:73 - Creating new Share node
+2024-01-09 11:05:49 INFO  logger:103 - Selecting the share options
+2024-01-09 11:05:51 INFO  logger:76 - Reviewing and checking out
+2024-01-09 11:05:51 INFO  logger:114 - Filling necessary checkout data
+2024-01-09 11:05:56 INFO  logger:120 - Searching for the event
+2024-01-09 11:05:57 INFO  logger:142 - Copy button click
+2024-01-09 11:06:19 INFO  logger:137 - Searching for the event
+2024-01-09 11:08:20 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 11:09:17 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 11:09:18 INFO  logger:47 - Clicking on create event button
+2024-01-09 11:09:54 INFO  logger:52 - Selecting the package
+2024-01-09 11:10:09 INFO  logger:43 - Logging in with valid credentials
+2024-01-09 11:10:11 INFO  logger:47 - Clicking on create event button
+2024-01-09 11:10:26 INFO  logger:52 - Selecting the package
+2024-01-09 11:10:26 INFO  logger:56 - Selecting package options
+2024-01-09 11:10:29 INFO  logger:60 - Filling event details
+2024-01-09 11:10:34 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-09 11:10:35 INFO  logger:68 - Creating new Gif
+2024-01-09 11:10:52 INFO  logger:73 - Creating new Share node
+2024-01-09 11:10:52 INFO  logger:103 - Selecting the share options
+2024-01-09 11:10:56 INFO  logger:76 - Reviewing and checking out
+2024-01-09 11:10:57 INFO  logger:114 - Filling necessary checkout data
+2024-01-09 11:11:02 INFO  logger:120 - Searching for the event
+2024-01-09 11:11:02 INFO  logger:142 - Copy button click
+2024-01-09 11:11:13 INFO  logger:137 - Searching for the event
+2024-01-09 16:27:54 INFO  logger:75 - login with valid credential
+2024-01-09 16:33:15 INFO  logger:43 - Logging in with valid credentials
+2024-01-10 11:01:10 INFO  logger:55 - login with valid credential
+2024-01-10 11:01:15 INFO  logger:62 - click on create new event button
+2024-01-10 11:01:25 INFO  logger:69 - click on package
+2024-01-10 11:01:25 INFO  logger:75 - select package
+2024-01-10 11:01:29 INFO  logger:85 - fill necccessory data
+2024-01-10 11:01:35 INFO  logger:94 - create photo node as single image
+2024-01-10 11:01:48 INFO  logger:112 - create Sahre node 
+2024-01-10 11:01:57 INFO  logger:124 - click on next button
+2024-01-10 11:01:59 INFO  logger:134 - fill credit details
+2024-01-10 11:02:10 INFO  logger:55 - login with valid credential
+2024-01-10 11:02:12 INFO  logger:63 - click on create new event button
+2024-01-10 11:02:20 INFO  logger:70 - click on package
+2024-01-10 11:02:20 INFO  logger:76 - select package
+2024-01-10 11:02:24 INFO  logger:86 - fill necccessory data
+2024-01-10 11:02:31 INFO  logger:95 - create photo node as single image
+2024-01-10 11:02:44 INFO  logger:113 - create Share node 
+2024-01-10 11:02:55 INFO  logger:124 - click on next button
+2024-01-10 11:02:56 INFO  logger:134 - fill credit details
+2024-01-10 11:03:06 INFO  logger:58 - login with valid credential
+2024-01-10 11:03:10 INFO  logger:65 - click on create new event button
+2024-01-10 11:03:18 INFO  logger:72 - click on package
+2024-01-10 11:03:18 INFO  logger:78 - select package
+2024-01-10 11:03:22 INFO  logger:90 - fill necccessory data
+2024-01-10 11:03:29 INFO  logger:116 - click on create new gif option
+2024-01-10 11:03:30 INFO  logger:120 - fill the neccessory details in gif
+2024-01-10 11:03:42 INFO  logger:134 - create Sahre node 
+2024-01-10 11:03:50 INFO  logger:148 - click on next button
+2024-01-10 11:03:51 INFO  logger:158 - fill credit details
+2024-01-10 11:07:07 INFO  logger:75 - login with valid credential
+2024-01-10 11:07:09 INFO  logger:171 - click on create event button
+2024-01-10 11:07:18 INFO  logger:179 - select the package
+2024-01-10 11:07:18 INFO  logger:185 - select month and pro options
+2024-01-10 11:07:22 INFO  logger:162 - fill the event details
+2024-01-10 11:07:29 INFO  logger:365 - click on create new video option
+2024-01-10 11:07:29 INFO  logger:369 - fill the neccessory details in video
+2024-01-10 11:07:45 INFO  logger:43 - Logging in with valid credentials
+2024-01-10 11:07:48 INFO  logger:47 - Clicking on create event button
+2024-01-10 11:07:57 INFO  logger:52 - Selecting the package
+2024-01-10 11:07:57 INFO  logger:56 - Selecting package options
+2024-01-10 11:08:00 INFO  logger:60 - Filling event details
+2024-01-10 11:08:05 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-10 11:08:07 INFO  logger:68 - Creating new Gif
+2024-01-10 11:08:23 INFO  logger:73 - Creating new Share node
+2024-01-10 11:08:23 INFO  logger:103 - Selecting the share options
+2024-01-10 11:08:29 INFO  logger:76 - Reviewing and checking out
+2024-01-10 11:08:30 INFO  logger:114 - Filling necessary checkout data
+2024-01-10 11:08:34 INFO  logger:120 - Searching for the event
+2024-01-10 11:08:35 INFO  logger:142 - Copy button click
+2024-01-10 11:09:18 INFO  logger:137 - Searching for the event
+2024-01-10 11:19:36 INFO  logger:102 - drag Gif in Boothdesign
+2024-01-10 11:35:48 INFO  logger:107 - Select the new photo template options
+2024-01-10 11:49:44 INFO  logger:107 - Select the new photo template options
+2024-01-11 09:40:02 INFO  logger:55 - login with valid credential
+2024-01-11 09:40:05 INFO  logger:62 - click on create new event button
+2024-01-11 09:40:11 INFO  logger:69 - click on package
+2024-01-11 09:40:11 INFO  logger:75 - select package
+2024-01-11 09:40:15 INFO  logger:85 - fill necccessory data
+2024-01-11 09:40:20 INFO  logger:94 - create photo node as single image
+2024-01-11 09:57:52 INFO  logger:55 - login with valid credential
+2024-01-11 10:00:39 INFO  logger:55 - login with valid credential
+2024-01-11 10:01:03 INFO  logger:55 - login with valid credential
+2024-01-11 10:01:06 INFO  logger:63 - click on create new event button
+2024-01-11 10:01:11 INFO  logger:70 - click on package
+2024-01-11 10:01:11 INFO  logger:76 - select package
+2024-01-11 10:01:14 INFO  logger:86 - fill necccessory data
+2024-01-11 10:01:20 INFO  logger:95 - create photo node as single image
+2024-01-11 10:02:32 INFO  logger:113 - create Share node 
+2024-01-11 10:02:42 INFO  logger:124 - click on next button
+2024-01-11 10:02:43 INFO  logger:134 - fill credit details
+2024-01-11 10:13:51 INFO  logger:55 - login with valid credential
+2024-01-11 10:14:01 INFO  logger:63 - click on create new event button
+2024-01-11 10:14:08 INFO  logger:70 - click on package
+2024-01-11 10:14:08 INFO  logger:76 - select package
+2024-01-11 10:14:12 INFO  logger:86 - fill necccessory data
+2024-01-11 10:14:17 INFO  logger:95 - create photo node as single image
+2024-01-11 10:14:28 INFO  logger:113 - create Share node 
+2024-01-11 10:14:39 INFO  logger:124 - click on next button
+2024-01-11 10:14:40 INFO  logger:134 - fill credit details
+2024-01-11 10:18:12 INFO  logger:55 - login with valid credential
+2024-01-11 10:18:18 INFO  logger:63 - click on create new event button
+2024-01-11 10:18:26 INFO  logger:70 - click on package
+2024-01-11 10:18:26 INFO  logger:76 - select package
+2024-01-11 10:18:29 INFO  logger:86 - fill necccessory data
+2024-01-11 10:18:36 INFO  logger:95 - create photo node as single image
+2024-01-11 10:18:47 INFO  logger:113 - create Share node 
+2024-01-11 10:18:57 INFO  logger:124 - click on next button
+2024-01-11 10:18:58 INFO  logger:134 - fill credit details
+2024-01-11 10:20:14 INFO  logger:55 - login with valid credential
+2024-01-11 10:22:38 INFO  logger:55 - login with valid credential
+2024-01-11 10:24:14 INFO  logger:55 - login with valid credential
+2024-01-11 10:24:30 INFO  logger:55 - login with valid credential
+2024-01-11 10:24:38 INFO  logger:63 - click on create new event button
+2024-01-11 10:24:44 INFO  logger:70 - click on package
+2024-01-11 10:24:44 INFO  logger:76 - select package
+2024-01-11 10:24:47 INFO  logger:86 - fill necccessory data
+2024-01-11 10:24:53 INFO  logger:95 - create photo node as single image
+2024-01-11 10:27:48 INFO  logger:55 - login with valid credential
+2024-01-11 10:27:57 INFO  logger:63 - click on create new event button
+2024-01-11 10:28:03 INFO  logger:70 - click on package
+2024-01-11 10:28:03 INFO  logger:76 - select package
+2024-01-11 10:28:07 INFO  logger:86 - fill necccessory data
+2024-01-11 10:28:12 INFO  logger:95 - create photo node as single image
+2024-01-11 10:28:15 INFO  logger:55 - login with valid credential
+2024-01-11 10:29:33 INFO  logger:55 - login with valid credential
+2024-01-11 10:29:38 INFO  logger:63 - click on create new event button
+2024-01-11 10:29:43 INFO  logger:70 - click on package
+2024-01-11 10:29:43 INFO  logger:76 - select package
+2024-01-11 10:29:46 INFO  logger:86 - fill necccessory data
+2024-01-11 10:29:52 INFO  logger:95 - create photo node as single image
+2024-01-11 10:32:15 INFO  logger:55 - login with valid credential
+2024-01-11 10:36:54 INFO  logger:55 - login with valid credential
+2024-01-11 10:36:57 INFO  logger:63 - click on create new event button
+2024-01-11 10:37:03 INFO  logger:70 - click on package
+2024-01-11 10:37:03 INFO  logger:76 - select package
+2024-01-11 10:37:06 INFO  logger:86 - fill necccessory data
+2024-01-11 10:37:12 INFO  logger:95 - create photo node as single image
+2024-01-11 10:38:07 INFO  logger:55 - login with valid credential
+2024-01-11 10:38:45 INFO  logger:55 - login with valid credential
+2024-01-11 10:38:51 INFO  logger:63 - click on create new event button
+2024-01-11 10:38:59 INFO  logger:70 - click on package
+2024-01-11 10:39:00 INFO  logger:76 - select package
+2024-01-11 10:39:03 INFO  logger:86 - fill necccessory data
+2024-01-11 10:39:09 INFO  logger:95 - create photo node as single image
+2024-01-11 10:40:56 INFO  logger:55 - login with valid credential
+2024-01-11 10:40:59 INFO  logger:63 - click on create new event button
+2024-01-11 10:41:04 INFO  logger:70 - click on package
+2024-01-11 10:41:04 INFO  logger:76 - select package
+2024-01-11 10:41:08 INFO  logger:86 - fill necccessory data
+2024-01-11 10:41:13 INFO  logger:95 - create photo node as single image
+2024-01-11 10:50:09 INFO  logger:58 - login with valid credential
+2024-01-11 10:50:13 INFO  logger:65 - click on create new event button
+2024-01-11 10:50:21 INFO  logger:72 - click on package
+2024-01-11 10:50:21 INFO  logger:78 - select package
+2024-01-11 10:50:25 INFO  logger:90 - fill necccessory data
+2024-01-11 10:50:31 INFO  logger:116 - click on create new gif option
+2024-01-11 10:50:31 INFO  logger:120 - fill the neccessory details in gif
+2024-01-11 10:50:43 INFO  logger:134 - create Sahre node 
+2024-01-11 10:50:52 INFO  logger:148 - click on next button
+2024-01-11 10:50:53 INFO  logger:158 - fill credit details
+2024-01-11 10:52:01 INFO  logger:58 - login with valid credential
+2024-01-11 10:52:24 INFO  logger:65 - click on create new event button
+2024-01-11 10:52:48 INFO  logger:72 - click on package
+2024-01-11 10:52:48 INFO  logger:78 - select package
+2024-01-11 10:52:51 INFO  logger:90 - fill necccessory data
+2024-01-11 10:52:57 INFO  logger:116 - click on create new gif option
+2024-01-11 10:52:58 INFO  logger:120 - fill the neccessory details in gif
+2024-01-11 10:53:09 INFO  logger:134 - create Sahre node 
+2024-01-11 10:53:18 INFO  logger:148 - click on next button
+2024-01-11 10:53:19 INFO  logger:158 - fill credit details
+2024-01-11 12:06:51 INFO  logger:57 - login with valid credential
+2024-01-11 12:06:51 INFO  logger:57 - login with valid credential
+2024-01-11 12:06:51 INFO  logger:57 - login with valid credential
+2024-01-11 12:06:51 INFO  logger:57 - login with valid credential
+2024-01-12 09:37:01 INFO  logger:58 - login with valid credential
+2024-01-12 09:37:06 INFO  logger:65 - click on create new event button
+2024-01-12 09:37:24 INFO  logger:72 - click on package
+2024-01-12 09:37:24 INFO  logger:78 - select package
+2024-01-12 09:37:27 INFO  logger:90 - fill necccessory data
+2024-01-12 09:37:34 INFO  logger:116 - click on create new gif option
+2024-01-12 09:37:34 INFO  logger:120 - fill the neccessory details in gif
+2024-01-12 09:37:45 INFO  logger:134 - create Sahre node 
+2024-01-12 09:37:55 INFO  logger:148 - click on next button
+2024-01-12 09:37:56 INFO  logger:158 - fill credit details
+2024-01-15 09:42:48 INFO  logger:75 - login with valid credential
+2024-01-15 09:42:59 INFO  logger:171 - click on create event button
+2024-01-15 09:43:09 INFO  logger:179 - select the package
+2024-01-15 09:43:09 INFO  logger:185 - select month and pro options
+2024-01-15 09:43:12 INFO  logger:162 - fill the event details
+2024-01-15 09:43:18 INFO  logger:366 - click on create new video option
+2024-01-15 09:43:19 INFO  logger:370 - fill the neccessory details in video
+2024-01-15 09:43:34 INFO  logger:147 - select the share options 
+2024-01-15 09:43:36 INFO  logger:153 - click on next button
+2024-01-15 09:43:36 INFO  logger:117 - Filling necessary checkout data
+2024-01-15 09:43:41 INFO  logger:123 - Searching for the event
+2024-01-15 09:43:41 INFO  logger:194 - Copy button click
+2024-01-15 09:43:49 INFO  logger:194 - Copy button click
+2024-01-15 09:43:49 INFO  logger:194 - Copy button click
+2024-01-15 09:43:49 INFO  logger:194 - Copy button click
+2024-01-15 09:43:57 INFO  logger:43 - Logging in with valid credentials
+2024-01-15 09:44:02 INFO  logger:47 - Clicking on create event button
+2024-01-15 09:44:16 INFO  logger:52 - Selecting the package
+2024-01-15 09:44:16 INFO  logger:56 - Selecting package options
+2024-01-15 09:44:19 INFO  logger:60 - Filling event details
+2024-01-15 09:44:23 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-15 09:44:25 INFO  logger:68 - Creating new Gif
+2024-01-15 09:44:41 INFO  logger:73 - Creating new Share node
+2024-01-15 09:44:41 INFO  logger:102 - Selecting the share options
+2024-01-15 09:44:45 INFO  logger:76 - Reviewing and checking out
+2024-01-15 09:44:46 INFO  logger:113 - Filling necessary checkout data
+2024-01-15 09:44:51 INFO  logger:119 - Searching for the event
+2024-01-15 09:44:51 INFO  logger:138 - Copy button click
+2024-01-15 09:45:01 INFO  logger:132 - Searching for the event
+2024-01-15 11:26:34 INFO  logger:366 - click on create new video option
+2024-01-15 11:26:35 INFO  logger:370 - fill the neccessory details in video
+2024-01-15 11:27:43 INFO  logger:97 - drag Videonode in Boothdesign
+2024-01-15 11:44:32 INFO  logger:51 - login with valid credential
+2024-01-15 11:44:35 INFO  logger:58 - click on create new event button
+2024-01-15 11:44:41 INFO  logger:65 - click on package
+2024-01-15 11:44:41 INFO  logger:71 - select package
+2024-01-15 11:44:44 INFO  logger:82 - fill necccessory data
+2024-01-15 11:44:54 INFO  logger:98 - create new photo
+2024-01-15 11:44:54 INFO  logger:106 - select the new  photo template  options
+2024-01-15 11:45:04 INFO  logger:112 - create Preview node 
+2024-01-15 11:45:10 INFO  logger:146 - fill credit details
+2024-01-15 11:45:24 INFO  logger:75 - login with valid credential
+2024-01-15 11:45:33 INFO  logger:171 - click on create event button
+2024-01-15 11:45:47 INFO  logger:179 - select the package
+2024-01-15 11:45:47 INFO  logger:185 - select month and pro options
+2024-01-15 11:45:51 INFO  logger:162 - fill the event details
+2024-01-15 11:45:58 INFO  logger:366 - click on create new video option
+2024-01-15 11:45:59 INFO  logger:370 - fill the neccessory details in video
+2024-01-15 11:46:15 INFO  logger:147 - select the share options 
+2024-01-15 11:46:19 INFO  logger:153 - click on next button
+2024-01-15 11:46:20 INFO  logger:117 - Filling necessary checkout data
+2024-01-15 11:46:25 INFO  logger:123 - Searching for the event
+2024-01-15 11:46:25 INFO  logger:194 - Copy button click
+2024-01-15 11:46:36 INFO  logger:136 - Searching for the event
+2024-01-15 11:47:42 INFO  logger:57 - login with valid credential
+2024-01-15 11:47:46 INFO  logger:64 - click on create new event button
+2024-01-15 11:47:51 INFO  logger:71 - click on package
+2024-01-15 11:47:51 INFO  logger:77 - select package
+2024-01-15 11:47:54 INFO  logger:90 - fill necccessory data
+2024-01-15 11:51:13 INFO  logger:113 - click on create new video option
+2024-01-15 11:51:13 INFO  logger:117 - fill the neccessory details in video
+2024-01-15 11:51:36 INFO  logger:57 - login with valid credential
+2024-01-15 11:56:22 INFO  logger:57 - login with valid credential
+2024-01-15 12:01:07 INFO  logger:57 - login with valid credential
+2024-01-15 12:12:57 INFO  logger:107 - Select the new photo template options
+2024-01-15 12:31:32 INFO  logger:58 - login with valid credential
+2024-01-15 12:31:44 INFO  logger:65 - click on create new event button
+2024-01-15 12:32:21 INFO  logger:72 - click on package
+2024-01-15 12:32:21 INFO  logger:78 - select package
+2024-01-15 12:32:25 INFO  logger:90 - fill necccessory data
+2024-01-15 12:32:33 INFO  logger:116 - click on create new gif option
+2024-01-15 12:32:34 INFO  logger:120 - fill the neccessory details in gif
+2024-01-15 12:32:47 INFO  logger:134 - create Sahre node 
+2024-01-15 12:32:56 INFO  logger:148 - click on next button
+2024-01-15 12:32:59 INFO  logger:158 - fill credit details
+2024-01-15 13:33:58 INFO  logger:43 - Logging in with valid credentials
+2024-01-15 13:34:02 INFO  logger:47 - Clicking on create event button
+2024-01-15 13:34:09 INFO  logger:52 - Selecting the package
+2024-01-15 13:34:09 INFO  logger:56 - Selecting package options
+2024-01-15 13:34:12 INFO  logger:60 - Filling event details
+2024-01-15 13:34:16 INFO  logger:64 - Dragging and dropping Gif node
+2024-01-15 13:34:18 INFO  logger:68 - Creating new Gif
+2024-01-15 13:34:33 INFO  logger:73 - Creating new Share node
+2024-01-15 13:34:33 INFO  logger:102 - Selecting the share options
+2024-01-15 13:34:38 INFO  logger:76 - Reviewing and checking out
+2024-01-15 13:34:39 INFO  logger:113 - Filling necessary checkout data
+2024-01-15 13:34:43 INFO  logger:119 - Searching for the event
+2024-01-15 13:34:44 INFO  logger:138 - Copy button click
+2024-01-15 13:34:53 INFO  logger:132 - Searching for the event
+2024-01-15 13:50:42 INFO  logger:111 - fill the neccessory details in video
+2024-01-15 15:34:35 INFO  logger:366 - click on create new video option
+2024-01-15 15:34:36 INFO  logger:370 - fill the neccessory details in video
+2024-01-15 15:37:46 INFO  logger:97 - drag Videonode in Boothdesign
+2024-01-15 15:42:26 INFO  logger:51 - login with valid credential
+2024-01-15 15:43:10 INFO  logger:116 - select the new  photo template  options
+2024-01-15 15:44:51 INFO  logger:75 - login with valid credential
+2024-01-15 15:47:50 INFO  logger:57 - login with valid credential
+2024-01-15 15:47:58 INFO  logger:64 - click on create new event button
+2024-01-15 15:48:03 INFO  logger:71 - click on package
+2024-01-15 15:48:03 INFO  logger:77 - select package
+2024-01-15 15:48:07 INFO  logger:90 - fill necccessory data
+2024-01-15 15:48:14 INFO  logger:113 - click on create new video option
+2024-01-15 15:48:15 INFO  logger:117 - fill the neccessory details in video
+2024-01-15 15:48:27 INFO  logger:129 - create Sahre node 
+2024-01-15 15:48:32 INFO  logger:143 - click on next button
+2024-01-15 15:48:33 INFO  logger:153 - fill credit details

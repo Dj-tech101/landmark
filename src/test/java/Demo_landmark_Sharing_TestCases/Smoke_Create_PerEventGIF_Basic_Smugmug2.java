@@ -58,7 +58,7 @@ public class Smoke_Create_PerEventGIF_Basic_Smugmug2 extends baseclass {
 		log.info("login with valid credential");
 		login = new loginpage();
 
-		login.loginwithCredential(pro.getusername() ,pro.getpassword());
+		login.loginwithCredential("pputest@gmail.com" ,"ppu12345");
 
 		creatEvent = new creatEventPage();
 
@@ -140,7 +140,7 @@ public class Smoke_Create_PerEventGIF_Basic_Smugmug2 extends baseclass {
 
 		sharepage sharenode = new sharepage();
 
-		sharenode.CreateNewShareNode("print");
+		sharenode.CreateNewShareNodemore("email","text");
 
 	//	sharenode.CreateNewShareNodemore("email", "smugmug");
 

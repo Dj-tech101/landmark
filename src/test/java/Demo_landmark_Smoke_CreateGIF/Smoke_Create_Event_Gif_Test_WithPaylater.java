@@ -49,16 +49,18 @@ public class Smoke_Create_Event_Gif_Test_WithPaylater extends baseclass {
 	public reviewPage reviewPage;
 
 	public MyEventsPage myEvents;
-	
+
 	public Logger log;
 	public propertyFile pro;
+
 //groups = "smoke",retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class
+	
 	@Test()
 
 	public void Validate_Creation_event_with_Gif_with_Paylater() throws InterruptedException, IOException {
 
-		pro= new propertyFile();
-		
+		pro = new propertyFile();
+
 		log = logger.getlogger();
 
 		login = new loginpage();
@@ -90,35 +92,32 @@ public class Smoke_Create_Event_Gif_Test_WithPaylater extends baseclass {
 		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
-		int number = ran.nextInt();
+		int number = ran.nextInt(10);
 
 		extenttest.info("fill the event details");
 
-		String name = "Test paylater function " + String.valueOf(number);
+		String name = "GIF creation for paylater  " + String.valueOf(number);
 
 		eventDetails.PaylaterFillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage();
 
-		log.info("drag Gif in Boothdesign");
+		extenttest.info("drag Gif in Boothdesign");
 
-		
-		//**************GIF NODE *****************
+		// **************GIF NODE *****************
 		designPage.dragAndDropGifNode();
 
 		designPage.clickonGifGearIcon();
 
 		GifPage gifPage = new GifPage();
 
-		//Thread.sleep(1500);
-
-
+		// Thread.sleep(1500);
 
 		int value = ran.nextInt();
 
 		String nameofGif = "gifName" + String.valueOf(value);
 
 		extenttest.info("click on create new gif option");
-		
+
 		gifPage.clickonCreateGifButton();
 
 		extenttest.info("fill the neccessory details in gif");
@@ -126,11 +125,9 @@ public class Smoke_Create_Event_Gif_Test_WithPaylater extends baseclass {
 		createGifPage createGif = new createGifPage();
 
 		createGif.createGifwithOverlay(nameofGif);
-		
 
-		//***********SHARE NODE*************
-		
-		
+		// ***********SHARE NODE*************
+
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
@@ -155,33 +152,28 @@ public class Smoke_Create_Event_Gif_Test_WithPaylater extends baseclass {
 		checkoutPage.clickOnPayLaterButton();
 
 		Thread.sleep(4000);
-		
+
 		extenttest.info("Search Event ");
-		
-		myEvents =new MyEventsPage();
-		
+
+		myEvents = new MyEventsPage();
+
 		myEvents.serachEventsAction(name);
 
 		extenttest.info("assser the valid data for new  event ");
-		
-		
 
-		String expectedText ="GO LIVE"
-				;
-		
-	
-		
-		String actualText=myEvents.getGoLiveButtontext();
-		
+		String expectedText = "GO LIVE";
+
+		String actualText = myEvents.getGoLiveButtontext();
+
 		System.out.println(actualText);
-		
+
 		if (expectedText.contains(actualText)) {
-			
+
 			assertTrue(true);
 		}
-		
+
 		else {
-			
+
 			controlAction.takeScreenshot("goLiveButtontest");
 			assertTrue(false);
 		}

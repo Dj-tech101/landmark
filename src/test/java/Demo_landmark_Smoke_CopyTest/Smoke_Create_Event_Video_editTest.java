@@ -157,11 +157,11 @@ public class Smoke_Create_Event_Video_editTest extends baseclass {
 	private void fillEventDetails(eventDetailsPage eventDetails2) throws InterruptedException {
 		ran = new Random();
 
-		int number = ran.nextInt();
+		int number = ran.nextInt(20);
 
 		log.info("fill the event details");
 
-		EventnameUse = "TestVideoCopy" + String.valueOf(number);
+		EventnameUse = "video sample" + String.valueOf(number);
 
 		eventDetails.PaylaterFillNeccessoryDetailsForEvent(EventnameUse);
 

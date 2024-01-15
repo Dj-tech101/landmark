@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Copy function(failed)">
     <classes>
-      <class name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3">
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest">
         <methods>
+          <include name="Create_Event_Video_EditTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="Validate_Creation_event_with_Gif"/>
+          <include name="initializedExtendReport"/>
+          <include name="generateExtendReport"/>
+          <include name="validateCopyFunction"/>
+          <include name="checkStatus"/>
+        </methods>
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest -->
+      <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest">
+        <methods>
+          <include name="validateCopyFunction"/>
+          <include name="Create_Event_Photo_copyTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
           <include name="initializedExtendReport"/>
           <include name="generateExtendReport"/>
           <include name="checkStatus"/>
         </methods>
-      </class> <!-- Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3 -->
+      </class> <!-- Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Copy function(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -41,7 +41,6 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 	public reviewPage reviewPage;
 
-	public Logger log;
 	public propertyFile pro;
 
 	@Test(groups = "share", retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
@@ -50,9 +49,8 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		pro = new propertyFile();
 
-		log = logger.getlogger();
 
-		log.info("login with valid credential");
+		extenttest.info("login with valid credential");
 		
 		login = new loginpage();
 
@@ -60,20 +58,20 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		creatEvent = new creatEventPage();
 
-		log.info("click on create new event button");
+		extenttest.info("click on create new event button");
 
 		creatEvent.clickoncreatEventButton();
 		Thread.sleep(2000);
 
 		packageselect = new packagePage();
 
-		log.info("click on package");
+		extenttest.info("click on package");
 
 		packageselect.clickOnPackage();
 
 		packageDetails = new packageDetails();
 
-		log.info("select package");
+		extenttest.info("select package");
 
 		packageDetails.selectPackage("PER EVENT", "Pro");
 
@@ -83,7 +81,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 		int number = ran.nextInt();
 		String name = "TestEmailShare" + String.valueOf(number);
 
-		log.info("fill necccessory data");
+		extenttest.info("fill necccessory data");
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 
@@ -92,7 +90,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 		// ************ PHTOT NODE***************88
 		designPage.dragAndDropphotoNode();
 
-		log.info("create photo node as single image");
+		extenttest.info("create photo node as single image");
 
 		designPage.clickonPhotoGearIcon();
 
@@ -106,11 +104,11 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
 		// ************ SHARE NODE***************
 
-		log.info("create Share node ");
+		extenttest.info("create Share node ");
 
 		designPage.dragAndDropShare();
 
@@ -121,7 +119,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 		sharenode.CreateNewShareNode("print");
 		sharenode.CreateNewShareNodemore("email", "smugmug");
 
-		log.info("click on next button");
+		extenttest.info("click on next button");
 
 		designPage.clickNextButton();
 
@@ -131,7 +129,7 @@ public class Smoke_Create_PerEvent_Basic_EmailShare extends baseclass {
 
 		CheckoutPage checkoutPage = new CheckoutPage();
 
-		log.info("fill credit details");
+		extenttest.info("fill credit details");
 
 	//	TakescreenShotUtils.GetScreenShot(driver, "Creditdetailspage");
 

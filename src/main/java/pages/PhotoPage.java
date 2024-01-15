@@ -21,7 +21,7 @@ import base.controlAction;
 
 public class PhotoPage extends controlAction {
 
-	//public WebDriver driver;
+	// public WebDriver driver;
 	public WebDriverWait wait;
 
 	public JavascriptExecutor js;
@@ -29,7 +29,7 @@ public class PhotoPage extends controlAction {
 	public PhotoPage() {
 		// TODO Auto-generated constructor stub
 
-		//this.driver = driver;
+		// this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
@@ -40,17 +40,24 @@ public class PhotoPage extends controlAction {
 
 	public void clickonCreatePhotoButton() throws InterruptedException {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		try {
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+			wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
-		WebElement e1 = wait.until(ExpectedConditions.elementToBeClickable(createPhotoButton));
+			WebElement e1 = wait.until(ExpectedConditions.elementToBeClickable(createPhotoButton));
 
-		Thread.sleep(500);
-		js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", e1);
+			Thread.sleep(900);
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(createPhotoButton));
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getLocalizedMessage());
+		}
 
 		// e1.click();
+
 //		Actions act = new Actions(driver);
 //		act.click(e1).perform();
 
@@ -67,7 +74,6 @@ public class PhotoPage extends controlAction {
 
 		WebElement e1 = wait.until(ExpectedConditions.visibilityOf(singleImgaeButton));
 
-		
 		Actions act = new Actions(driver);
 		act.click(waitForElementToBeVisible(singleImgaeButton)).perform();
 
@@ -86,7 +92,6 @@ public class PhotoPage extends controlAction {
 		Actions act = new Actions(driver);
 		act.click(waitForElementToBeVisible(PhotoTempalteButton)).perform();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
-		
 
 	}
 
@@ -126,7 +131,7 @@ public class PhotoPage extends controlAction {
 
 	}
 
-	public void createNewSinglePhoto(String nameofphoto) throws InterruptedException, IOException {
+	public void createNewSinglePhoto(String nameofphoto, String Type) throws InterruptedException, IOException {
 
 		PhotoPage photopage = new PhotoPage();
 
@@ -138,19 +143,89 @@ public class PhotoPage extends controlAction {
 
 		createPhoto.sendNameTextField(nameofphoto);
 
-		createPhoto.sendKeysBackgroundImage();
+		createPhoto.getClickonAAutoRemovalbackButton();
 
-		createPhoto.sendKeysOverlayField();
+		if (Type.contains("GS") || Type.contains("greenScreen")) {
 
-		createPhoto.clickonSaveButton();
+			createPhoto.clickOnGreenScreenToggle();
 
-		photopage.clickOnClosedPhotoWindow(nameofphoto);
+			createPhoto.sendKeysBackgroundImage();
+
+			createPhoto.sendKeysOverlayField();
+
+			createPhoto.clickonSaveButton();
+
+			photopage.clickOnClosedPhotoWindow(nameofphoto);
+
+		} else if (Type.equals("BR") || Type.contains("Background")) {
+
+			createPhoto.clickOnAutoBackgroundRemovalToggle();
+
+			createPhoto.sendKeysBackgroundImage();
+
+			createPhoto.sendKeysOverlayField();
+
+			createPhoto.clickonSaveButton();
+
+			photopage.clickOnClosedPhotoWindow(nameofphoto);
+
+		}
 
 	}
 
-	
+	public void createNewSinglePhotoWithoutBackground(String nameofphoto, String Type)
+			throws InterruptedException, IOException {
 
-	
+		PhotoPage photopage = new PhotoPage();
+
+		photopage.clickonCreatePhotoButton();
+
+		photopage.clickOnSingleImageButton();
+
+		createPhotoPage createPhoto = new createPhotoPage();
+
+		createPhoto.sendNameTextField(nameofphoto);
+
+		createPhoto.getClickonAAutoRemovalbackButton();
+
+		if (Type.contains("GS") || Type.contains("greenScreen")) {
+
+			createPhoto.clickOnGreenScreenToggle();
+
+			// createPhoto.sendKeysBackgroundImage();
+
+			createPhoto.sendKeysOverlayField();
+
+			createPhoto.clickonSaveButton();
+
+			photopage.clickOnClosedPhotoWindow(nameofphoto);
+
+		} else if (Type.equals("BR") || Type.contains("Background")) {
+
+			createPhoto.clickOnAutoBackgroundRemovalToggle();
+
+			// createPhoto.sendKeysBackgroundImage();
+
+			createPhoto.sendKeysOverlayField();
+
+			createPhoto.clickonSaveButton();
+
+			photopage.clickOnClosedPhotoWindow(nameofphoto);
+
+		}
+
+	}
+
+	@FindBy(xpath = "//div[@class='photo-panel']/div[2]")
+	private WebElement greenScrrenElement;
+
+	public WebElement getGreenScreenElement() throws InterruptedException {
+		
+		Thread.sleep(1500);
+		return waitForElementToBeVisible(greenScrrenElement);
+
+	}
+
 	public void createNewPhotoTemplate(String nameofphoto) throws InterruptedException, IOException {
 
 		PhotoPage photopage = new PhotoPage();
@@ -162,11 +237,11 @@ public class PhotoPage extends controlAction {
 		createPhotoPage createPhoto = new createPhotoPage();
 
 		createPhoto.sendNameTextField(nameofphoto);
-		
-		//createPhoto.sendKeysBackgroundImage();
+
+		// createPhoto.sendKeysBackgroundImage();
 
 		createPhoto.sendKeysOverlayField();
-		
+
 		createPhoto.clickonaddPhotoTemplatePlace();
 
 		createPhoto.clickonSaveButton();

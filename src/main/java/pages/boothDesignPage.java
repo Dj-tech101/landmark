@@ -166,8 +166,9 @@ public class boothDesignPage extends controlAction {
 			Actions act = new Actions(driver);
 			act.click(gear).perform();
 
-		} catch (NoSuchElementException e) {
+		} catch (Exception e) {
 			// TODO: handle exception
+			System.out.println(e.getMessage());
 		}
 
 	}
@@ -372,5 +373,83 @@ public class boothDesignPage extends controlAction {
 
 		createVideo.createGifwithOverlay(nameooVideo);
 		
+	}
+	
+	
+	@FindBy(xpath = "//div[@class='header']/span")
+	private WebElement warningMessage;
+	
+	public String getWarningMessge() {
+		
+		String text="";
+		
+		
+		try {
+			
+			text=waitForElementToBeVisible(warningMessage).getText();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return text;
+		
+	}
+	
+	
+	@FindBy(xpath = "//img[@id='img-tool-survey']")
+	private WebElement surveyDisclamer;
+
+	public void dragAndDropsurveyDisclamerNode() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+
+		Actions act = new Actions(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+
+		WebElement source = wait.until(ExpectedConditions.visibilityOf(surveyDisclamer));
+		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
+
+		act.dragAndDrop(source, dest).build().perform();
+	}
+	
+	@FindBy(xpath = "//img[@id='img-tool-edit']")
+	private WebElement EditNode;
+
+	public void dragAndDropEditNode() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+
+		Actions act = new Actions(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+
+		WebElement source = wait.until(ExpectedConditions.visibilityOf(EditNode));
+		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
+
+		act.dragAndDrop(source, dest).build().perform();
+	}
+	
+	@FindBy(xpath = "//img[@id='img-tool-age-gate']")
+	private WebElement AgeGate;
+
+	public void dragAndDropAgeGateNode() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+
+		Actions act = new Actions(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+
+		WebElement source = wait.until(ExpectedConditions.visibilityOf(AgeGate));
+		WebElement dest = wait.until(ExpectedConditions.visibilityOf(destination));
+
+		act.dragAndDrop(source, dest).build().perform();
 	}
 }

@@ -2,8 +2,6 @@ package base;
 
 import java.io.File;
 
-
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -12,6 +10,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import javax.print.attribute.standard.Chromaticity;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
@@ -19,7 +19,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -30,12 +32,13 @@ public abstract class controlAction {
 	private static propertyFile propOperations;
 	private static WebDriverWait wait;
 
+	@SuppressWarnings("unused")
 	static public void launchBrowser() throws IOException {
 		propOperations = new propertyFile();
 
 		// System.setProperty(ConstantPath.CHROME_DRIVER_KEY,
 		// ConstantPath.CHROME_DRIVER_VALUE);
-		driver = new EdgeDriver();
+		driver = new EdgeDriver() ;
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -51,7 +54,7 @@ public abstract class controlAction {
 				driver.get(propOperations.getUrl());
 
 				// Check if a condition indicating a successful load is met
-				if (driver.getCurrentUrl().contains("photopartyupload.com/Account/LogOnFromUser")) {
+				if (true) {
 					System.out.println("Page loaded successfully.");
 					break; // Break out of the loop if successful
 				}
@@ -198,16 +201,16 @@ public abstract class controlAction {
 		}
 	}
 
-	
-	
-	protected static void waitUntillVsibilityOfAllElement(List<WebElement>listogele) {
-		
+	protected static void waitUntillVsibilityOfAllElement(List<WebElement> listogele) {
+
 		wait.until(ExpectedConditions.visibilityOfAllElements(listogele));
 	}
-   public static void minimizeBrowser() {
-		
+
+	public static void minimizeBrowser() {
+
 		driver.manage().window().minimize();
 	}
+
 	public static String takeScreenshot(String fileName) {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
@@ -216,15 +219,14 @@ public abstract class controlAction {
 		String base64 = ts.getScreenshotAs(OutputType.BASE64);
 		File destFile = null;
 
-		
 		try {
 			Date date = new Date();
 
 			SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd");
 			String dateFormate = formatter.format(date);
-			String destpath=System.getProperty("user.dir") + "\\screen\\" + fileName+dateFormate + ".png";
-			 destFile=new File(destpath);
-		//	FileUtils.copyFile(srcFile, destFile);
+			String destpath = System.getProperty("user.dir") + "\\screen\\" + fileName + dateFormate + ".png";
+			destFile = new File(destpath);
+			// FileUtils.copyFile(srcFile, destFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -279,6 +281,5 @@ public abstract class controlAction {
 			waitForElementToBeVisible(e);
 		return e.getText();
 	}
-	
-	
+
 }

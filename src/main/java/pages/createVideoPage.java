@@ -94,19 +94,12 @@ public class createVideoPage extends controlAction {
 
 	}
 
-	@FindBy(xpath = "(//button[contains(text(),'SAVE')])[2]")
+	@FindBy(xpath = "//div[@class='footer']/*")
 	WebElement saveButton;
 
 	public void clickonSaveButton() throws InterruptedException {
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
-
-//		FluentWait<WebDriver> waitfluent = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
-//				.pollingEvery(Duration.ofMinutes(1))
-//
-//				.withMessage("element is not display");
-//
-//		WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(saveButton));
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 

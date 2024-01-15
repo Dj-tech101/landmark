@@ -120,7 +120,7 @@ public class Smoke_Create_Event_WithGreenScreen extends baseclass {
 
 		extenttest.info("select the new single photo options");
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
 
 		extenttest.info("drag the share options ");

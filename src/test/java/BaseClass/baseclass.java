@@ -71,7 +71,7 @@ public class baseclass {
 
 		// add config.
 		sparkReporter.config().setDocumentTitle("Landmark test Report");
-		sparkReporter.config().setReportName("User tester");
+		sparkReporter.config().setReportName("Dj_Tester");
 		sparkReporter.config().setTheme(Theme.DARK);
 		sparkReporter.config().setTimeStampFormat("MM-dd-yyyy HH:mm:ss");
 

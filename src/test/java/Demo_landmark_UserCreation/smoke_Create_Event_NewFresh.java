@@ -101,7 +101,7 @@ public class smoke_Create_Event_NewFresh extends baseclass {
 		int value = ran.nextInt();
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
-		photopage.createNewSinglePhoto(nameofphoto);
+		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
 		System.out.println("closed the window ");
 

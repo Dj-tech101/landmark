@@ -109,7 +109,7 @@ public class PPUSmoke_Create_Event_Photo extends baseclass {
 
 		String nameofphoto = "photonumber" + String.valueOf(value);
 
-		photopage.createNewSinglePhoto(nameofphoto);
+		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
 		// ***********SHARE NODE*************
 

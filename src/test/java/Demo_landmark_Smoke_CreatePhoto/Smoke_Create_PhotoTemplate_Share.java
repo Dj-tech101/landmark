@@ -125,7 +125,7 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 
 		sharepage sharenode = new sharepage();
 
-		sharenode.CreateNewShareNode("print");
+		sharenode.CreateNewShareNodemore("email","print");
 
 		extenttest.info("click on next button");
 
