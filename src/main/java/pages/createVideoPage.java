@@ -152,4 +152,177 @@ public class createVideoPage extends controlAction {
 
 	}
 
+	public void createGifwithOverlayForBackground(String name) throws IOException, InterruptedException {
+
+		createVideoPage video = new createVideoPage();
+
+		video.sendVideoname(name);
+
+		video.sendKeysOverlayField();
+
+		video.clickNextButton();
+		video.sendLength();
+//		
+		video.clickonSaveButton();
+
+		VideoPage videoPage = new VideoPage();
+
+		videoPage.clickOnClosedGifWindow(name);
+//		
+
+	}
+
+	@FindBy(xpath = "(//div[@class='mat-radio-outer-circle'])[2]")
+	private WebElement backgroundRemoval;
+
+	public void clickOnAutoBackgroundRemovalToggle() {
+
+		try {
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(backgroundRemoval));
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+	}
+
+	@FindBy(xpath = "((//div[@class='image-setting-buttons'])/*[@class='btn-create'])[1]")
+	private WebElement openBackroundSection;
+
+	public WebElement getopenBackroundSectionElement() {
+		return waitForElementToBeVisible(openBackroundSection);
+	}
+
+	@SuppressWarnings("deprecation")
+	public void sendKeysBackgroundImage() throws IOException, InterruptedException {
+//		boolean value = false;
+//
+//		try {
+//
+//			String areaChecked = waitForElementToBeVisible(GreenScreenToggle).getAttribute("class");
+//			if (CheckedGreenScreenToggle()) {
+//				System.out.println("Toggle is on");
+//			} else {
+//				js = (JavascriptExecutor) driver;
+//
+//				js.executeScript("arguments[0].click();", waitForElementToBeVisible(GreenScreenToggle));
+//
+//			}
+//
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//
+//			System.out.println(e.getMessage());
+//		}
+
+		Thread.sleep(1200);
+
+		try {
+
+//			System.out.println("ready to click on background");
+//			WebElement background = wait.until(ExpectedConditions.elementToBeClickable(openBackroundSection));
+
+//			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(2))
+//					.pollingEvery(Duration.ofSeconds(100)).withMessage("not define");
+//
+//			WebElement background = wait.until(ExpectedConditions.visibilityOf(openBackroundSection));
+
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(openBackroundSection));
+
+//			background.click();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getLocalizedMessage());
+		}
+
+		Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\backround autoIt.exe");
+
+	}
+
+	@FindBy(xpath = "//input[@role='switch']")
+	private WebElement autoRemovalButton;
+
+	public void getClickonAAutoRemovalbackButton() {
+
+		try {
+
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(autoRemovalButton));
+
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getMessage());
+		}
+	}
+
+	public void createNewVideoWithoutBackground(String nameofVideo, String Type) throws IOException, InterruptedException
+		
+	{
+		createVideoPage video = new createVideoPage();
+
+		video.sendVideoname(nameofVideo);
+
+		getClickonAAutoRemovalbackButton();
+
+		if (Type.contains("GS") || Type.contains("greenScreen")) {
+
+			clickOnGreenScreenToggle();
+			sendKeysBackgroundImage();
+			sendKeysOverlayField();
+			
+			video.clickNextButton();
+			video.sendLength();
+//			
+			video.clickonSaveButton();
+
+			VideoPage videoPage = new VideoPage();
+
+			videoPage.clickOnClosedGifWindow(nameofVideo);
+
+		} else if (Type.equals("BR") || Type.contains("Background")) {
+
+			clickOnGreenScreenToggle();
+			
+			clickOnAutoBackgroundRemovalToggle();
+
+			sendKeysBackgroundImage();
+
+			sendKeysOverlayField();
+			video.clickNextButton();
+			video.sendLength();
+//			
+			video.clickonSaveButton();
+
+			VideoPage videoPage = new VideoPage();
+
+			videoPage.clickOnClosedGifWindow(nameofVideo);
+
+//			createPhoto.clickonSaveButton();
+//
+//			photopage.clickOnClosedPhotoWindow(nameofphoto);
+		}
+	}
+
+	@FindBy(xpath = "(//div[@class='mat-radio-outer-circle'])[1]")
+	private WebElement GreenScreenToggle;
+
+	public void clickOnGreenScreenToggle() {
+
+		try {
+			js = (JavascriptExecutor) driver;
+
+			js.executeScript("arguments[0].click();", waitForElementToBeVisible(GreenScreenToggle));
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+	}
 }

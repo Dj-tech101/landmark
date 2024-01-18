@@ -8,28 +8,56 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Copy function</a></td><td class="num">3</td><td class="num attn">1</td><td class="num attn">6</td><td class="num attn">2</td><td class="num">1,077,497</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">1,060,133</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Copy function &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest</td><td><a href="#m0">Create_Event_Photo_copyTest</a></td><td rowspan="1">1705292782619</td><td rowspan="1">240355</td></tr><tr class="failedodd"><td rowspan="1">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest</td><td><a href="#m1">validateCopyFunction</a></td><td rowspan="1">1705292029646</td><td rowspan="1">30</td></tr><tr><th colspan="4">Copy function &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest</td><td><a href="#m2">validateCopyFunction</a></td><td rowspan="1">1705293023442</td><td rowspan="1">0</td></tr><tr><th colspan="4">Copy function &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest</td><td><a href="#m3">Create_Event_Photo_copyTest</a></td><td rowspan="3">1705292111410</td><td rowspan="3">190557</td></tr><tr class="retriedeven"><td><a href="#m4">Create_Event_Photo_copyTest</a></td></tr><tr class="retriedeven"><td><a href="#m5">Create_Event_Photo_copyTest</a></td></tr><tr class="retriedodd"><td rowspan="3">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest</td><td><a href="#m6">validateCopyFunction</a></td><td rowspan="3">1705292029556</td><td rowspan="3">36</td></tr><tr class="retriedodd"><td><a href="#m7">validateCopyFunction</a></td></tr><tr class="retriedodd"><td><a href="#m8">validateCopyFunction</a></td></tr><tr><th colspan="4">Copy function &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy</td><td><a href="#m9">validateCopyFunction</a></td><td rowspan="1">1705292091496</td><td rowspan="1">10916</td></tr><tr class="passedeven"><td><a href="#m10">verifyCreationOfGif</a></td><td rowspan="1">1705292037414</td><td rowspan="1">54080</td></tr><tr class="passedodd"><td rowspan="1">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest</td><td><a href="#m11">Create_Event_Video_EditTest</a></td><td rowspan="1">1705291968484</td><td rowspan="1">53262</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection</td><td><a href="#m0">validate_Happypath_Background_IconForNoneSelection</a></td><td rowspan="1">1705560429711</td><td rowspan="1">286635</td></tr><tr><th colspan="4">Default test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection</td><td><a href="#m1">validate_Happypath_Background_IconForNoneSelection</a></td><td rowspan="3">1705559665718</td><td rowspan="3">192432</td></tr><tr class="retriedeven"><td><a href="#m2">validate_Happypath_Background_IconForNoneSelection</a></td></tr><tr class="retriedeven"><td><a href="#m3">validate_Happypath_Background_IconForNoneSelection</a></td></tr></tbody>
 </table>
-<h2>Copy function</h2><h3 id="m0">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest#Create_Event_Photo_copyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: Password&apos; (tried for 120 second(s) with 500 milliseconds interval)
+<h2>Default test</h2><h3 id="m0">Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection#validate_Happypath_Background_IconForNoneSelection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: Password&apos; (tried for 120 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
 	at pages.loginpage.passwordnamesendkey(loginpage.java:49)
 	at pages.loginpage.loginwithCredential(loginpage.java:69)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:73)
+	at Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection.validate_Happypath_Background_IconForNoneSelection(Landmark_background_OpenImageForNoneSelection.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Password&quot;}
   (Session info: MicrosoftEdge=120.0.2210.133)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d21def3b8144e885c655e7c67aeb8f3f, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d21def3b8144e885c655e7c67aeb8f3f
+Command: [afdaaed4fad40a1b1bd78005dfc90228, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56972}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56972/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afdaaed4fad40a1b1bd78005dfc90228
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -50,70 +78,83 @@ Session ID: d21def3b8144e885c655e7c67aeb8f3f
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	... 30 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest#validateCopyFunction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Copy&apos;]&quot;}
-  (Session info: MicrosoftEdge=120.0.2210.133)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title=&apos;Copy&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f3281563d9c386ccf399849aeba81bd0
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pages.MyEventsPage.clickOnCopyButton(MyEventsPage.java:116)
-	at pages.MyEventsPage.copyExistEvent(MyEventsPage.java:154)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:198)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection#validate_Happypath_Background_IconForNoneSelection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isEnabled()&quot; because &quot;this.element&quot; is null
+	at Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection.validateBackgroundUpload(Landmark_background_OpenImageForNoneSelection.java:84)
+	at Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection.createVideo(Landmark_background_OpenImageForNoneSelection.java:80)
+	at Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection.validate_Happypath_Background_IconForNoneSelection(Landmark_background_OpenImageForNoneSelection.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest#validateCopyFunction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.validateCopyFunction() on instance Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695 depends on not successfully finished methods 
-[Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest() on instance Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest@44c03695]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest#Create_Event_Photo_copyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[EdgeDriver: MicrosoftEdge on windows (d21def3b8144e885c655e7c67aeb8f3f)] -&gt; xpath: //button[@id=&apos;btnPayLater&apos;]] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d21def3b8144e885c655e7c67aeb8f3f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
-	at pages.CheckoutPage.clickOnPayLaterButton(CheckoutPage.java:217)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.reviewAndCheckoutPage(Smoke_Create_Event_Photo_editTest.java:114)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:103)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest#Create_Event_Photo_copyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: Password&apos; (tried for 120 second(s) with 500 milliseconds interval)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection#validate_Happypath_Background_IconForNoneSelection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: Password&apos; (tried for 120 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
 	at pages.loginpage.passwordnamesendkey(loginpage.java:49)
 	at pages.loginpage.loginwithCredential(loginpage.java:69)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:73)
+	at Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection.validate_Happypath_Background_IconForNoneSelection(Landmark_background_OpenImageForNoneSelection.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Password&quot;}
   (Session info: MicrosoftEdge=120.0.2210.133)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d21def3b8144e885c655e7c67aeb8f3f, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d21def3b8144e885c655e7c67aeb8f3f
+Command: [afdaaed4fad40a1b1bd78005dfc90228, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56972}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56972/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afdaaed4fad40a1b1bd78005dfc90228
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -134,24 +175,52 @@ Session ID: d21def3b8144e885c655e7c67aeb8f3f
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	... 30 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest#Create_Event_Photo_copyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: Password&apos; (tried for 120 second(s) with 500 milliseconds interval)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection#validate_Happypath_Background_IconForNoneSelection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: Password&apos; (tried for 120 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at base.controlAction.waitForElementToBeVisible(controlAction.java:159)
 	at pages.loginpage.passwordnamesendkey(loginpage.java:49)
 	at pages.loginpage.loginwithCredential(loginpage.java:69)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest.Create_Event_Photo_copyTest(Smoke_Create_Event_Photo_editTest.java:73)
+	at Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection.validate_Happypath_Background_IconForNoneSelection(Landmark_background_OpenImageForNoneSelection.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Password&quot;}
   (Session info: MicrosoftEdge=120.0.2210.133)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d21def3b8144e885c655e7c67aeb8f3f, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61490}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61490/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d21def3b8144e885c655e7c67aeb8f3f
+Command: [afdaaed4fad40a1b1bd78005dfc90228, findElement {using=id, value=Password}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56972}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56972/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afdaaed4fad40a1b1bd78005dfc90228
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -172,90 +241,6 @@ Session ID: d21def3b8144e885c655e7c67aeb8f3f
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	... 30 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest#validateCopyFunction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Copy&apos;]&quot;}
-  (Session info: MicrosoftEdge=120.0.2210.133)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title=&apos;Copy&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f3281563d9c386ccf399849aeba81bd0
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pages.MyEventsPage.clickOnCopyButton(MyEventsPage.java:116)
-	at pages.MyEventsPage.copyExistEvent(MyEventsPage.java:154)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:198)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest#validateCopyFunction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;theme-btn btn-style-threess btn-style-one link-box&quot; id=&quot;btnEventData&quot; type=&quot;submit&quot; name=&quot;submit-form&quot;&gt;...&lt;/button&gt; is not clickable at point (953, 675). Other element would receive the click: &lt;div class=&quot;edc-loader&quot;&gt;...&lt;/div&gt;
-  (Session info: MicrosoftEdge=120.0.2210.133)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f3281563d9c386ccf399849aeba81bd0, clickElement {id=2DE3E8EEE7914CB176396D9E56F45231_element_724}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (f3281563d9c386ccf399849aeba81bd0)] -&gt; id: btnEventData]
-Session ID: f3281563d9c386ccf399849aeba81bd0
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pages.eventDetailsPage.clickNextButton(eventDetailsPage.java:176)
-	at pages.eventDetailsPage.copyEventFillNeccessoryDetailsForEvent(eventDetailsPage.java:323)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:201)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest#validateCopyFunction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Copy&apos;]&quot;}
-  (Session info: MicrosoftEdge=120.0.2210.133)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f3281563d9c386ccf399849aeba81bd0, findElement {using=xpath, value=//a[@title=&apos;Copy&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.133, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61321}, msedge: {msedgedriverVersion: 120.0.2210.133 (5a3825c4628..., userDataDir: C:\Users\webca\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61321/devtoo..., se:cdpVersion: 120.0.2210.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f3281563d9c386ccf399849aeba81bd0
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pages.MyEventsPage.clickOnCopyButton(MyEventsPage.java:116)
-	at pages.MyEventsPage.copyExistEvent(MyEventsPage.java:154)
-	at Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest.validateCopyFunction(Smoke_Create_Event_Video_editTest.java:198)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy#validateCopyFunction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy#verifyCreationOfGif</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest#Create_Event_Video_EditTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

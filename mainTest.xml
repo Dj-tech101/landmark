@@ -1,95 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="5" name="Test">
-		<classes>
-			<class
-				name="Demo_landmark_Smoke_EditsEvent.Smoke_Create_Event_Video_editTest" />
-			<class
-				name="Demo_landmark_Smoke_CreateVideo.Smoke_Create_Event_VideoTest" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_EditNodeWarningTest" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_SurveyDisclamerTest" />
-			<class
-				name="Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality" />
-			<class
-				name="Demo_landmark_SaAdminShareTest.DemoSaAdminSuccessQuantity" />
-			<class name="Demo_landmark_Smoke_EventType.Smoke_Create_PreviewNode" />
-			<class
-				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Video_editTest" />
-			<class
-				name="Demo_landmark_Smoke_CreateGIF.Smoke_Create_Event_Gif_Test_WithPaylater" />
-			<class name="BaseClass.baseclass" />
-			<class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerYearPro" />
-			<class
-				name="Demo_landmark_Smoke_EventType.Smoke_Create_PerMonth_Pro" />
-			<class
-				name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Gif_TestPPu3" />
-			<class
-				name="Com_Landmark_AutoRemovalBackground.Landmark_background_Negative" />
-			<class
-				name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_Event_Photo_Test_WithPaylater2" />
-			<class
-				name="Demo_landmark_Smoke_EventType.Smoke_Create_PerEvent_Pro" />
-			<class
-				name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_PhotoTemplate_ValdiationMessage" />
-			<class
-				name="Demo_landmark_Smoke_EventType.Smoke_Create_Event_WithGreenScreen" />
-			<class
-				name="Com_Landmark_AutoRemovalBackground.Landmark_background_OpenImageForNoneSelection" />
-			<class
-				name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_EmailShare" />
-			<class name="Demo_landmark_WarningVerification.Smoke_GIFWarningTest" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_PhotoWarningTest" />
-			<class
-				name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEventGIF_Basic_Smugmug2" />
-			<class
-				name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_PhotoTemplate_Share" />
-			<class name="Demo_landmark_SaAdminShareTest.DemoSaAdminShareTest" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_CustomeInsertWarningTest" />
-			<class
-				name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserFunction" />
-			<class
-				name="Demo_landmark_SaAdminTestCases.DemoSaAdminUserNameSearchFunction" />
-			<class
-				name="Demo_landmark_Smoke_EditsEvent.Smoke_Create_Event_Photo_editTest" />
-			<class
-				name="Demo_landmark_Smoke_EditsEvent.Smoke_Create_Event_Gif_editTest" />
-			<class
-				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy" />
-			<class
-				name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Photo_editTest" />
-			<class
-				name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Video_TestPPu2" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_ShareWarningTest" />
-			<class name="Demo_landmark_UserCreation.smoke_Create_Event_NewFresh" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_PreviewWarningTest" />
-			<class
-				name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality" />
-			<class
-				name="Com_Landmark_AutoRemovalBackground.Landmark_background_HappyPath" />
-			<class
-				name="Demo_landmark_Smoke_EventType.Smoke_Create_CustomeInsertNode" />
-			<class
-				name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_Smugmug" />
-			<class
-				name="Demo_landmark_UserCreation.Smoke_Create_Event_ExistingList" />
-			<class
-				name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserSelectUserDetails" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_AgeGateNodeWarningTest" />
-			<class
-				name="Demo_landmark_WarningVerification.Smoke_VideoWarningTest" />
-			<class
-				name="Demo_landmark_Smoke_CreateGIF.Smoke_Create_Event_Gif_Test" />
-			<class name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Photo" />
-		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+<suite name="EventFunctionalitySuite">
+    <test thread-count="5" name="ApplicationSmokeTest">
+        <classes>
+            <!-- Event Creation and Editing -->
+            <class name="Demo_landmark_Smoke_EditsEvent.Smoke_Create_Event_Video_editTest" />
+            <class name="Demo_landmark_Smoke_EditsEvent.Smoke_Create_Event_Photo_editTest" />
+            <class name="Demo_landmark_Smoke_EditsEvent.Smoke_Create_Event_Gif_editTest" />
+
+            <!-- Event Types -->
+            <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerYearPro" />
+            <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerMonth_Pro" />
+            <class name="Demo_landmark_Smoke_EventType.Smoke_Create_PerEvent_Pro" />
+            <class name="Demo_landmark_Smoke_EventType.Smoke_Create_Event_WithGreenScreen" />
+            <class name="Demo_landmark_Smoke_EventType.Smoke_Create_CustomeInsertNode" />
+
+            <!-- Photo and Video Creation -->
+            <class name="Demo_landmark_Smoke_CreateVideo.Smoke_Create_Event_VideoTest" />
+            <class name="Demo_landmark_Smoke_CreateGIF.Smoke_Create_Event_Gif_Test_WithPaylater" />
+            <class name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_Event_Photo_Test_WithPaylater2" />
+            <class name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_Event_Photo_Test_WithPaylater2" />
+            <class name="Demo_landmark_Smoke_CreateGIF.Smoke_Create_Event_Gif_Test" />
+            <class name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Video_TestPPu2" />
+            <class name="Demo_landmark_PpuUser.PPUSmoke_Create_Event_Photo" />
+
+            <!-- Copy and Share -->
+            <class name="Demo_landmark_Smoke_CopyTest.Smoke_Create_Event_Gif_Copy" />
+            <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_EmailShare" />
+            <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEventGIF_Basic_Smugmug2" />
+            <class name="Demo_landmark_Smoke_CreatePhoto.Smoke_Create_PhotoTemplate_Share" />
+            <class name="Demo_landmark_SaAdminShareTest.DemoSaAdminShareTest" />
+
+            <!-- Warning Verifications -->
+            <class name="Demo_landmark_WarningVerification.Smoke_EditNodeWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_SurveyDisclamerTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_GIFWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_PhotoWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_CustomeInsertWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_ShareWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_PreviewWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_AgeGateNodeWarningTest" />
+            <class name="Demo_landmark_WarningVerification.Smoke_VideoWarningTest" />
+
+            <!-- User Administration -->
+            <class name="Demo_landmark_SaAdminTestCases.VerifySAAdminShowAllEventsFunctionality" />
+            <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserFunction" />
+            <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminUserNameSearchFunctionality" />
+            <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminSearchFunctionality" />
+            <class name="Demo_landmark_SaAdminTestCases.DemoSaAdminManageUserSelectUserDetails" />
+
+            <!-- Background Removal -->
+            <class name="Com_Landmark_AutoRemovalBackground.Landmark_background_Negative" />
+            <class name="Com_Landmark_AutoRemovalBackground.Landmark_background_OpenImageForNoneSelection" />
+            <class name="Com_Landmark_AutoRemovalBackground.Landmark_background_HappyPath" />
+
+        </classes>
+    </test>
+</suite>

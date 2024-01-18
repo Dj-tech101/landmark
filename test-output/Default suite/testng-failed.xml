@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo_landmark_UserCreation.smoke_Create_Event_NewFresh">
+      <class name="Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection">
         <methods>
-          <include name="TestNewUserCreation"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="validate_Happypath_Background_IconForNoneSelection"/>
           <include name="initializedExtendReport"/>
           <include name="generateExtendReport"/>
           <include name="checkStatus"/>
         </methods>
-      </class> <!-- Demo_landmark_UserCreation.smoke_Create_Event_NewFresh -->
+      </class> <!-- Com_Landmark_AutoRemovalBackground_Video.Landmark_background_OpenImageForNoneSelection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

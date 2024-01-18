@@ -46,7 +46,7 @@ public class baseclass {
 	@AfterClass
 	public void tearDown() throws IOException {
 		
-		controlAction.closeBrowser();
+		//controlAction.closeBrowser();
 	}
 
 	@BeforeSuite

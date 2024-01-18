@@ -374,6 +374,34 @@ public class boothDesignPage extends controlAction {
 		createVideo.createGifwithOverlay(nameooVideo);
 		
 	}
+	public void createVideoNodeForBackGround(String type) throws InterruptedException, IOException {
+		designPage= new boothDesignPage();
+		
+		log=logger.getlogger();
+		
+		designPage.dragAndDropVideoNode();
+
+		designPage.clickonVideoGearIcon();
+
+		VideoPage videoPage = new VideoPage();
+
+		Random ran= new Random();
+		
+		int value = ran.nextInt();
+
+		String nameooVideo = "VideoName" + String.valueOf(value);
+
+		log.info("click on create new video option");
+		
+		videoPage.clickonCreateVideoButton();
+
+		log.info("fill the neccessory details in video");
+
+		createVideoPage createVideo = new createVideoPage();
+
+		createVideo.createNewVideoWithoutBackground(nameooVideo, type);
+		
+	}
 	
 	
 	@FindBy(xpath = "//div[@class='header']/span")
