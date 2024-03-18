@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.print.DocFlavor.STRING;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -257,4 +258,12 @@ public class MyEventsPage_SaAdmin extends controlAction {
 		}
 	}
 
+	public void clickOnUserProfile(String username) {
+		
+		WebElement element=driver.findElement(By.xpath("(//button[contains(text(),'"+username+"')])[1]"));
+		js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].click();", (element));
+
+	}
 }

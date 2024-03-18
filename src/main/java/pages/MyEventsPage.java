@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -69,6 +70,9 @@ public class MyEventsPage extends controlAction {
 
 	public void serachEventsAction(String eventName) {
 
+		
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2000));
+		
 		Actions act = new Actions(driver);
 
 		act.sendKeys((waitForElementToBeVisible(searchEventFiled)), eventName).perform();
@@ -146,6 +150,7 @@ public class MyEventsPage extends controlAction {
 		
 	}
 	
+	//@FindBy(myevxpath = "(//button[contains(text(),'"++"')])[1]")
 	
 	
 	
@@ -154,9 +159,26 @@ public class MyEventsPage extends controlAction {
 		clickOnCopyButton();
 		sendNewEventName(name);
 		clickOnOkButton();
-		
-		
-		
-		
 	}
+	
+public void clickOnUserProfile(String username) {
+		
+		WebElement element=driver.findElement(By.xpath("(//button[contains(text(),'"+username+"')])[1]"));
+		js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].click();", (element));
+
+	}
+
+ @FindBy(xpath = "//section[@class='hidden-bar']/div/ul/li[8]/a")
+private WebElement signOutButton;
+
+public void clcikOnSignOutButton() {
+	js = (JavascriptExecutor) driver;
+
+	js.executeScript("arguments[0].click();", (waitForElementToBeVisible(signOutButton)));
+
+}
+
+
 }

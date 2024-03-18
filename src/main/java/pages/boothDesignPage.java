@@ -480,4 +480,15 @@ public class boothDesignPage extends controlAction {
 
 		act.dragAndDrop(source, dest).build().perform();
 	}
+	
+	@FindBy(id = "eventdetails")
+	private WebElement eventDetailsCompo;
+
+	
+	public void clickOnEventDetailsComponent() {
+		
+		js= (JavascriptExecutor)driver;
+		
+		js.executeScript("arguments[0].click();", waitForElementToBeVisible(eventDetailsCompo));
+	}
 }

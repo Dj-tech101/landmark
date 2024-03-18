@@ -47,7 +47,7 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 
 	public propertyFile pro;
 
-	// 
+	//
 	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
 	public void Validate_Creation_Phototemplate() throws InterruptedException, IOException {
@@ -108,16 +108,16 @@ public class Smoke_Create_PhotoTemplate_ValdiationMessage extends baseclass {
 		photopage.clickonCreatePhotoButton();
 		photopage.clickOnPhotoTemplateButton();
 		createPhoto.sendNameTextField(nameofphoto);
-		createPhoto.sendKeysOverlayField();
+//	createPhoto.sendKeysOverlayField();
 		createPhoto.clickonSaveButton();
 
 		// Validate that a message is displayed
 		String expectedMessage = "Please add placeholders.";
 		String actualMessage = createPhoto.getValidationText();
-		TakescreenShotUtils.GetScreenShot(driver, "Validationmessage");
+		
+		System.out.println("actual message on placeholder is :"+actualMessage);
+		
 		org.testng.Assert.assertEquals(expectedMessage, actualMessage);
-		// ************ SHARE NODE***************
-
 
 	}
 }

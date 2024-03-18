@@ -4,7 +4,9 @@ import java.beans.DesignMode;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +23,7 @@ import base.controlAction;
 
 public class GifPage extends controlAction {
 
-	//public WebDriver driver;
+	// public WebDriver driver;
 	public WebDriverWait wait;
 
 	public JavascriptExecutor js;
@@ -29,7 +31,7 @@ public class GifPage extends controlAction {
 	public GifPage() {
 		// TODO Auto-generated constructor stub
 
-		//this.driver = driver;
+		// this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
@@ -40,14 +42,10 @@ public class GifPage extends controlAction {
 
 	public void clickonCreateGifButton() throws InterruptedException {
 
-
-
-
 		Thread.sleep(500);
-		
+
 		js = (JavascriptExecutor) driver;
-		
-		
+
 		js.executeScript("arguments[0].click();", waitForElementToBeClickable(createGifButton));
 
 		// e1.click();
@@ -56,46 +54,55 @@ public class GifPage extends controlAction {
 
 	}
 
-	
-	
-
 	@FindBy(xpath = "//div[@class='header']//*[name()='img']")
 	WebElement closedGifButton;
-	
 
 	@FindBy(xpath = "//div[@class='name']")
 	List<WebElement> listofthephotos;
+	@FindBy(xpath = "(//div[@class='gif-holder'])[8]/div/div/img")
+	private WebElement imageTag1;
 
+	@FindBy(xpath ="//div[@class='scroller']/div/div[1]")
+	private WebElement loaderEelement;
+
+	
 	public void clickOnClosedGifWindow(String expectedname) throws InterruptedException {
-
-	
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
-
-		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
-
-		Thread.sleep(2500);
-
-		for (WebElement elements : listofthephotos) {
-
-			String actualPhotoname = elements.getText();
+		
 			
+			Thread.sleep(15000);
+			String border=loaderEelement.getCssValue("border");
+			
+			System.out.println(border);
+		
+		
+		
+		
+		if (border.contains("2.4px solid rgb(91, 62, 238)")) {
 
-			if (actualPhotoname.equalsIgnoreCase(expectedname)) {
+			for (int i = 0; i < listofthephotos.size(); i++) {
+				
+				String actualPhotoname = listofthephotos.get(i).getText();
 
-//				 Wait<WebDriver> wait = new FluentWait<>(driver)
-//			                .withTimeout(Duration.ofSeconds(1500))
-//			                .pollingEvery(Duration.ofSeconds(1500))
-//			                .ignoring(Exception.class); // Ignore exceptions for more robustness
+				System.out.println(actualPhotoname);
 
-				js = (JavascriptExecutor) driver;
+				if (actualPhotoname.equalsIgnoreCase(expectedname)) {
 
-				WebElement element = wait.until(ExpectedConditions.visibilityOf(closedGifButton));
+					//System.out.println("Iam enter in the loop");
+					
+					js = (JavascriptExecutor) driver;
 
-				js.executeScript("arguments[0].click();", element);
 
-				break;
+					js.executeScript("arguments[0].click();", waitForElementToBeVisible(closedGifButton));
 
+					break;
+				} else {
+
+					System.out.println("element is not display ");
+				}
 			}
-		}}
-	
+		}
+		
+		
+	}
+
 }

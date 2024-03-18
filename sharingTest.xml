@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_Smugmug"/>
+      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEvent_Basic_EmailShare"/>
+      <class name="Demo_landmark_Sharing_TestCases.Smoke_Create_PerEventGIF_Basic_Smugmug2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

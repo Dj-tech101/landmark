@@ -49,13 +49,16 @@ public class createGifPage extends controlAction {
 
 	@FindBy(xpath = "(//button[contains(text(),' OPEN FILE ')])[2]")
 	WebElement openFileForOverlay;
+	
+	@FindBy(xpath = "(//div[@class='gif-holder'])[8]/div/div/img")
+	private WebElement imageTag;
+	
 
-	@SuppressWarnings("deprecation")
 	public void sendKeysOverlayField() throws IOException {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+		//driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
-		wait = new WebDriverWait(driver, Duration.ofMillis(3));
+	//	wait = new WebDriverWait(driver, Duration.ofMillis(3));
 		try {
 			Thread.sleep(2000);
 			WebElement e2 = wait.until(ExpectedConditions.elementToBeClickable(openFileForOverlay));
@@ -64,8 +67,10 @@ public class createGifPage extends controlAction {
 
 			js.executeScript("arguments[0].click();", e2);
 
-			Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\autoitfiles.exe");
+			Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\overlay.exe");
 
+		//	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3500));
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e.getLocalizedMessage());
@@ -75,6 +80,8 @@ public class createGifPage extends controlAction {
 
 	@FindBy(xpath = "//button[contains(text(),' NEXT ')]")
 	WebElement nextButton;
+	
+	
 
 	public void clickNextButton() throws InterruptedException {
 
@@ -88,32 +95,28 @@ public class createGifPage extends controlAction {
 		;
 
 		js = (JavascriptExecutor) driver;
-
+		
 		js.executeScript("arguments[0].click();", e1);
+
+		
+		
 
 	}
 
 	@FindBy(xpath = "//div[@class='footer']/*")
 	WebElement saveButton;
 
-	public void clickonSaveButton() throws InterruptedException {
-
-		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
-
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+	public void clickonSaveButton() {
 		
-		
-		try {
-			js = (JavascriptExecutor) driver;
+		 try {
+	            js = (JavascriptExecutor) driver;
+	            js.executeScript("arguments[0].click();", saveButton);
+	        } catch (NoSuchElementException e) {
+	            System.out.println("No such element found");
+	        }
+	    }
 
-			Thread.sleep(2000);
 
-			js.executeScript("arguments[0].click();", saveButton);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-	}
 
 	public void createGifwithOverlay(String name) throws IOException, InterruptedException {
 

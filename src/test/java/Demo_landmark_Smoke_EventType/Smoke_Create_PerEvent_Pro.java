@@ -7,6 +7,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
+import com.aventstack.extentreports.markuputils.Markup;
+
 import BaseClass.baseclass;
 import Utility.propertyFile;
 import dev.failsafe.internal.util.Assert;
@@ -39,6 +41,7 @@ public class Smoke_Create_PerEvent_Pro extends baseclass {
 	public reviewPage reviewPage;
 
 	public propertyFile pro;
+	
 
 	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
@@ -49,103 +52,87 @@ public class Smoke_Create_PerEvent_Pro extends baseclass {
 		
 		login = new loginpage();
 
+		extenttest.info("login with valid crendential");
 		login.loginwithCredential(pro.getusername(), pro.getpassword());
 
 		creatEvent = new creatEventPage();
 
 		creatEvent.clickoncreatEventButton();
-//
-//		
 		Thread.sleep(3000);
 
 		packageselect = new packagePage();
 
 		packageselect.clickOnPackage();
 
-		System.out.println("click on new package button");
-
+   
+		extenttest.info("click on new package button");
 		// packageselect.clickonnewPackageButton();
 
 		packageDetails = new packageDetails();
 
 		packageDetails.selectPackage("PER EVENT", "Pro");
 
-		System.out.println("fill the neccessory details");
-
+        extenttest.info("fill the neccessory details");
+        
 		eventDetails = new eventDetailsPage();
-		Random ran = new Random();
+		Random ran = new Random(100);
 
 		int number = ran.nextInt();
-		String name = "TestAutomation" + String.valueOf(number);
+		String name = "PER EVETN TEST " + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
-//		eventDetails.eventNameSendkeys("testAutomation");
-//		eventDetails.startNowRadioButton();
-//		eventDetails.timeZoneSelection("Delhi");
-//		eventDetails.contrySelection("India");
-//		eventDetails.stateSelection("Maharashtra");
-//		eventDetails.citySendkeys("pune");
-//		eventDetails.clickNextButton();
-//		System.out.println("click on next button ");
 
 		// eventDetails.eventSubmission();
 		designPage = new boothDesignPage();
 
-		System.out.println("drag photo to destination");
+		extenttest.info("drag photo to destination");
+		
 		designPage.dragAndDropphotoNode();
 
-		System.out.println("click on phto gear icon ");
 
+		extenttest.info("click on phto gear icon ");
+		
 		designPage.clickonPhotoGearIcon();
 
 		PhotoPage photopage = new PhotoPage();
 
 		Thread.sleep(1500);
 
-		// photopage.clickonCreatePhotoButton();
+		 photopage.clickonCreatePhotoButton();
 
-		// photopage.clickOnSingleImageButton();
+		 photopage.clickOnSingleImageButton();
 
 		createPhotoPage createPhoto = new createPhotoPage();
 
-		int value = ran.nextInt();
+		int value = ran.nextInt(100);
 
-		String nameofphoto = "photonumber" + String.valueOf(value);
+		String nameofphoto = "PER EVENT PRO " + String.valueOf(value);
+		
 		photopage.createNewSinglePhoto(nameofphoto,"BR");
 
-//		createPhoto.sendNameTextField(nameofphoto);
-//
-//		createPhoto.sendKeysOverlayField();
-//
-//		createPhoto.clickonSaveButton();
-//
-//		photopage.clickOnClosedPhotoWindow(nameofphoto);
 
-		System.out.println("closed the window ");
-
+		extenttest.info("closed the window ");
 		designPage.dragAndDropShare();
 
 		designPage.clickonShareGearIcon();
 
-		System.out.println("lets click on share gear icon");
 
 		sharepage sharenode = new sharepage();
 
-//		sharenode.getlistofshareOptions("print");
-//
-//		sharenode.clickonPrintSwitch();
-//
-//		sharenode.clickOnClosedPhotoWindow();
 
 		sharenode.CreateNewShareNode("print");
 
 		designPage.clickNextButton();
+		extenttest.info("click on review next button");
+		
 
 		reviewPage = new reviewPage();
 
 		reviewPage.clickNextButton();
 
 		CheckoutPage checkoutPage = new CheckoutPage();
+		extenttest.info("fill neccessory details for chekout ");
+
 
 		checkoutPage.FillNeccessoryCardDetails("Exist");
 

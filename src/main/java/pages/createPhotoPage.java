@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.controlAction;
+import io.netty.handler.timeout.TimeoutException;
 
 public class createPhotoPage extends controlAction {
 
@@ -72,9 +73,13 @@ public class createPhotoPage extends controlAction {
 
 	@FindBy(xpath = "(//button[contains(text(),' OPEN FILE ')])[2]")
 	WebElement openFileForOverlay;
+	
+	@FindBy(tagName = "img")
+	private WebElement img;
+	
 
 	@SuppressWarnings("deprecation")
-	public void sendKeysOverlayField() throws IOException {
+	public void sendKeysOverlayField() throws IOException, TimeoutException {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
@@ -87,7 +92,11 @@ public class createPhotoPage extends controlAction {
 
 			js.executeScript("arguments[0].click();", e2);
 
-			Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\autoitfiles.exe");
+			Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\autoitfiles overlay.exe");
+			
+			Thread.sleep(3000);
+		//	waitForElementToBeVisible(img);
+			
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -263,7 +272,7 @@ public class createPhotoPage extends controlAction {
 
 		wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
-		String text = wait.until(ExpectedConditions.elementToBeClickable(ValidationmessagePhototemplate)).getText();
+		String text = wait.until(ExpectedConditions.visibilityOf(ValidationmessagePhototemplate)).getText();
 
 		return text;
 	}

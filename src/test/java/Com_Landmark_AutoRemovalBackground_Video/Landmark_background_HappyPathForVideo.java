@@ -157,7 +157,7 @@ public class Landmark_background_HappyPathForVideo extends baseclass {
 		Random ran = new Random();
 
 		int number = ran.nextInt();
-		String name = "BackGround removal photo" + String.valueOf(number);
+		String name = "BackGround removal video" + String.valueOf(number);
 
 		extenttest.info("fill necccessory data");
 

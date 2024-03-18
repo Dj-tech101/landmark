@@ -88,6 +88,7 @@ private VideoPage videopage;
             org.testng.Assert.assertTrue(false);
         } else {
         	System.out.println("element is not enable boss");
+        	System.out.println("test case is pass");
             org.testng.Assert.assertTrue(true);
         }
     }

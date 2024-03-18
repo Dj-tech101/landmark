@@ -26,16 +26,13 @@ public class loginpage extends controlAction {
 	@SuppressWarnings("unused")
 	public void usernamesendkey(String name) {
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
 		try {
-			wait = new WebDriverWait(driver, Duration.ofMinutes(2));
 
 			waitForElementToBeVisible(email).sendKeys(name);
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-
-			System.out.println(e.getLocalizedMessage());
+   System.err.println("ELEMENT IS NOT DISPLAY");
 			// Assert.assertTrue(false);
 		}
 

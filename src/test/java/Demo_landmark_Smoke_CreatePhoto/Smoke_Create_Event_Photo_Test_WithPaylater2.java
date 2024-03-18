@@ -52,6 +52,9 @@ public class Smoke_Create_Event_Photo_Test_WithPaylater2 extends baseclass {
 	
 	public Logger log;
 	public propertyFile pro;
+	
+	public  String name;
+	
 //
 	@Test(retryAnalyzer = retryAnalyzerUtil.retryAnalyser.class)
 
@@ -85,7 +88,7 @@ public class Smoke_Create_Event_Photo_Test_WithPaylater2 extends baseclass {
 
 		extenttest.info("select month and pro options");
 
-		packageDetails.selectPackage("PER EVENT", "Pro");
+		packageDetails.selectPackage("PER EVENT", "Basic");
 
 		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
@@ -94,7 +97,7 @@ public class Smoke_Create_Event_Photo_Test_WithPaylater2 extends baseclass {
 
 		extenttest.info("fill the event details");
 
-		String name = "Test paylater function with Photo " + String.valueOf(number);
+		name = "Test paylater function with Photo " + String.valueOf(number);
 
 		eventDetails.PaylaterFillNeccessoryDetailsForEvent(name);
 		designPage = new boothDesignPage();
@@ -117,11 +120,11 @@ public class Smoke_Create_Event_Photo_Test_WithPaylater2 extends baseclass {
 
 		int value = ran.nextInt();
 
-		String nameofphoto = "photonumber" + String.valueOf(value);
+		String nameofphoto = "test" + String.valueOf(value);
 
 		extenttest.info("select the new  photo template  options");
 
-		photopage.createNewPhotoTemplate(nameofphoto);
+		photopage.createNewSinglePhotoWithoutBackground(nameofphoto,"GS");
 		
 
 		//***********SHARE NODE*************
@@ -140,6 +143,7 @@ public class Smoke_Create_Event_Photo_Test_WithPaylater2 extends baseclass {
 		designPage.clickNextButton();
 
 		extenttest.info("click on next button");
+		
 		reviewPage = new reviewPage();
 
 		reviewPage.clickNextButton();

@@ -81,9 +81,9 @@ public class Smoke_Create_PhotoTemplate_Share extends baseclass {
 		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
-		int number = ran.nextInt(100);
+		int number = ran.nextInt(50);
 
-		String name = "PhotoTemplateTest" + String.valueOf(number);
+		String name = "PHOTO TEMPLATE SHARE TEST" + String.valueOf(number);
 
 		extenttest.info("fill necccessory data");
 

@@ -15,9 +15,11 @@ pages\CheckoutPage.class
 pages\PhotoPage.class
 pages\RegistrationPage.class
 UtilityxlUtility\ReadxcelFile.class
+Utility\randomNumberUtility.class
 pages\VideoPage.class
 pages\loginpage.class
 Utility\logger.class
+pages\SharingEvent.class
 pages\createGifPage.class
 pages\createPhotoPage.class
 pages\creatEventPage.class

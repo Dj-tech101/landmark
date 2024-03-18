@@ -149,6 +149,7 @@ public class Smoke_Create_Event_Gif_Test extends baseclass {
 		Thread.sleep(4000);
 
 		extenttest.info("assser the valid data for new  event ");
+		
 		org.testng.Assert.assertTrue(true);
 
 		extenttest.info("Event is created ");

@@ -85,7 +85,7 @@ public class Smoke_Create_Event_VideoTest extends baseclass {
 		eventDetails = new eventDetailsPage();
 		Random ran = new Random();
 
-		int number = ran.nextInt();
+		int number = ran.nextInt(100);
 
 		extenttest.info("fill the event details");
 
@@ -147,6 +147,7 @@ public class Smoke_Create_Event_VideoTest extends baseclass {
 		Thread.sleep(4000);
 
 		extenttest.info("assser the valid data for new  event ");
+		
 		org.testng.Assert.assertTrue(true);
 
 		extenttest.info("Event is created ");

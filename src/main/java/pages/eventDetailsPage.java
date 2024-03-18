@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.List;
 
+import javax.print.DocFlavor.STRING;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -244,7 +246,7 @@ public class eventDetailsPage extends controlAction {
 			i++;
 			String classtext = element.getText();
 
-			System.out.println("available date is" + classtext);
+			//System.out.println("available date is" + classtext);
 
 			if (i == 2) {
 
@@ -322,6 +324,17 @@ public class eventDetailsPage extends controlAction {
 //		eventDetails.citySendkeys("pune");
 		eventDetails.clickNextButton();
 
+	}
+	
+	@FindBy(id = "EndDate")
+	private WebElement endDate;
+	
+	public String getEnddateEvent() {
+		
+		String date =waitForElementToBeVisible(endDate).getAttribute("value");
+
+		return date ;
+		
 	}
 
 }

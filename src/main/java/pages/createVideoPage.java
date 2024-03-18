@@ -240,7 +240,8 @@ public class createVideoPage extends controlAction {
 			System.out.println(e.getLocalizedMessage());
 		}
 
-		Runtime.getRuntime().exec("C:\\Users\\webca\\OneDrive\\Desktop\\QA\\backround autoIt.exe");
+		Runtime.getRuntime().exec("Created program:C:\\Users\\webca\\OneDrive\\Desktop\\QA\\backround autoIt.exe\r\n"
+				+ "+>11:05:38 AutoIt3Wrapper Finished.");
 
 	}
 

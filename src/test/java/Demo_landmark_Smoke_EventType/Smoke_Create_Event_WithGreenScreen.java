@@ -84,7 +84,7 @@ public class Smoke_Create_Event_WithGreenScreen extends baseclass {
 
 		extenttest.info("fill the event details");
 
-		String name = "TestAutomation" + String.valueOf(number);
+		String name = "GREEN SCREEN" + String.valueOf(number);
 
 		eventDetails.FillNeccessoryDetailsForEvent(name);
 //		eventDetails.eventNameSendkeys("testAutomation");
